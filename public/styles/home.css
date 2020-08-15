@@ -10,31 +10,35 @@ body {
     flex-direction: column;
 }
 .content {
-    max-width: 1200px;
     margin: 0 auto;
-}
-header {
+    max-width: 1290px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+header {
     position: fixed;
-    max-width: 1200px;
-    width: 100%;
+    width: 100vw;
     border-bottom: 1px solid rgb(226, 226, 226);
-    height: 110px;
+    height: 80px;
     z-index: 2;
     background-color: white;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
 }
 header img {
-    height: 60px;
+    height: 30px;
     margin: 1rem;
 }
-header i {
-    margin: 1rem;
+header .content i {
+    display: block;
+    margin: 2rem;
 }
 #container {
-    margin-top: 7rem;
     z-index: 1;
+    width: 100vw;
 }
 .header-homepage {
     background-image: url('http://nexaas.com/wp-content/uploads/2020/04/hero-home-bg_Varejo_QquerLugar-1.jpg');
@@ -45,10 +49,125 @@ header i {
     justify-content: center;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    height: 700px;
+    color: white;
+    
+}
+.header-homepage-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 28px;
+    font-size: 1.2rem;
     text-align: center;
-    height: 300px;
+    font-family: 'Montserrat';
+}
+.header-homepage h1 {
+    margin-bottom: 1.5rem;
+    line-height: 50px;
+}
+.header-homepage p {
+    margin: 0 1.5rem 0 1.5rem;
+}
+.header-homepage a {
+    background-color: #03a9f4;
+    border-radius: 1.5rem;
+    padding: 0.7rem;
+    color: white;
+    font-family: 'Archivo';
+    text-decoration: none;
+    margin: 1.5rem;
+    font-size: 0.9rem;
+}
+.header-homepage a:hover {
+    background-color: #15b2fa;
 }
 #container img.cropped {
     width: 100%;
+}
+.menu-content {
+    display: none;
+}
+.content-section {
+    display: flex;
+    flex-direction: column;
+    margin: 4rem 1rem 2rem 1rem;
+    font: 'Montserrat';
+    text-align: center;
+    font-size: 0.8rem;
+    color: #3e4451;
+    line-height: 23px;
+}
+.content-section img {
+    margin-bottom: 2rem;
+}
+.content-section h1 {
+    margin-bottom: 2rem;
+    font-family: 'Lato';
+    line-height: 40px;
+}
+.content-section hr {
+    background-color: #FF9800;
+    width: 5rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+.content-section p {
+    font-size: 0.895rem;
+}
+@media (min-width:1100px) {
+    .header-homepage {
+        align-items: flex-start;
+    }
+    .header-homepage-text {
+        align-items: flex-start;
+        text-align: left;
+        line-height: 30px;
+        font-size: 1.5rem;
+        max-width: 420px;
+        margin-top: 10rem;
+        padding: 5rem;
+        font-family: 'Montserrat';
+    }
+    .header-homepage-text h1 {
+        margin-left: 1.5rem;
+    }
+    .header-homepage-text p {
+        margin-left: 1.5rem;
+    }
+    header {
+        height: 90px;
+    }
+    .header-homepage-text a  {
+        font-size: 1.2rem;
+        padding: 0.9rem;
+        border-radius: 5rem;
+    }
+    .header-homepage-text
+    header img {
+        height: 60px;
+        margin: 1rem;
+    }
+    .menu-content {
+        display: flex;
+        list-style: none;
+        margin-right: 2rem;
+    }
+    .menu-content li {
+        padding: 0.5rem;
+        text-transform: uppercase;
+        font: 700 1rem Archivo;
+        border-bottom: 2px solid white;
+        cursor: pointer;
+        color: #47494c;
+    }
+    .menu-content li:hover {
+        color: #03a9f4;
+        border-bottom: 2px solid #03a9f4;
+    }
+    header .content i {
+        display: none;
+    }
 }
