@@ -110,12 +110,34 @@ header .content i {
 }
 .content-section hr {
     background-color: #FF9800;
-    width: 5rem;
+    width: 7rem;
     margin-left: 2rem;
     margin-bottom: 2rem;
 }
 .content-section p {
     font-size: 0.895rem;
+}
+.content-cards {
+    background-color: #f5fafd;
+    width: 100%;
+}
+.header-content-cards {
+    padding: 3rem;
+    font-family: 'Lato';
+    text-align: center;
+}
+.header-content-cards hr {
+    width: 7rem;
+    background-color: #FF9800;
+    margin: 2rem auto;
+}
+.header-content-cards p {
+    font-weight: 700;
+    line-height: 30px;
+}
+hr {
+    height: 2px;
+    border: none;
 }
 @media (min-width:1100px) {
     .header-homepage {
