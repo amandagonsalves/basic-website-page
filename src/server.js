@@ -5,12 +5,10 @@ nunjucks.configure('src/views', {
     express: server,
     noCache: true
 })
-const dataCard = require('./data.json');
+const cards = require('./cards.json');
 server
 .use(express.static('public'))
 .get('/', (req, res) => {
-    return res.render('index.html', { 
-
-     })
+    return res.render('index.html', { cards })
 })
 .listen(5500)

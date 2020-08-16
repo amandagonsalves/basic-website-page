@@ -51,36 +51,14 @@
                     <p>Lojas físicas, E-commerces, marketplaces, supermercados ou restaurantes e lanchonetes conectados numa solução completa, gestão com mobilidade e economia. Leve seu negócio para onde quiser, quando quiser.</p>
                 </div>
                 <div class="cards">
-                    <div class="card">
-                        <img src="/images/gip.png" alt="">
-                        <h1>Gestão lalalal</h1>
-                        <p>Lojas físicas, E-commerces, marketplaces, supermercados ou restaurantes e lanchonetes conectados numa solução completa, gestão com mobilidade e economia. Leve seu negócio para o</p>
-                        <a href="#">Conheça lalala</a>
-                    </div>
-                    <div class="card">
-                        <img src="/images/gip.png" alt="">
-                        <h1>Gestão lalalal</h1>
-                        <p>Lojas físicas, E-commerces, marketplaces, supermercados ou restaurantes e lanchonetes conectados numa solução completa, gestão com mobilidade e economia. Leve seu negócio para o</p>
-                        <a href="#">Conheça lalala</a>
-                    </div>
-                    <div class="card">
-                        <img src="/images/gip.png" alt="">
-                        <h1>Gestão lalalal</h1>
-                        <p>Lojas físicas, E-commerces, marketplaces, supermercados ou restaurantes e lanchonetes conectados numa solução completa, gestão com mobilidade e economia. Leve seu negócio para o</p>
-                        <a href="#">Conheça lalala</a>
-                    </div>
-                    <div class="card">
-                        <img src="/images/gip.png" alt="">
-                        <h1>Gestão lalalal</h1>
-                        <p>Lojas físicas, E-commerces, marketplaces, supermercados ou restaurantes e lanchonetes conectados numa solução completa, gestão com mobilidade e economia. Leve seu negócio para o</p>
-                        <a href="#">Conheça lalala</a>
-                    </div>
-                    <div class="card">
-                        <img src="/images/gip.png" alt="">
-                        <h1>Gestão lalalal</h1>
-                        <p>Lojas físicas, E-commerces, marketplaces, supermercados ou restaurantes e lanchonetes conectados numa solução completa, gestão com mobilidade e economia. Leve seu negócio para o</p>
-                        <a href="#">Conheça lalala</a>
-                    </div>
+                    {% for card in cards %}
+                        <div class="card">
+                            <img src="{{card.thumbnail}}" alt="">
+                            <h1>{{card.title}}</h1>
+                            <p>{{card.description}}</p>
+                            <a href="#">{{card.action}}</a>
+                        </div>
+                    {% endfor %}
                 </div>
             </div>
         </div>
