@@ -1,4 +1,8 @@
 {% include 'layout.html' %}
+{% block styles %}
+    <link rel="stylesheet" href="/styles/partials/header.css">
+{% endblock styles %}
 {% block content %}
+{% include 'partials/header.html' %}
 {% include 'partials/footer.html' %}
-{% endblock %}
+{% endblock content %}
