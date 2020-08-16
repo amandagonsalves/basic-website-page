@@ -239,6 +239,63 @@ footer .footer .social-icons {
 footer .footer p {
     margin-top: 1rem;
 }
+.card {
+    max-width: 600px;
+    width: 90%;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #d7dbde;
+    box-shadow: 1px 1px 14px 0px #b7aeae;
+    transition: 0.2s;
+}
+.card img {
+    width: 100%;
+}
+.card h1 {
+    cursor: default;
+    margin-top: 1rem;
+}
+.card p {
+    margin: 2rem 2rem 0 2rem;
+    text-align: center;
+    font-family: Archivo;
+    line-height: 30px;
+    color: #6d6d5c;
+    font-size: 0.8rem;
+    cursor: default;
+}
+.card a {
+    padding: 1rem;
+    width: 90%;
+    border-top: 1px solid #0083b8;
+    text-align: center;
+    text-decoration: none;
+    font: 700 0.8rem Archivo;
+    color: #0083b8;
+    margin-top: 1rem;
+}
+.card a:hover {
+    color:#129dd4;
+}
+.card:hover {
+    zoom: 101%;
+    transform: scale(1.03);
+}
+@media (min-width:600px) and (max-width:1099px) {
+    .card {
+        max-width: 600px;
+        width: 60%;
+        margin: 2rem auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid #d7dbde;
+        box-shadow: 1px 1px 14px 0px #b7aeae;
+        transition: 0.2s;
+    }
+}
 @media (min-width:1100px) {
     header img {
         height: 60px;
@@ -343,5 +400,13 @@ footer .footer p {
     footer .footer .col {
         height: 180px;
         border-right: 1px solid #262d33;
+    }
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .card {
+        max-width: 475px;
+        width: 80%;
     }
 }
