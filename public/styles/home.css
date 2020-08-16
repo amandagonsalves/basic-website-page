@@ -240,8 +240,14 @@ footer .footer p {
     margin-top: 1rem;
 }
 @media (min-width:1100px) {
+    header img {
+        height: 60px;
+    }
     .header-homepage {
         align-items: flex-start;
+    }
+    .header-homepage p {
+        text-shadow: none;
     }
     .header-homepage-text {
         align-items: flex-start;
@@ -266,6 +272,10 @@ footer .footer p {
         font-size: 1.2rem;
         padding: 0.9rem;
         border-radius: 5rem;
+    }
+    .header-content-cards p {
+        max-width: 700px;
+        margin: 0 auto;
     }
     .header-homepage-text
     header img {
@@ -303,6 +313,7 @@ footer .footer p {
     }
     #container img.cropped {
         width: 50%;
+        box-shadow: 4px 0 16px #989898;
     }
     footer .footer {
         display: flex;
@@ -314,7 +325,7 @@ footer .footer p {
     }
     .footer-solutions img {
         width: 50%;
-        box-shadow: 2px 2px #5d5d5d;
+        box-shadow: 4px 0 16px #949494;
     }
     .footer-solutions {
         display: flex;

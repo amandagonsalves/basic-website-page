@@ -1,0 +1,46 @@
+{
+    "cards": [
+        {
+            "id": 0,
+            "title": "Gestão Integrada de Pedidos",
+            "image": "/images/gip.png",
+            "description": "Uma visão e uma jornada de compra unificada para cada cliente, de forma que ele tenha uma melhor experiência, seja qual for o canal de entrada, além da visibilidade integrada dos seus estoques.",
+            "textButton": "Conheça o OMS >>"
+        },
+        {
+            "id": 1,
+            "title": "Ponto de Venda Móvel",
+            "image": "/images/pvm.jpg",
+            "description": "Tenha gestão e controle do seu negócio, com facilidade e mobilidade.  Aplicavo para sistema de PDV e caixa de loja 100% móvel: funciona de qualquer lugar, levando seu negócio onde você estiver. ",
+            "textButton": "Conheça o PDVend >>"
+        },
+        {
+            "id": 2,
+            "title": "Emissão de DFe fora do ERP",
+            "image": "/images/dfe.png",
+            "description": "Integra-se a sistemas de ponto de venda, marketplaces, E-commerces e smart terminals. Emita notas fiscais eletrônicas independente do seu tipo de atividade ou modelo de negócios e fora do seu ERP.",
+            "textButton": "Conheça o Emites >>"
+        },
+        {
+            "id": 3,
+            "title": "Venda online rápido",
+            "image": "/images/vor.jpg",
+            "description": "Monte seu E-commerce com plataforma multilojas e design responsivo para vendas pela web e celular. Uma solução completa com serviços de entrega com frota própria, Correios ou retirada.",
+            "textButton": "Conheça a Solução Store >>"
+        },
+        {
+            "id": 4,
+            "title": "Do Multicanal ao Omnichannel",
+            "image": "/images/omnichannel.png",
+            "description": "Visão única dos seus pedidos em vendas online em marketplaces, E-commerce e sua loja física. Veja seus estoques integrados, com inteligência fiscal e menos infraestrutura.",
+            "textButton": "Conheça a Suíte Omnichannel >>"
+        },
+        {
+            "id": 5,
+            "title": "Gestão financeira acessível",
+            "image": "/images/gfa.jpg",
+            "description": "Organize os recebíveis, integre com o banco, classifique os lançamentos e faça muito mais, no smartphone, tablet ou computador, tudo numa ferramenta automatizada.",
+            "textButton": "Conheça o MyFinance >>"
+        }
+    ]
+}

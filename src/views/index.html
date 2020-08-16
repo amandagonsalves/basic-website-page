@@ -50,6 +50,12 @@
                     <hr>
                     <p>Lojas físicas, E-commerces, marketplaces, supermercados ou restaurantes e lanchonetes conectados numa solução completa, gestão com mobilidade e economia. Leve seu negócio para onde quiser, quando quiser.</p>
                 </div>
+                <div class="cards">
+                    {% for item in dataCard %}
+                        <div class="card-item">
+                            {{item.image}}
+                        </div>
+                </div>
             </div>
         </div>
         <footer>
