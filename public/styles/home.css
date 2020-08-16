@@ -222,9 +222,22 @@ footer .footer .col {
 }
 footer .footer .logo-footer {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 footer .footer h1 {
     font: 700 2.6rem Archivo;
+}
+footer .footer .social-icons a img {
+    width: 30px;
+    height: 30px;
+}
+footer .footer .social-icons {
+    margin: 2rem auto;
+}
+footer .footer p {
+    margin-top: 1rem;
 }
 @media (min-width:1100px) {
     .header-homepage {
@@ -278,7 +291,36 @@ footer .footer h1 {
     header .content i {
         display: none;
     }
+    .content-section {
+        display: flex;
+        flex-direction: initial;
+        margin: 3rem 4rem 0 4rem;
+    }
+    .content-section-text {
+        display: flex;
+        flex-direction: column;
+        padding: 3rem;
+    }
+    #container img.cropped {
+        width: 50%;
+    }
     footer .footer {
+        display: flex;
+        flex-direction: initial;
+    }
+    .header-footer-text {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-solutions img {
+        width: 50%;
+        box-shadow: 2px 2px #5d5d5d;
+    }
+    .footer-solutions {
+        display: flex;
+        margin-top: 5rem;
+    }
+    .section-footer ul {
         display: flex;
         flex-direction: initial;
     }
