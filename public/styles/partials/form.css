@@ -1,0 +1,10 @@
+#form-register {
+    width: 90%;
+    max-width: 800px;
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: column;
+}
+#form-register fieldset {
+
+}

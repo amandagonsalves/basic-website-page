@@ -2,8 +2,13 @@
 {% block styles %}
     <link rel="stylesheet" href="/styles/partials/header.css">
     <link rel="stylesheet" href="/styles/partials/oms.css">
+    <link rel="stylesheet" href="/styles/partials/sectionDescription.css">
+    <link rel="stylesheet" href="/styles/partials/form.css">
 {% endblock styles %}
 {% block content %}
 {% include 'partials/header.html' %}
+    <img src="/images/oms-products.png" alt="" class="comercial">
+    {% include 'partials/sectionDescription.html' %}
+    {% include 'partials/form.html' %}
 {% include 'partials/footer.html' %}
 {% endblock content %}
