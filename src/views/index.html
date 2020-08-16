@@ -1,125 +1,70 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nexaas</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="/styles/home.css">
-    <link href="https://fonts.googleapis.com/css2?family=Archivo&family=Lato:wght@100&family=Montserrat:wght@100&display=swap" rel="stylesheet">
-
-
-</head>
-
-<body>
-        <header>
-            <div class="content">
-            <img src="/images/nexaas-logo.png" alt="">
-            <i class="fa fa-bars"></i>
-            <ul class="menu-content">
-                <li>Home</li>
-                <li>Soluções</li>
-                <li>Trabalhe conosco</li>
-                <li>Contato</li>
-                <li>Blog</li>
-            </ul>
+{% include 'layout.html' %}
+{% block content %}
+<div id="container">
+    <div class="header-homepage">
+        <div class="header-homepage-text">
+            <h1>Comece a vender online já!</h1>
+            <p>Construa sua loja online ou integre com sua loja física, já com delivery, tabela de frete e outros canais de venda. Tudo numa solução única e integrada.</p>
+            <a href="#">Conheça o Nexaas.Store</a>
         </div>
-        </header>
-        <div id="container">
-            <div class="header-homepage">
-                <div class="header-homepage-text">
-                    <h1>Comece a vender online já!</h1>
-                    <p>Construa sua loja online ou integre com sua loja física, já com delivery, tabela de frete e outros canais de venda. Tudo numa solução única e integrada.</p>
-                    <a href="#">Conheça o Nexaas.Store</a>
-                </div>
-            </div>
-            <div class="content-section">
-                <img src="http://nexaas.com/wp-content/uploads/2018/09/cropped-editada_ps-shutterstock_372396529-1.png" alt="" class="cropped">
-               <div class="content-section-text">
-                <h1>Seu varejo em qualquer canal online e offline juntos e misturados</h1>
-                <hr>
-                <p>Sabemos que negócios mudam constantemente, portanto o que as empresas necessitam hoje é de eficiência e economia.
-                </p>
-               </div>
-            </div>
-            <div class="content-cards">
-                <div class="header-content-cards">
-                    <h1>Soluções para todos os segmentos</h1>
-                    <hr>
-                    <p>Lojas físicas, E-commerces, marketplaces, supermercados ou restaurantes e lanchonetes conectados numa solução completa, gestão com mobilidade e economia. Leve seu negócio para onde quiser, quando quiser.</p>
-                </div>
-                <div class="cards">
-                    {% for card in cards %}
-                        <div class="card">
-                            <img src="{{card.thumbnail}}" alt="">
-                            <h1>{{card.title}}</h1>
-                            <p>{{card.description}}</p>
-                            <a href="#">{{card.action}}</a>
-                        </div>
-                    {% endfor %}
-                </div>
-            </div>
+    </div>
+    <div class="content-section">
+        <img src="http://nexaas.com/wp-content/uploads/2018/09/cropped-editada_ps-shutterstock_372396529-1.png" alt="" class="cropped">
+       <div class="content-section-text">
+        <h1>Seu varejo em qualquer canal online e offline juntos e misturados</h1>
+        <hr>
+        <p>Sabemos que negócios mudam constantemente, portanto o que as empresas necessitam hoje é de eficiência e economia.
+        </p>
+       </div>
+    </div>
+    <div class="content-cards">
+        <div class="header-content-cards">
+            <h1>Soluções para todos os segmentos</h1>
+            <hr>
+            <p>Lojas físicas, E-commerces, marketplaces, supermercados ou restaurantes e lanchonetes conectados numa solução completa, gestão com mobilidade e economia. Leve seu negócio para onde quiser, quando quiser.</p>
         </div>
-        <footer>
-            <div class="footer-solutions">
-
-                <img src="http://nexaas.com/wp-content/uploads/2020/04/cropped-shutterstock_1505458583-1-1.jpg" alt="">
-                <div class="header-content-footer">
-                    <h1>Soluções inteligentes e integradas</h1>
-                    <hr>
-                    <div class="header-footer-text">
-                        <p>As soluções Nexaas são diferentes de tudo o que você conhece. Por serem desenvolvidas na nuvem, elas atendem a um inovador conceito de conexão que permite que sejam integradas entre si, enquanto funcionam de maneira independente de acordo com a sua necessidade e a realidade de sua empresa.</p>
-                        <div class="solutions">
-                            <ul>
-                                <li>
-                                    <h1>Modular</h1>
-                                    <p>Use apenas o que for necessário</p>
-                                </li>
-                                <li>
-                                    <h1>Simples e rápido</h1>
-                                    <p>Sem necessidade de mexer nos atuais sistemas</p>
-                                </li>
-                                <li>
-                                    <h1>Inovador</h1>
-                                    <p>Trazendo as melhores práticas do varejo mundial</p>
-                                </li>
-                                <li>
-                                    <h1>Cabe no bolso</h1>
-                                    <p>Pensado para ser leve na operação e no custo</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+        <div class="cards">
+            {% for card in cards %}
+                <div class="card">
+                    <img src="{{card.thumbnail}}" alt="">
+                    <h1>{{card.title}}</h1>
+                    <p>{{card.description}}</p>
+                    <a href="#">{{card.action}}</a>
                 </div>
-            </div>
-            <div class="section-footer">
-                <h1>Clientes Nexaas</h1>
-                <hr>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<div class="footer-solutions">
+    <img src="http://nexaas.com/wp-content/uploads/2020/04/cropped-shutterstock_1505458583-1-1.jpg" alt="">
+    <div class="header-content-footer">
+        <h1>Soluções inteligentes e integradas</h1>
+        <hr>
+        <div class="header-footer-text">
+            <p>As soluções Nexaas são diferentes de tudo o que você conhece. Por serem desenvolvidas na nuvem, elas atendem a um inovador conceito de conexão que permite que sejam integradas entre si, enquanto funcionam de maneira independente de acordo com a sua necessidade e a realidade de sua empresa.</p>
+            <div class="solutions">
                 <ul>
-                    <li><img src="/images/logo-zeedog.png" alt=""></li>
-                    <li><img src="/images/logo-linkapi.png" alt=""></li>
-                    <li><img src="/images/kenoby.png" alt=""></li>
-                    <li><img src="/images/logo-ebanx.png" alt=""></li>
-                    <li><img src="/images/logo-gett.png" alt=""></li>
+                    <li>
+                        <h1>Modular</h1>
+                        <p>Use apenas o que for necessário</p>
+                    </li>
+                    <li>
+                        <h1>Simples e rápido</h1>
+                        <p>Sem necessidade de mexer nos atuais sistemas</p>
+                    </li>
+                    <li>
+                        <h1>Inovador</h1>
+                        <p>Trazendo as melhores práticas do varejo mundial</p>
+                    </li>
+                    <li>
+                        <h1>Cabe no bolso</h1>
+                        <p>Pensado para ser leve na operação e no custo</p>
+                    </li>
                 </ul>
             </div>
-            <div class="footer">
-                <div class="col">a</div>
-                <div class="col">a</div>
-                <div class="col">a</div>
-                <div class="logo-footer">
-                    <h1>Nexaas</h1>
-                    <p>&copy; 2020 Nexaas</p>
-                    <div class="social-icons">
-                        <a href="#"><img src="/images/linkedin.png" alt=""></a>
-                        <a href="#"><img src="/images/facebook.png" alt=""></a>
-                        <a href="#"><img src="/images/youtube.png" alt=""></a>
-                    </div>
-                </div>
-            </div>
-        </footer>
-</body>
-
-</html>
+        </div>
+    </div>
+</div>
+{% include 'partials/footer.html' %}
+{% endblock %}
+       

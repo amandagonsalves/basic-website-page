@@ -11,4 +11,7 @@ server
 .get('/', (req, res) => {
     return res.render('index.html', { cards })
 })
+.get('/oms', (req, res) => {
+    return res.render('partials/oms.html')
+})
 .listen(5500)

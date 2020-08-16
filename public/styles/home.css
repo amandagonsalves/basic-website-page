@@ -247,7 +247,7 @@ footer .footer p {
     flex-direction: column;
     align-items: center;
     border: 1px solid #d7dbde;
-    box-shadow: 1px 1px 14px 0px #b7aeae;
+    box-shadow: 1px 1px 14px 0px #d6d6d6;
     transition: 0.2s;
 }
 .card img {
@@ -284,6 +284,9 @@ footer .footer p {
 .card:hover {
     zoom: 101%;
     transform: scale(1.03);
+}
+.footer-solutions img {
+    width: 100%;
 }
 @media (min-width:600px) and (max-width:1099px) {
     .card {
