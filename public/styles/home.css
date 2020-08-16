@@ -9,9 +9,10 @@ body {
     display: flex;
     flex-direction: column;
 }
+h1 {
+    font-size: 1.6rem;
+}
 .content {
-    margin: 0 auto;
-    max-width: 1290px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -19,7 +20,7 @@ body {
 }
 header {
     position: fixed;
-    width: 100vw;
+    width: 100%;
     border-bottom: 1px solid rgb(226, 226, 226);
     height: 80px;
     z-index: 2;
@@ -38,7 +39,7 @@ header .content i {
 }
 #container {
     z-index: 1;
-    width: 100vw;
+    width: 100%;
 }
 .header-homepage {
     background-image: url('http://nexaas.com/wp-content/uploads/2020/04/hero-home-bg_Varejo_QquerLugar-1.jpg');
@@ -70,6 +71,8 @@ header .content i {
 }
 .header-homepage p {
     margin: 0 1.5rem 0 1.5rem;
+    text-shadow: 2px 2px #402929;
+    font-weight: bold;
 }
 .header-homepage a {
     background-color: #03a9f4;
@@ -146,9 +149,10 @@ footer img {
 }
 .header-content-footer {
     text-align: center;
+    margin: 2rem;
 }
 .header-content-footer h1 {
-    margin: 2rem auto;
+    margin: 1rem auto;
 }
 .header-content-footer hr {
     width: 7rem;
@@ -159,8 +163,68 @@ footer img {
 .header-content-footer p {
     font-family: Archivo;
     line-height: 30px;
-    margin: 1rem 2rem 1rem 2rem;
     font-size: 0.895rem;
+}
+.solutions ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 2rem;
+}
+.solutions ul h1 {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: Archivo;
+    font-size: 0.8rem;
+}
+.solutions ul li p {
+    color: #969696;
+}
+.section-footer {
+    width: 100%;
+    margin: 5rem auto 0 auto;
+    text-align: center;
+    background-color: #f5fafd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section-footer h1 {
+    margin-top: 2rem;
+}
+.section-footer hr {
+    width: 7rem;
+    height: 2px;
+    margin: 2rem auto;
+    background-color: #FF9800;
+}
+.section-footer ul {
+    max-width: 700px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+footer .footer {
+    flex: 1;
+    background-color: #222222;
+    color: white;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    height: 210px;
+}
+footer .footer .col {
+    height: 30px;
+    width: 315px;
+    font-size: 0.1px;
+}
+footer .footer .logo-footer {
+    flex: 1;
+}
+footer .footer h1 {
+    font: 700 2.6rem Archivo;
 }
 @media (min-width:1100px) {
     .header-homepage {
@@ -173,7 +237,7 @@ footer img {
         font-size: 1.5rem;
         max-width: 420px;
         margin-top: 10rem;
-        padding: 5rem;
+        padding: 5rem; 
         font-family: 'Montserrat';
     }
     .header-homepage-text h1 {
@@ -198,7 +262,6 @@ footer img {
     .menu-content {
         display: flex;
         list-style: none;
-        margin-right: 2rem;
     }
     .menu-content li {
         padding: 0.5rem;
@@ -214,5 +277,18 @@ footer img {
     }
     header .content i {
         display: none;
+    }
+    footer .footer {
+        display: flex;
+        flex-direction: initial;
+    }
+    footer .footer .logo-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .footer .col {
+        height: 180px;
+        border-right: 1px solid #262d33;
     }
 }
