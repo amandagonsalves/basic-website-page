@@ -5,6 +5,9 @@
 :root {
     font-family: Lato;
 }
+p {
+    font-size: 0.895rem;
+}
 body {
     display: flex;
     flex-direction: column;
@@ -118,7 +121,6 @@ header .content i {
     margin-bottom: 2rem;
 }
 .content-section p {
-    font-size: 0.895rem;
     font-family: Archivo;
 }
 .content-cards {
@@ -138,7 +140,6 @@ header .content i {
 .header-content-cards p {
     font-weight: 700;
     line-height: 30px;
-    font-size: 0.895rem;
 }
 hr {
     height: 2px;
@@ -163,7 +164,6 @@ footer img {
 .header-content-footer p {
     font-family: Archivo;
     line-height: 30px;
-    font-size: 0.895rem;
 }
 .solutions ul {
     list-style: none;
@@ -300,6 +300,9 @@ footer .footer p {
         box-shadow: 1px 1px 14px 0px #b7aeae;
         transition: 0.2s;
     }
+    .card p {
+        font-size: 1rem;
+    }
 }
 @media (min-width:1100px) {
     header img {
@@ -320,6 +323,11 @@ footer .footer p {
         margin-top: 10rem;
         padding: 5rem; 
         font-family: 'Montserrat';
+    }
+    .header-content-cards p {
+        font-weight: 700;
+        line-height: 30px;
+        font-size: 1.2rem;
     }
     .header-homepage-text h1 {
         margin-left: 1.5rem;
@@ -367,6 +375,9 @@ footer .footer p {
         display: flex;
         flex-direction: initial;
         margin: 3rem 4rem 0 4rem;
+    }
+    .content-section p {
+        font-size: 1.2rem;
     }
     .content-section-text {
         display: flex;
