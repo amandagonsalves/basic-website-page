@@ -23,6 +23,9 @@
 .services div  {
     flex: 1;
 }
+.services ul {
+    padding: 2rem 3rem;
+}
 .services li {
     line-height: 20px;
     text-align: left;
