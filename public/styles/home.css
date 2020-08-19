@@ -64,7 +64,6 @@ header .content i {
     align-items: center;
     justify-content: center;
     line-height: 28px;
-    font-size: 1.2rem;
     text-align: center;
     font-family: 'Montserrat';
     text-shadow: 3px 3px 10px #000000;
@@ -72,10 +71,12 @@ header .content i {
 .header-homepage h1 {
     margin-bottom: 1.5rem;
     line-height: 50px;
+    font-size: 1.8rem;
 }
 .header-homepage p {
     margin: 0 1.5rem 0 1.5rem;
     font-weight: bold;
+    font-size: 1.2rem;
 }
 .header-homepage a {
     background-color: #03a9f4;
