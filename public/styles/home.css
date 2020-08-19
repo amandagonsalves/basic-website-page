@@ -6,7 +6,7 @@
     font-family: Lato;
 }
 p {
-    font-size: 0.895rem;
+    font-size: 0.995rem;
 }
 body {
     display: flex;
@@ -184,7 +184,6 @@ footer img {
     width: 100%;
     margin: 5rem auto 0 auto;
     text-align: center;
-    background-color: #f5fafd;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -248,7 +247,7 @@ footer .footer p {
     align-items: center;
     border: 1px solid #d7dbde;
     box-shadow: 1px 1px 14px 0px #d6d6d6;
-    transition: 0.2s;
+    transition: 0.295s;
 }
 .card img {
     width: 100%;

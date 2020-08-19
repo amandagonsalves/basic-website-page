@@ -1,10 +1,13 @@
 #form-register {
     width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
+    background-color: #f5fafd;
+    display: flex;
+    justify-content: center;
 }
 #form-register fieldset {
+    max-width: 800px;
     margin: 2rem;
+    width: 100%;
 }
 .form-group-flex {
     display: flex;
