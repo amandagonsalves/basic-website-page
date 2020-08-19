@@ -6,7 +6,7 @@
     font-family: Lato;
 }
 p {
-    font-size: 0.995rem;
+    font-size: 1rem;
 }
 body {
     display: flex;
@@ -67,6 +67,7 @@ header .content i {
     font-size: 1.2rem;
     text-align: center;
     font-family: 'Montserrat';
+    text-shadow: 3px 3px 10px #000000;
 }
 .header-homepage h1 {
     margin-bottom: 1.5rem;
@@ -74,7 +75,6 @@ header .content i {
 }
 .header-homepage p {
     margin: 0 1.5rem 0 1.5rem;
-    text-shadow: 2px 2px #402929;
     font-weight: bold;
 }
 .header-homepage a {
@@ -304,6 +304,9 @@ footer .footer p {
     }
 }
 @media (min-width:1100px) {
+    p {
+        font-size: 1.2rem;
+    }
     header img {
         height: 60px;
     }
@@ -319,14 +322,14 @@ footer .footer p {
         line-height: 30px;
         font-size: 1.5rem;
         max-width: 420px;
-        margin-top: 10rem;
+        margin-top: 6rem;
         padding: 5rem; 
         font-family: 'Montserrat';
+        text-shadow: 3px 3px 10px #000000;
     }
     .header-content-cards p {
         font-weight: 700;
         line-height: 30px;
-        font-size: 1.2rem;
     }
     .header-homepage-text h1 {
         margin-left: 1.5rem;
@@ -374,9 +377,6 @@ footer .footer p {
         display: flex;
         flex-direction: initial;
         margin: 3rem 4rem 0 4rem;
-    }
-    .content-section p {
-        font-size: 1.2rem;
     }
     .content-section-text {
         display: flex;

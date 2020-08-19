@@ -1,50 +1,48 @@
-#form-register {
+ #form-register {
     width: 100%;
     background-color: #f5fafd;
-    display: flex;
-    justify-content: center;
+    margin-top: 4rem;
+
 }
 #form-register fieldset {
-    max-width: 800px;
-    margin: 2rem;
-    width: 100%;
+    background-color: white;
     border-radius: 0.8rem;
-    border: 2px solid white;
+    border: 2px solid rgb(250, 250, 250);
+    box-shadow: 1px 1px 16px #d9d9da;
+    max-width: 600px;
+    margin: 2rem auto;
     padding: 2rem;
+}
+#form-register fieldset h1 {
+    margin: 1rem 0;
 }
 .form-group-flex {
     display: flex;
 }
 .form-group {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    margin: 0.5rem;
-    width: 98%;
 }
 .form-group input, .form-group select {
     height: 40px;
-    border: none;
+    border: 1px solid #dfdfdf;
     outline: none;
     border-radius: 0.4rem;
     background-color: white;
+    margin: 0.2rem;
+    color: gray;
 }
 .form-group label {
+    color: gray;
     margin-top: 2rem;
     margin-bottom: 0.4rem;
     font-size: 0.8rem;
     font-family: Archivo;
 }
-.form-group input#name, .form-group select#position, .form-group select#city {
-    width: 100%;
-}
-.form-group input#surname, .form-group select#area, .form-group select#state {
-    flex: 1;
-}
-.form-group+.form-group-flex {
-} 
 
 #form-register button {
-    margin: 2rem 1rem;
+    margin: 2rem 0.2rem;
     background-color: #0086ba;
     padding: 1rem;
     width: 150px;
@@ -53,6 +51,7 @@
     color: white;
     font-size: 1.2rem;
     outline: none;
+    cursor: pointer;
 }
 #form-register button:hover {
     background-color: #0f92c5;
@@ -62,18 +61,14 @@
 @media (max-width:700px) {
     .form-group-flex {
         display: flex;
-    }
-    .form-group {
-        display: flex;
         flex-direction: column;
+        width: 100%;
+    }
+    .form-group input, .form-group select {
+        margin: 0.5rem;
         width: 95%;
     }
-    #form-register fieldset {
-        padding: 0.5rem;
+    .form-group {
+        margin: 0.5rem 0;
     }
-    .form-group input#name, .form-group select#position, .form-group select#city,
-    .form-group input#surname, .form-group select#area, .form-group select#state {
-        width: 100%;
-        flex: none;
-    } 
-}
+} 
