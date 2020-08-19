@@ -14,10 +14,38 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 2rem;
 }
 .services img {
     width: 60%;
+    max-height: 300px;
 }
 .services div  {
     flex: 1;
+}
+.services li {
+    line-height: 20px;
+    text-align: left;
+    font-family: Archivo;
+    margin-bottom: 0.5rem;
+    color: rgb(102, 102, 102);
+}
+.services h1 {
+    margin-bottom: 1rem;
+    font: 700 1.7rem Archivo;
+    color: #ff6704;
+}
+@media (max-width:800px) {
+    .services {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+    .services ul {
+        padding: 2rem;
+    }
+    .services h1 {
+        margin: 2rem 0 0 1rem;
+    }
 }

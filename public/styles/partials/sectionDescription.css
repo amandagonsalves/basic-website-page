@@ -6,6 +6,7 @@ section {
 }
 section img {
     width: 50%;
+    max-height: 300px;
     box-shadow: 1px 1px 13px rgb(153, 153, 153);
 }
 .section-description {
