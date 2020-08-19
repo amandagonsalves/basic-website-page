@@ -8,6 +8,9 @@
     max-width: 800px;
     margin: 2rem;
     width: 100%;
+    background-color: white;
+    border-radius: 0.8rem;
+    border: 2px solid white;
 }
 .form-group-flex {
     display: flex;
@@ -16,16 +19,18 @@
     display: flex;
     flex-direction: column;
     margin: 0.5rem;
+    width: 98%;
 }
 .form-group input, .form-group select {
     height: 40px;
     border: none;
     outline: none;
     border-radius: 0.4rem;
-    background-color: white;
+    background-color: #f5fafd;
 }
 .form-group label {
-    margin-bottom: 0.2rem;
+    margin-top: 2rem;
+    margin-bottom: 0.4rem;
     font-size: 0.6rem;
     font-family: Archivo;
 }
@@ -35,9 +40,9 @@
 .form-group input#surname, .form-group select#area, .form-group select#state {
     flex: 1;
 }
-.form-group {
-    width: 98%;
-}
+.form-group+.form-group-flex {
+} 
+
 #form-register button {
     margin: 2rem 1rem;
     background-color: #0086ba;
