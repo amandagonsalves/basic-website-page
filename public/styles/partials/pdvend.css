@@ -32,3 +32,33 @@ section ul.integrations li img {
     max-width: 150px;
     height: 100px;
 } 
+@media (min-width:600px) and (max-width:900px) {
+    section ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    } 
+    /* {
+    
+    } 
+    {
+    
+    } 
+    {
+    
+    }  */
+} 
+@media (max-width:600px) {
+    section ul {
+        display: grid;
+        grid-template-columns: 1fr;
+    } 
+    /* {
+    
+    } 
+    {
+    
+    } 
+    {
+    
+    }  */
+} 
