@@ -34,6 +34,10 @@
     .section-page-suite {
         display: flex;
         flex-direction: column;
+        
+    }
+    .section-page-suite .section-description {
+        text-align: center;
     }
     .section-page-suite img {
         width: 100%;
