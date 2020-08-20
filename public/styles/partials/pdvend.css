@@ -17,7 +17,8 @@ section ul li p {
     line-height: 25px;
     font-family: Archivo;
     font-size: 1rem;
-    margin: 2rem ;
+    margin: 2rem;
+    color: rgb(98, 98, 98);
 }
 section h1 {
     line-height: 30px;
@@ -35,13 +36,14 @@ section ul img {
     margin: 2rem auto;
     max-width: 900px;
     padding: 0 2rem;
+    color: rgb(98, 98, 98);
 }
 section ul.integrations {
     grid-template-columns: repeat(5, 1fr);
 }
 section ul.integrations li img {
     max-width: 150px;
-    height: 100px;
+    height: 60px;
 } 
 section ul.integrations li {
     margin: 2rem;
@@ -60,4 +62,8 @@ section ul.integrations li {
         display: grid;
         grid-template-columns: 1fr;
     } 
+    section ul.integrations li img {
+        max-width: 150px;
+        height: 50px;
+    }
 } 
