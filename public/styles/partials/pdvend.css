@@ -3,20 +3,27 @@ section {
     flex-direction: column;
     width: 100%;
     text-align: center;
-    
-}
-section p {
-    line-height: 30px;
-    font-family: Archivo;
-    font-size: 1.1rem;
 }
 section ul {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     list-style: none;
-    margin: 2rem;
+    margin: 2rem auto;
     text-align: center;
     align-items: center;
+    gap: 20px;
+}
+section p {
+    line-height: 25px;
+    font-family: Archivo;
+    font-size: 1rem;
+    margin: 2rem auto;
+}
+section h1 {
+    line-height: 30px;
+    font-family: Archivo;
+    font-size: 1.3rem;
+    margin: 2rem auto;
 }
 section ul img {
     height: 150px;
@@ -24,4 +31,4 @@ section ul img {
 section ul.integrations li img {
     max-width: 150px;
     height: 100px;
-}
+} 

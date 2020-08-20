@@ -27,16 +27,16 @@
     {
         "title": "Vendas",
         "thumbnail": "https://nexaas.com/wp-content/uploads/2020/05/vendas.png",
-        "description": "Veja o relatório de vendas por período, status, e tipos de documento. Veja também por vendedor, produto e cliente. Integrado com leitor de código de barras e desconto global unitário"
+        "description": "Veja o relatório de vendas por período, status, e tipos de documento."
     },
     {
         "title": "Estoque",
         "thumbnail": "https://nexaas.com/wp-content/uploads/2020/05/estoque.png",
-        "description": "Controle de estoque de maneira simples, cadastro de produtos via planilha , controle de entrada e saída,  total e valor em estoque."
+        "description": "Controle de estoque de maneira simples e valor em estoque."
     },
     {
         "title": "Resultado",
         "thumbnail": "https://nexaas.com/wp-content/uploads/2020/05/resultado.png",
-        "description": "Saiba o faturamento, lucro bruto, custos, estoque, número de vendas, produtos mais lucrativos e outras informações de sua loja. Tudo em uma única tela."
+        "description": "Saiba o faturamento, lucro bruto e outras informações de sua loja."
     }
 ]
