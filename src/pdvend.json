@@ -1,0 +1,42 @@
+[
+    {
+        "title": "Cupons fiscais",
+        "thumbnail": "https://nexaas.com/wp-content/uploads/2020/05/cupons-fiscais.png",
+        "description": "Emissão de NFCe e CFe/SAT ilimitado, direto do seu PDVend para o cliente"
+    },
+    {
+        "title": "XML automatico",
+        "thumbnail": "https://nexaas.com/wp-content/uploads/2020/05/xml-automatico.png",
+        "description": "Envio automatico do XML das suas notas fiscais direto para o seu contador ao término de cada mês."
+    },
+    {
+        "title": "Visão de negócio",
+        "thumbnail": "https://nexaas.com/wp-content/uploads/2020/05/visao-de-negocios.png",
+        "description": "Analise os dados fornecidos pela PDVend e veja onde melhorar para lucrar ainda mais!"
+    },
+    {
+        "title": "Gerenciamento a distância",
+        "thumbnail": "https://nexaas.com/wp-content/uploads/2020/05/gerenciamento-a-distancia.png",
+        "description": "Saiba o que acontece com o seu negócio, independente de onde você estiver."
+    },
+    {
+        "title": "Baixo investimento",
+        "thumbnail": "https://nexaas.com/wp-content/uploads/2020/05/baixo-investimento.png",
+        "description": "Não precisa pagar licença ou taxa de adesão, apenas uma assinatura mensal."
+    },
+    {
+        "title": "Vendas",
+        "thumbnail": "https://nexaas.com/wp-content/uploads/2020/05/vendas.png",
+        "description": "Veja o relatório de vendas por período, status, e tipos de documento. Veja também por vendedor, produto e cliente. Integrado com leitor de código de barras e desconto global unitário"
+    },
+    {
+        "title": "Estoque",
+        "thumbnail": "https://nexaas.com/wp-content/uploads/2020/05/estoque.png",
+        "description": "Controle de estoque de maneira simples, cadastro de produtos via planilha , controle de entrada e saída,  total e valor em estoque."
+    },
+    {
+        "title": "Resultado",
+        "thumbnail": "https://nexaas.com/wp-content/uploads/2020/05/resultado.png",
+        "description": "Saiba o faturamento, lucro bruto, custos, estoque, número de vendas, produtos mais lucrativos e outras informações de sua loja. Tudo em uma única tela."
+    }
+]

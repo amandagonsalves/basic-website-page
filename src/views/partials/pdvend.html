@@ -6,6 +6,39 @@
 {% endblock styles %}
 {% block content %}
 {% include 'partials/header.html' %}
+<section>
+    <div class="description-page-pdvend">
+        <h1>Como o PDVend melhora a sua vida:</h1>
+        <p>Pensado para tornar a sua gestão mais simples, rápida, eficiente e funcional. Aplicavo para sistema de PDV e Caixa de loja 100% móvel: funciona de qualquer lugar, levando seu negócio onde você estiver. Com qualquer dispositivo Android, é possível efetuar suas vendas de qualquer lugar.</p>
+    </div>
+    <ul>
+        {% for item in li %}
+            <li>
+                <img src="{{item.thumbnail}}" alt="">
+                <h1>{{item.title}}</h1>
+                <p>{{item.description}}</p>
+            </li>
+        {% endfor %}
+    </ul>
+    <h1>Integrações</h1>
+    <ul class="integrations">
+            <li>
+                <img src="https://nexaas.com/wp-content/uploads/2020/05/sumup-logo-275x80-1.png" alt="">
+            </li>
+            <li>
+                <img src="https://nexaas.com/wp-content/uploads/2020/05/Stone_pagamentos-275x139-1.png" alt="">
+            </li>
+            <li>
+                <img src="https://nexaas.com/wp-content/uploads/2020/05/rede-logo-1-275x90-1.png" alt="">
+            </li>
+            <li>
+                <img src="https://nexaas.com/wp-content/uploads/2020/04/Logo_of_Cielo.svg_-1024x340.png" alt="">
+            </li>
+            <li>
+                <img src="https://nexaas.com/wp-content/uploads/2020/05/Logo_PagSeguro-275x89-1.png" alt="">
+            </li>
+    </ul>
+</section>
 {% include 'partials/form.html' %}
 {% include 'partials/footer.html' %}
 {% endblock content %}

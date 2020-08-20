@@ -359,15 +359,16 @@ footer .footer p {
         display: flex;
         list-style: none;
     }
-    .menu-content li {
+    .menu-content a {
         padding: 0.5rem;
         text-transform: uppercase;
         font: 700 1rem Archivo;
         border-bottom: 2px solid white;
         cursor: pointer;
         color: #47494c;
+        text-decoration: none;
     }
-    .menu-content li:hover {
+    .menu-content a:hover {
         color: #03a9f4;
         border-bottom: 2px solid #03a9f4;
     }

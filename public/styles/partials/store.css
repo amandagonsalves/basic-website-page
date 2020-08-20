@@ -30,6 +30,21 @@ hr {
     background-color: rgb(240, 133, 12);
     width: 150px;
     margin: 0 auto;
+    display: none;
+}
+@media (min-width:700px) and (max-width:1000px) {
+    .section-flex img {
+        width: 50%;
+        max-width: 700px;
+    }
+    h1 {
+        margin: 0 1rem 2rem 1rem;
+        text-align: center;
+        
+    }    
+    hr {
+        display: none;
+    }
 }
 @media (max-width:700px) {
     .section-flex {
@@ -43,5 +58,9 @@ hr {
     h1 {
         margin: 0 1rem 2rem 1rem;
         text-align: center;
+        
     }    
+    hr {
+        display: block;
+    }
 }
