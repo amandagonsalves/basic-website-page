@@ -3,6 +3,11 @@
     color: rgb(0, 184, 92);
     margin: 4rem 2rem;
 }
+.description-page h1.blue {
+    font: 700 1.8rem Archivo;
+    color: rgb(0, 99, 212);
+    margin: 4rem 2rem;
+}
 .description-page {
     text-align: center;
     margin: 2rem auto;
@@ -14,29 +19,36 @@
     line-height: 30px;
     color: rgb(95, 95, 95);
 }
-.section-page-emites {
+.section-page {
     display: flex;
     align-items: center;
-    margin: 0 2rem;
+    margin: 5rem 2rem;
 }
-.section-page-emites img {
+.section-page img {
     width: 50%;
-    height: 200px;
 }
-.section-page-emites .description-page {
+.section-page .description-page {
     flex: 1;
 }
+.lastImage{
+    width: 20%;
+    max-width: 400px;
+    height: 400px;
+}
 @media (max-width:700px) {
-    .section-page-emites {
+    .lastImage{
+        height: 300px;
+    }
+    .section-page {
         display: flex;
         flex-direction: column;
+        margin: 1rem 2rem;
     }
-    .section-page-emites .description-page {
+    .section-page .description-page {
         text-align: center;
     }
-    .section-page-emites img {
+    .section-page img {
         width: 70%;
-        height: 100px;
     }
     .description-page p {
         font: 400 1rem Archivo;
@@ -49,7 +61,7 @@
         color: rgb(0, 184, 92);
         margin: 2rem;
     }
-    .section-page-emites.lastContent {
+    .section-page.reverse {
         flex-direction: column-reverse;
     }
 }
