@@ -18,8 +18,12 @@
     <header>
         <div class="content">
             <img src="/images/nexaas-logo.png" alt="">
-            <i class="fa fa-bars"></i>
+            <i class="fa fa-bars icon-menu"></i>
             <ul class="menu-content">
+                <div class="menu-close">
+                    <i class="fa fa-times icon-close"></i>
+                    <p>MENU</p>
+                </div>
                 <a href="/">Home</a>
                 <a href="#">Soluções</a>
                 <a href="#">Trabalhe conosco</a>
@@ -30,6 +34,7 @@
     </header>
     {% block content %}
     {% endblock %}
+    <script src="/scripts/utils.js"></script>
 </body>
 
 </html>
