@@ -431,6 +431,7 @@ footer .footer p {
         color: #47494c;
         text-decoration: none;
         transition: 0.3s;
+        margin-right: 1rem;
     }
     .menu-content a:hover {
         color: #03a9f4;
