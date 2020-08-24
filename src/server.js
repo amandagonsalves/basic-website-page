@@ -26,7 +26,7 @@ server
 })
 .get('/suite', (req, res) => {
     return res.render('partials/suite.html', { title:'Suíte Omnichannel', descriptionTitle: 'Qualquer canal, experiência única', description: 'Visão única dos seus pedidos em vendas online em marketplaces, ecommerce e sua loja física. Veja seus estoques integrados, com inteligência fiscal e menos infraestrutura.',titleSection: 'Conectividade e flexibilidade em toda operação', descriptionSection:'Promove uma visão e uma jornada de compra unificada para cada cliente, de forma que ele tenha uma melhor experiência, seja qual for o canal de entrada, além da visibilidade integrada dos seus estoques.', thumbnailSection:'/images/oms-products.png'})
-})
+}) 
 .get('/myFinance', (req, res) => {
     return res.render('partials/myFinance.html', { title:'MyFinance', descriptionTitle: 'Gestão financeira acessível e integrada', description: 'Permite que você organize os recebíveis, integre com o banco, classifique os lançamentos e faça muito mais, no smartphone, tablet ou computador.'})
 })
