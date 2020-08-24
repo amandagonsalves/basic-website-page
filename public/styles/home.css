@@ -84,6 +84,7 @@ header .content .icon-menu {
     width: 250px;
     box-shadow: 2px 2px 450px black;
     transition: 0.5s;
+    overflow-y: auto;
 }
 .menu-content.show a, .menu-content.show li {
     padding: 1.5rem;
@@ -95,10 +96,28 @@ header .content .icon-menu {
     cursor: pointer;
     color: #47494c;
     transition: 0.3s;
+    list-style: none;
 }
 .menu-content.show a:hover, .menu-content.show li:hover {
     color: #03a9f4;
     border-bottom: 2px solid #03a9f4;
+}
+.menu-solutions {
+    background-color: white;
+    width: 200px;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    border-radius: 0.8rem;
+    display: none;
+    border: none;
+}
+.menu-solutions.show-menu {
+    display: flex;
+    flex-direction: column;
+} 
+.menu-content.show li #title-menu {
+    text-align: center;
 }
 #container {
     z-index: 1;
@@ -413,8 +432,6 @@ footer .footer p {
         margin: 1rem;
     }
     .menu-solutions {
-        position: absolute;
-        top: 42px;
         background-color: white;
         width: 200px;
         align-items: center;
@@ -426,6 +443,8 @@ footer .footer p {
     .menu-solutions.show-menu {
         display: flex;
         flex-direction: column;
+        position: absolute;
+        top: 42px;
     } 
     .menu-close {
         display: none;
@@ -436,6 +455,9 @@ footer .footer p {
         transition: 0.3s;
         position: absolute;
         right: 2px;
+    }
+    .menu-content.show {
+       display: none;
     }
     .menu-content a, .menu-content li {
         padding: 0.5rem;
