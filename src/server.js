@@ -30,4 +30,7 @@ server
 .get('/myFinance', (req, res) => {
     return res.render('partials/myFinance.html', { title:'MyFinance', descriptionTitle: 'Gestão financeira acessível e integrada', description: 'Permite que você organize os recebíveis, integre com o banco, classifique os lançamentos e faça muito mais, no smartphone, tablet ou computador.'})
 })
+.get('/work-with-us', (req, res) => {
+    return res.render('work-with-us.html')
+})
 .listen(5500)
