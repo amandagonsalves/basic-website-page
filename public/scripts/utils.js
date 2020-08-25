@@ -31,6 +31,7 @@ function getCities(event) {
         for (let city of cities) {
             citySelect.innerHTML += ` <option value="${city.id}">${city.nome}</option>`
         }
+        citySelect.disabled = false;
     })
 }
 document.querySelector('#state').addEventListener('change', getCities)
