@@ -77,6 +77,8 @@
     border-radius: 0.8rem;
     margin: 0.5rem 0;
     border: 1px solid rgb(235, 235, 235);
+    color: gray;
+    outline: none;
 }
 .section-search .form-block {
     display: flex;
