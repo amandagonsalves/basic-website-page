@@ -47,9 +47,32 @@
     max-width: 900px;
     width: 100%;
 }
-.section-search form {
-   display: flex;
-   width: 100%;
+.section-search .form-block {
+    display: flex;
+    justify-content: space-evenly;
+}
+.section-search fieldset {
+    border-radius: 1.8rem;
+    border: 1px solid rgb(235, 235, 235);
+}
+.section-search .form-block .select-block {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+.section-search .form-block .select-block label {
+    font: 400 0.9rem Archivo;
+    color: gray;
+}
+.section-search .form-block .select-block select {
+    height: 30px;
+    border-radius: 0.8rem;
+    margin: 0.5rem 0;
+    border: 1px solid rgb(235, 235, 235);
+}
+.section-search .form-block {
+    display: flex;
+    justify-content: space-evenly;
 }
 .section-background{
     background-image: url('https://s3-sa-east-1.amazonaws.com/prod-jobsite-files.kenoby.com/uploads/nexaas-trabalhe-conosco-1565979537-prancheta3png.png');
