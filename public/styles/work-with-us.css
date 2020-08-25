@@ -121,6 +121,7 @@
 .section-content p {
     font: 400 1.2rem Archivo;
     line-height: 27px;
+    margin: 0 2rem;
     margin-bottom: 3rem;
     color: rgb(124, 124, 124);
 }
@@ -142,6 +143,7 @@
     }
     .backdrop .backdrop-text p {
         line-height: 30px;
+        margin: 2rem;
     }
     .section-content p {
         margin: 0 2rem;
