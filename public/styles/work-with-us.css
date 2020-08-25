@@ -101,12 +101,11 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
-
 }
 .section-content img {
     max-width: 600px;
     width: 50%;
-    margin: 2rem auto;
+    margin: 3rem auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -114,13 +113,13 @@
 }
 .section-content h1 {
     font: 700 3rem Archivo;
-    margin-bottom: 2rem;
+    margin: 3rem 2rem;
     color: rgb(80, 80, 80);
 }
 .section-content p {
     font: 400 1.2rem Archivo;
     line-height: 27px;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     color: rgb(124, 124, 124);
 }
 .section-text{
