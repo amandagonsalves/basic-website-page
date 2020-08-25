@@ -44,8 +44,35 @@
     display: flex;
     flex-direction: column;
 }
+.form-block label {
+    font: 700 0.9 Archivo;
+    margin: 0.6rem auto;
+}
+.form-block input {
+    padding: 0.8rem;
+    border-radius: 0.9rem;
+    border: none;
+    outline: none;
+    margin: 0 0 1rem 0;
+}
 .backdrop form {
-  background-color: rgba(0,0,0,0.8);
-  width: 50%;
-  max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: none;
+    width: 50%;
+    max-width: 400px;
+}
+.backdrop form fieldset {
+    padding: 2rem;
+    border-radius: 0.7rem;
+}
+.backdrop form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    max-width: 400px;
 }
