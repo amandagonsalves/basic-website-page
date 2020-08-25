@@ -33,4 +33,7 @@ server
 .get('/work-with-us', (req, res) => {
     return res.render('work-with-us.html')
 })
+.get('/applicant', (req, res) => {
+    return res.render('partials/applicant-email.html')
+})
 .listen(5500)

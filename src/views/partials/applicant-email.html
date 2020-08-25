@@ -1,0 +1,21 @@
+{% include 'layout.html' %}
+{% block styles %}
+    <link rel="stylesheet" href="/styles/partials/applicant.css">
+{% endblock styles %}
+{% block content %}
+<div class="section-background">
+    <div class="backdrop">
+            <h1>Portal do candidato</h1>
+            <p>Acompanhe sua evolução no processo seletivo</p>
+            <form action="">
+                <fieldset>
+                    <div class="form-block">
+                        <label for="email">Endereço de E-mail</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                </fieldset>
+                <button>Enviar</button>
+            </form>
+    </div>
+</div>
+{% endblock content %}
