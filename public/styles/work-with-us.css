@@ -28,7 +28,7 @@
     margin-bottom: 3.9rem;
     font: 400 1.3rem Archivo;
 }
-.backdrop .backdrop-text a {
+.backdrop .backdrop-text a, .section-text a {
     padding: 1.2rem;
     margin: 1rem;
     background-color: #a31313;
@@ -41,6 +41,14 @@
 }
 .backdrop .backdrop-text a:hover {
     background-color: rgba(0,0,0,0);
+}
+.section-text a {
+    padding: 0.9rem;
+    font-size: 1rem;
+}
+.section-text a:hover {
+    background-color: rgba(0,0,0,0);
+    color: #a31313;
 }
 .section-search {
     margin: 3rem auto;
@@ -74,6 +82,28 @@
     display: flex;
     justify-content: space-evenly;
 }
-.section-background{
-    background-image: url('https://s3-sa-east-1.amazonaws.com/prod-jobsite-files.kenoby.com/uploads/nexaas-trabalhe-conosco-1565979537-prancheta3png.png');
+.section-text {
+    max-width: 900px;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.section-text p {
+    font: 400 1.3rem Archivo;
+    color: gray;
+}
+.section-text  {
+    max-width: 900px;
+    margin: 2rem auto;
+    display: flex;
+    text-align: center;
+
+}
+.section-text{
+    max-width: 900px;
+    margin: 2rem auto;
+    display: flex;
+    text-align: center;
+
 }
