@@ -81,7 +81,11 @@
     margin: 2rem auto;
 }
 .blog-cards-card .blog-cards-social a {
-    background-color: blue;
+    border: 1px solid #0083b8;
+    transition: 0.295s;
+}
+.blog-cards-card .blog-cards-social a:hover {
+    background-color: #0083b8;
 }
 @media (min-width:600px) and (max-width:1099px) {
     .blog-cards-card {
@@ -96,6 +100,8 @@
         transition: 0.2s;
     }
     .blog-cards-card p {
+        max-width: 300px;
+        width: 100%;
         font-size: 1rem;
     }
 }
@@ -109,8 +115,11 @@
         width: 80%;
     }
     .blog-cards-card p {
-        max-width: 200px;
+        max-width: 300px;
         width: 100%;
+    }
+    .blog-cards-card h1 {
+        margin: 1rem 1rem 0 1rem;
     }
 }
 .header h1 {
