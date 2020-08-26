@@ -1,0 +1,56 @@
+section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+.section-help {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+.section .section-map {
+    flex: 1;
+}
+.section-help {
+    
+}
+.section-help {
+    
+}
+.section-help {
+    
+}
+.section-help {
+    
+}
+.section-help {
+    
+}
+.section-help {
+    
+}
+.section-help {
+    
+}
+.section-help {
+    
+}
+.section-help {
+    
+}
+.section-help {
+    
+}
+@media (max-width:600px) {
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
