@@ -17,19 +17,47 @@ section {
 .section .section-map {
     flex: 1;
 }
-.section-help {
-    
+.section-help ul {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-.section-help {
-    
+.section-help ul li, .section-help.form p  {
+    margin: 0.7rem auto;
+    font: 400 1.2rem Archivo;
 }
-.section-help {
-    
+.section-help h1 {
+    margin: 1rem auto;
+    font: 400 2rem Archivo;
 }
-.section-help {
-    
+.section-help a {
+    padding: 0.9rem;
+    width: 50%;
+    background-color: rgb(38, 38, 241);
+    border-radius: 0.8rem;
+    text-decoration: none;
+    color: white;
+    margin: 0.7rem auto;
+    text-align: center;
+    font: 400 0.9rem Archivo;
+    transition: 0.3s;
 }
-.section-help {
+.section-help a:hover {
+    background-color: rgb(76, 76, 250);
+}
+.section-help.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: -4rem;
+    margin-top: 4rem;
+    background-color: #f5fafd;
+}
+.section-help.form p {
     
 }
 .section-help {
