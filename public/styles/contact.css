@@ -14,8 +14,9 @@ section {
     align-items: center;
     width: 30%;
 }
-.section .section-map {
-    flex: 1;
+.section-map {
+    width: 600px;
+    height: 350px;
 }
 .section-help ul {
     width: 100%;
@@ -34,15 +35,17 @@ section {
 }
 .section-help a {
     padding: 0.9rem;
-    width: 50%;
+    width: 15rem;
     background-color: rgb(38, 38, 241);
     border-radius: 0.8rem;
     text-decoration: none;
     color: white;
-    margin: 0.7rem auto;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
     text-align: center;
     font: 400 0.9rem Archivo;
     transition: 0.3s;
+    cursor: pointer;
 }
 .section-help a:hover {
     background-color: rgb(76, 76, 250);
@@ -57,28 +60,29 @@ section {
     margin-top: 4rem;
     background-color: #f5fafd;
 }
-.section-help.form p {
-    
+.section-help.form h1 {
+    margin-top: 3rem;
 }
-.section-help {
-    
-}
-.section-help {
-    
-}
-.section-help {
-    
-}
-.section-help {
-    
-}
-.section-help {
-    
-}
-@media (max-width:600px) {
+@media (max-width:1100px) {
     section {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        padding: 0;
+    }
+    .section-help {
+        width: 100%;
+    }
+    .section-help ul {
+        list-style: none;
+    }
+    section h1 {
+        text-align: center;
+    }
+    .section-help.form {
+        text-align: center;
+    }
+    .section-help.form ul li {
+        font: 700 1.2rem Archivo;
     }
 }

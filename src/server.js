@@ -37,6 +37,9 @@ server
     return res.render('partials/applicant-email.html')
 })
 .get('/contact', (req, res) => {
-    return res.render('partials/contact.html', { title:'Contato', descriptionTitle: 'Fale com a Nexaas', description: 'Deixe seu melhor e-mail para receber informações de nossos produtos, planos e assinaturas.', titleForm: 'Converse com o suporte'})
+    return res.render('contact.html', { title:'Contato', descriptionTitle: 'Fale com a Nexaas', description: 'Deixe seu melhor e-mail para receber informações de nossos produtos, planos e assinaturas.', titleForm: 'Converse com o suporte'})
+})
+.get('/blog', (req, res) => {
+    return res.render('blog.html')
 })
 .listen(5500)
