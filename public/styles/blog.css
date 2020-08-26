@@ -67,13 +67,18 @@
     transform: scale(1.03);
 }
 .blog-cards-card p.words-blog {
-    margin: 2rem 2rem 0 2rem;
+    margin: 0.5rem;
     text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: rgb(202, 96, 96);
     font-family: Archivo;
     line-height: 30px;
-    color: #6d6d5c;
     font-size: 0.8rem;
     cursor: default;
+}
+.blog-cards-card .blog-cards-social {
+    margin: 2rem auto;
 }
 .blog-cards-card .blog-cards-social a {
     background-color: blue;
