@@ -49,7 +49,7 @@
     font-size: 0.8rem;
     cursor: default;
 }
-.blog-cards-card a {
+.blog-cards-card a.read-more {
     padding: 1rem;
     width: 50%;
     background-color: #0083b8;
@@ -62,7 +62,7 @@
     border-radius: 0.6rem;
     transition: 0.3s;
 }
-.blog-cards-card a:hover {
+.blog-cards-card a.read-more:hover {
     background-color: #2aa9db;
 }
 .blog-cards-card:hover {
@@ -88,6 +88,11 @@
     color: #0083b8;
     border: 1px solid #0083b8;
     transition: 0.295s;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    font: 700 0.8rem Archivo;
+    border-radius: 0.6rem;
 }
 .blog-cards-card .blog-cards-social a:hover {
     background-color: #0083b8;
@@ -145,13 +150,37 @@
     .blog-cards-card {
         max-width: 475px;
         width: 80%;
+        height: 700px;
+        position: relative;
     }
     .blog-cards-card p {
-        max-width: 300px;
-        width: 100%;
+        display: block;
+        text-overflow: ellipsis;
+        word-wrap: break-word;
+        overflow: hidden;
+        max-height: 7.6rem;
+        line-height: 2rem;
+        margin: 2rem 2rem 1rem 2rem;
+    }
+    .blog-cards-card a.read-more {
+        margin-bottom: 1rem;
     }
     .blog-cards-card h1 {
         margin: 1rem 1rem 0 1rem;
+        font-size: 1.6rem;
+        line-height: 3rem;
+    }
+    .blog-cards-card .words-blog {
+        display: block;
+        text-overflow: ellipsis;
+        word-wrap: break-word;
+        overflow: hidden;
+        max-height: 5.6rem;
+        line-height: 1.5rem;
+    }
+    .blog-cards-card .blog-cards-social {
+        position: absolute;
+        bottom: 0.9rem;
     }
     
 }
