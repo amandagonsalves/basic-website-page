@@ -111,13 +111,13 @@
 }
 .page-numbers a,.pagination-page div {
     border: 2px solid #0083b8;
-    padding: 1.6rem 1.8rem;
+    padding: 1.2rem 1.4rem;
     margin: 0.3rem;
     border-radius: 50%;
     cursor: pointer;
     color: #0083b8;
     text-decoration: none;
-    font: 400 1.3rem Archivo;
+    font: 400 1.1rem Archivo;
     transition: 0.295s;
 }
 .page-numbers a:hover,.pagination-page div:hover  {

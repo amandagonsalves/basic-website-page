@@ -1,8 +1,7 @@
 function populateCards() {
-    console.log('roda')
+    console.log(cards)
 }
 populateCards();
-const cards = require('/src/cards-blog.json');
 const state = {
     page: 1,
     perPage: 6,
