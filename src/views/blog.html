@@ -24,14 +24,19 @@
         </div>
        {% endfor %}
     </div>
-    <nav class="navigation-page-numbers">
+    <nav class="pagination-page">
+        <div class="first">&#171</div>
+        <div class="prev">&lt;</div>
         <ul class="page-numbers">
             <a href="#">1</a>
             <a href="#">2</a>
             <a href="#">3</a>
             <a href="#">4</a>
         </ul>
+        <div class="next">&gt;</div>
+        <div class="last">&#187</div>
     </nav>
 </section>
 {% include 'partials/footer.html' %}
+<script src="/scripts/paginate.js"></script>
 {% endblock content %}

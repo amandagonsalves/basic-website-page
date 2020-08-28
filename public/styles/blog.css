@@ -101,17 +101,15 @@
     background-color: #0083b8;
     color: white;
 }
-.navigation-page-numbers {
+.pagination-page {
     width: 100vw;
     margin: 4rem 0 0 0;
-}
-.page-numbers {
     display: flex;
     justify-content: center;
     align-items: center;
     list-style: none;
 }
-.page-numbers a {
+.page-numbers a,.pagination-page div {
     border: 2px solid #0083b8;
     padding: 1.6rem 1.8rem;
     margin: 0.3rem;
@@ -122,7 +120,7 @@
     font: 400 1.3rem Archivo;
     transition: 0.295s;
 }
-.page-numbers a:hover {
+.page-numbers a:hover,.pagination-page div:hover  {
     background-color: #0083b8;
     color: white;
 }
