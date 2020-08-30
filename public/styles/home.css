@@ -152,6 +152,7 @@ header .content .icon-menu {
     text-decoration: none;
     margin: 1.5rem;
     font-size: 0.9rem;
+    text-shadow: none;
 }
 .header-homepage a:hover {
     background-color: #15b2fa;

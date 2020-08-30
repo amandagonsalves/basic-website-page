@@ -28,3 +28,9 @@ function getCities(event) {
     })
 }
 document.querySelector('#state').addEventListener('change', getCities);
+document.querySelector('#aboutUs').addEventListener('click', e => {
+   document.querySelector('.section-content').focus()
+})
+document.querySelector('#job').addEventListener('click', e => {
+    document.querySelector('.seaction-search').focus()
+})
