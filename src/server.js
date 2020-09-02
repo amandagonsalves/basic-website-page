@@ -1,7 +1,6 @@
 const express = require('express');
 const server = express();
 const nunjucks = require('nunjucks');
-const { paginate } = require('./paginate')
 nunjucks.configure('src/views', {
     express: server,
     noCache: true
@@ -42,6 +41,6 @@ server
     return res.render('contact.html', { title:'Contato', descriptionTitle: 'Fale com a Nexaas', description: 'Deixe seu melhor e-mail para receber informações de nossos produtos, planos e assinaturas.', titleForm: 'Converse com o suporte'});
 })
 .get('/blog', (req, res) => {
-    return res.render('blog.html', { cardsBlog }, paginate(cardsBlog));
+    return res.render('blog.html', { cardsBlog });
 })
 .listen(5500)

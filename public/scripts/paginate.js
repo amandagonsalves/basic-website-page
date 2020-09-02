@@ -20,8 +20,7 @@ function paginate(data) {
         prev() {},
         goTo() {}
     }
-    console.log(state.page)
-}
-module.exports =  {
-    paginate
+    document.querySelector('.next').addEventListener('click', e => {
+      console.log('ola botao')
+    })
 }
