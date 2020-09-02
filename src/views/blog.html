@@ -4,18 +4,18 @@
 {% endblock styles %}
 {% block content %}
 <div class="header">
-    <h1>Blog</h1>
+    <h1 class="header__h1">Blog</h1>
 </div>
 <section>
-    <div class="blog-cards">
+    <div class="cards">
         {% for card in cardsBlog %}
-        <div class="blog-cards-card">
-            <img src="{{card.thumbnail}}" alt="">
-            <h1>{{card.title}}</h1>
-            <p >{{card.description}}</p>
-            <a href="#" class="read-more">Ler mais</a>
-            <p class="words-blog"><i class="fa fa-bookmark"></i>{{card.keywords}}</p>
-            <ul class="blog-cards-social">
+        <div class="cards__card card">
+            <img src="{{card.thumbnail}}" alt="" class="card__photo">
+            <h1 class="card__title">{{card.title}}</h1>
+            <p class="card__description">{{card.description}}</p>
+            <a href="#" class="card__read-more">Ler mais</a>
+            <p class="card__words-blog"><i class="fa fa-bookmark"></i>{{card.keywords}}</p>
+            <ul class="card__social">
                 <a href="#">1</a>
                 <a href="#">2</a>
                 <a href="#">3</a>
