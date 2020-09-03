@@ -88,23 +88,30 @@
 }
 .card-blog__social {
     margin: 2rem auto;
+    display: flex;
 }
 .card-blog__social a {
-    background-color: white;
-    color: #0083b8;
-    border: 1px solid #0083b8;
+    background-color: white; 
+    border: 1px solid #e2e2e2; 
     transition: 0.295s;
     padding: 1rem;
     text-align: center;
     text-decoration: none;
     font: 700 0.8rem Archivo;
     border-radius: 0.6rem;
+    margin: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-blog__social a img {
+    width: 1.5rem;
+    height: 1.5rem;
 }
 .card-blog__social a:hover {
-    background-color: #0083b8;
-    color: white;
+    border: 1px solid #0083b8;
 }
-.pagination-page {
+.pagination {
     width: 100vw;
     margin: 4rem 0 0 0;
     display: flex;
@@ -112,7 +119,7 @@
     align-items: center;
     list-style: none;
 }
-.page-numbers a,.pagination-page div {
+.pagination__item {
     border: 2px solid #0083b8;
     padding: 1.2rem 1.4rem;
     margin: 0.3rem;
@@ -123,7 +130,7 @@
     font: 400 1.1rem Archivo;
     transition: 0.295s;
 }
-.page-numbers a:hover,.pagination-page div:hover  {
+.pagination__item:hover {
     background-color: #0083b8;
     color: white;
 }

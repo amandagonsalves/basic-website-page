@@ -9,32 +9,32 @@
 <section>
     <div class="cards-blog">
         {% for card in cardsBlog %}
-        <div class="cards-blog__card card-blog">
+        <div class="card-blog">
             <img src="{{card.thumbnail}}" alt="" class="card-blog__photo">
             <h1 class="card-blog__title">{{card.title}}</h1>
             <p class="card-blog__description">{{card.description}}</p>
             <a href="#" class="card-blog__read-more">Ler mais</a>
             <p class="card-blog__words-blog"><i class="fa fa-bookmark"></i>{{card.keywords}}</p>
             <ul class="card-blog__social">
-                <a href="#">1</a>
-                <a href="#">2</a>
-                <a href="#">3</a>
-                <a href="#">4</a>
+                <a href="#"><img src="../images/youtube-blog.svg" alt=""></a>
+                <a href="#"><img src="../images/facebook-blog.svg" alt=""></a>
+                <a href="#"><img src="../images/instagram-blog.svg" alt=""></a>
+                <a href="#"><img src="../images/twitter-blog.svg" alt=""></a>
             </ul>
         </div>
        {% endfor %}
     </div>
-    <nav class="pagination-page">
-        <div class="first">&#171</div>
-        <div class="prev">&lt;</div>
-        <ul class="page-numbers">
-            <a href="#">1</a>
-            <a href="#">2</a>
-            <a href="#">3</a>
-            <a href="#">4</a>
+    <nav class="pagination">
+        <div class="pagination__item" id="first">&#171</div>
+        <div class="pagination__item" id="prev">&lt;</div>
+        <ul class="pagination__page-numbers">
+            <a href="#" class="pagination__item">1</a>
+            <a href="#" class="pagination__item">2</a>
+            <a href="#" class="pagination__item">3</a>
+            <a href="#" class="pagination__item">4</a>
         </ul>
-        <div class="next">&gt;</div>
-        <div class="last">&#187</div>
+        <div class="pagination__item" id="next">&gt;</div>
+        <div class="pagination__item" id="last">&#187</div>
     </nav>
 </section>
 {% include 'partials/footer.html' %}
