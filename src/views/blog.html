@@ -7,15 +7,15 @@
     <h1 class="header__h1">Blog</h1>
 </div>
 <section>
-    <div class="cards">
+    <div class="cards-blog">
         {% for card in cardsBlog %}
-        <div class="cards__card card">
-            <img src="{{card.thumbnail}}" alt="" class="card__photo">
-            <h1 class="card__title">{{card.title}}</h1>
-            <p class="card__description">{{card.description}}</p>
-            <a href="#" class="card__read-more">Ler mais</a>
-            <p class="card__words-blog"><i class="fa fa-bookmark"></i>{{card.keywords}}</p>
-            <ul class="card__social">
+        <div class="cards-blog__card card-blog">
+            <img src="{{card.thumbnail}}" alt="" class="card-blog__photo">
+            <h1 class="card-blog__title">{{card.title}}</h1>
+            <p class="card-blog__description">{{card.description}}</p>
+            <a href="#" class="card-blog__read-more">Ler mais</a>
+            <p class="card-blog__words-blog"><i class="fa fa-bookmark"></i>{{card.keywords}}</p>
+            <ul class="card-blog__social">
                 <a href="#">1</a>
                 <a href="#">2</a>
                 <a href="#">3</a>
