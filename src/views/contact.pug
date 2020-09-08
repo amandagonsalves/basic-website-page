@@ -1,8 +1,13 @@
 include partials/head.pug
-link(rel="stylesheet", href="/styles/contact.css")
-link(rel="stylesheet" href="/styles/partials/header.css")
-link(rel="stylesheet" href="/styles/partials/form.css")
-include partials/menu.pug
+link(rel="stylesheet", href="../../public/styles/contact.css")
+link(rel="stylesheet", href="../../public/styles/partials/header.css")
+link(rel="stylesheet", href="../../public/styles/partials/form.css")
+include partials/menu
+
+- var title = contact.title;
+- var descriptionTitle = contact.descriptionTitle;
+- var description = contact.description;
+
 include partials/header-page.pug
 section
     .section-help
@@ -21,5 +26,8 @@ section
         li Planos
         li Dúvidas
         li Valores
+
+- var titleForm = contact.titleForm;
+
 include partials/form.pug
 include partials/footer.pug
