@@ -1,12 +1,13 @@
-include layout.pug
+include partials/head.pug
 link(rel="stylesheet", href="../../public/styles/blog.css")
+include partials/menu.pug
 .header 
     h1.header__h1 Blog 
 section 
     .cards-blog 
         each card in cardsBlog
             .card-blog
-                img(src="#{card.thumbnail}", alt="").card-blog__photo
+                img(src=card.thumbnail, alt="").card-blog__photo
                 h1.card-blog__title #{card.title}
                 p.card-blog__description #{card.description}
                 a(href="#").card-blog__read-more Ler mais
@@ -14,13 +15,13 @@ section
                     i.fa.fa-bookmark #{card.keywords}
                 ul.card-blog__social
                     a(href="#")
-                        img(src="../images/youtube-blog.svg" alt="")
+                        img(src="../../public/images/youtube-blog.svg" alt="")
                     a(href="#")
-                        img(src="../images/facebook-blog.svg", alt="") 
+                        img(src="../../public/images/facebook-blog.svg", alt="") 
                     a(href="#")
-                        img(src="../images/instagram-blog.svg", alt="")
+                        img(src="../../public/images/instagram-blog.svg", alt="")
                     a(href="#")
-                        img(src="../images/twitter-blog.svg", alt="")
+                        img(src="../../public/images/twitter-blog.svg", alt="")
  
     nav.pagination
         .pagination__item #first &#171

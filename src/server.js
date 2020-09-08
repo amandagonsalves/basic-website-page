@@ -51,7 +51,7 @@ server.set('view engine', 'ejs');
 
 const options = {}; 
 
-const bundler = new Bundler([ join(__dirname, './views/index.pug')], options);
+const bundler = new Bundler([join(__dirname, './views/index.html'), join(__dirname, './views/blog.pug')], options);
 
 server.use(bundler.middleware());
 
