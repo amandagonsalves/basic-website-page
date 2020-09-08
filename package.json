@@ -2,14 +2,15 @@
   "name": "nexaas",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/server.js"
+    "serve": "node src/server.js"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "express": "^4.17.1",
-    "node-fetch": "^2.6.0",
-    "nodemon": "^2.0.4",
-    "nunjucks": "^3.2.2"
+    "parcel-bundler": "^1.12.4",
+    "pug": "^3.0.0",
+    "pug-cli": "^1.0.0-alpha6"
   }
 }

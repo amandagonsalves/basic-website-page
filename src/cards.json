@@ -2,7 +2,7 @@
         {
             "id": 0,
             "title": "Gestão Integrada de Pedidos",
-            "thumbnail": "/images/gip.png",
+            "thumbnail": "http://nexaas.com/wp-content/uploads/2018/09/cropped-editada_ps-shutterstock_1012713175.png",
             "description": "Uma visão e uma jornada de compra unificada para cada cliente, de forma que ele tenha uma melhor experiência, seja qual for o canal de entrada, além da visibilidade integrada dos seus estoques.",
             "action": "Conheça o OMS >>",
             "href": "/oms"
@@ -10,7 +10,7 @@
         {
             "id": 1,
             "title": "Ponto de Venda Móvel",
-            "thumbnail": "/images/pvm.jpg",
+            "thumbnail": "http://nexaas.com/wp-content/uploads/2020/04/cropped-485e8a23-0fc7-4581-a0ab-c1f7cba72ac2_h-1.jpg",
             "description": "Tenha gestão e controle do seu negócio, com facilidade e mobilidade.  Aplicavo para sistema de PDV e caixa de loja 100% móvel: funciona de qualquer lugar, levando seu negócio onde você estiver. ",
             "action": "Conheça o PDVend >>",
             "href": "/pdvend"
@@ -18,7 +18,7 @@
         {
             "id": 2,
             "title": "Emissão de DFe fora do ERP",
-            "thumbnail": "/images/dfe.png",
+            "thumbnail": "http://nexaas.com/wp-content/uploads/2020/04/cropped-fortes-tecnologia-nfc-e-1-810x540-1-1.png",
             "description": "Integra-se a sistemas de ponto de venda, marketplaces, E-commerces e smart terminals. Emita notas fiscais eletrônicas independente do seu tipo de atividade ou modelo de negócios e fora do seu ERP.",
             "action": "Conheça o Emites >>",
             "href": "/emites"
@@ -26,7 +26,7 @@
         {
             "id": 3,
             "title": "Venda online rápido",
-            "thumbnail": "/images/vor.jpg",
+            "thumbnail": "http://nexaas.com/wp-content/uploads/2020/04/cropped-shutterstock_1237494658.jpg",
             "description": "Monte seu E-commerce com plataforma multilojas e design responsivo para vendas pela web e celular. Uma solução completa com serviços de entrega com frota própria, Correios ou retirada.",
             "action": "Conheça a Solução Store >>",
             "href": "/store"
@@ -34,7 +34,7 @@
         {
             "id": 4,
             "title": "Do Multicanal ao Omnichannel",
-            "thumbnail": "/images/omnichannel.png",
+            "thumbnail": "http://nexaas.com/wp-content/uploads/2018/11/cropped-editada_psshutterstock_640493977.png",
             "description": "Visão única dos seus pedidos em vendas online em marketplaces, E-commerce e sua loja física. Veja seus estoques integrados, com inteligência fiscal e menos infraestrutura.",
             "action": "Conheça a Suíte Omnichannel >>",
             "href": "/suite"
@@ -42,7 +42,7 @@
         {
             "id": 5,
             "title": "Gestão financeira acessível",
-            "thumbnail": "/images/gfa.jpg",
+            "thumbnail": "http://nexaas.com/wp-content/uploads/2020/05/cropped-86533-estender-500-conheca-as-funcoes-do-gerente-de-loja-de-varejo-1.jpg",
             "description": "Organize os recebíveis, integre com o banco, classifique os lançamentos e faça muito mais, no smartphone, tablet ou computador, tudo numa ferramenta automatizada.",
             "action": "Conheça o MyFinance >>",
             "href": "/myFinance"

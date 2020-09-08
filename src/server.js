@@ -1,6 +1,6 @@
-const express = require('express');
+/*const express = require('express');
 const server = express();
-const nunjucks = require('nunjucks');
+ const nunjucks = require('nunjucks');
 nunjucks.configure('src/views', {
     express: server,
     noCache: true
@@ -42,5 +42,17 @@ server
 })
 .get('/blog', (req, res) => {
     return res.render('blog.html', { cardsBlog });
-})
-.listen(5500)
+}) */
+const Bundler = require('parcel-bundler');
+const server = require('express')();
+const { join } = require('path');
+
+server.set('view engine', 'ejs');
+
+const options = {}; 
+
+const bundler = new Bundler([ join(__dirname, './views/index.pug')], options);
+
+server.use(bundler.middleware());
+
+server.listen(5500);

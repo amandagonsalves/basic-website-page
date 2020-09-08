@@ -1,0 +1,48 @@
+include layout.pug
+#container
+    .header-homepage
+        .header-homepage-text
+            h1 Comece a vender online já!
+            p Construa sua loja online ou integre com sua loja física, já com delivery, tabela de frete e outros canais de venda. Tudo numa solução única e integrada.
+            a(href="/store") Conheça o Nexaas.Store
+    .content-section
+        img(src="http://nexaas.com/wp-content/uploads/2018/09/cropped-editada_ps-shutterstock_372396529-1.png" alt="" class="cropped") 
+        .content-section-text
+            h1 Seu varejo em qualquer canal online e offline juntos e misturados
+            hr
+            p Sabemos que negócios mudam constantemente, portanto o que as empresas necessitam hoje é de eficiência e economia.
+    .content-cards
+        .header-content-cards
+            h1 Soluções para todos os segmentos
+            hr
+            p Lojas físicas, E-commerces, marketplaces, supermercados ou restaurantes e lanchonetes conectados numa solução completa, gestão com mobilidade e economia. Leve seu negócio para onde quiser, quando quiser.
+            .cards
+                each card in cards 
+                    .card
+                        img(src=card.thumbnail, alt="") 
+                        h1 #{card.title}
+                        p #{card.description}
+                        a(href=card.href) #{card.action}
+.footer-solutions
+    img(src="http://nexaas.com/wp-content/uploads/2020/04/cropped-shutterstock_1505458583-1-1.jpg" alt="")
+    .header-content-footer
+        h1 Soluções inteligentes e integradas
+        hr
+        .header-footer-text
+            p As soluções Nexaas são diferentes de tudo o que você conhece. Por serem desenvolvidas na nuvem, elas atendem a um inovador conceito de conexão que permite que sejam integradas entre si, enquanto funcionam de maneira independente de acordo com a sua necessidade e a realidade de sua empresa.
+            .solutions
+                ul
+                    li
+                        h1 Modular
+                        p Use apenas o que for necessário
+                    li
+                        h1 Simples e rápido
+                        p Sem necessidade de mexer nos atuais sistemas
+                    li
+                        h1 Inovador
+                        p Trazendo as melhores práticas do varejo mundial
+                    li
+                        h1 Cabe no bolso
+                        p Pensado para ser leve na operação e no custo
+include partials/footer.pug
+       
