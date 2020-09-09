@@ -21,7 +21,7 @@
             "thumbnail": "http://nexaas.com/wp-content/uploads/2020/04/cropped-fortes-tecnologia-nfc-e-1-810x540-1-1.png",
             "description": "Integra-se a sistemas de ponto de venda, marketplaces, E-commerces e smart terminals. Emita notas fiscais eletrônicas independente do seu tipo de atividade ou modelo de negócios e fora do seu ERP.",
             "action": "Conheça o Emites >>",
-            "href": "/emites"
+            "href": "./partials/emites.pug"
         },
         {
             "id": 3,

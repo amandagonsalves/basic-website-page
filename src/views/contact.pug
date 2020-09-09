@@ -1,8 +1,8 @@
-include partials/head.pug
+include head.pug
 link(rel="stylesheet", href="../../public/styles/contact.css")
 link(rel="stylesheet", href="../../public/styles/partials/header.css")
 link(rel="stylesheet", href="../../public/styles/partials/form.css")
-include partials/menu
+include menu.pug
 
 - var title = contact.title;
 - var descriptionTitle = contact.descriptionTitle;
@@ -30,4 +30,4 @@ section
 - var titleForm = contact.titleForm;
 
 include partials/form.pug
-include partials/footer.pug
+include footer.pug

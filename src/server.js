@@ -51,7 +51,7 @@ server.set('view engine', 'ejs');
 
 const options = {}; 
 
-const bundler = new Bundler([join(__dirname, './views/index.pug'), join(__dirname, './views/contact.pug'), join(__dirname, './views/blog.pug'), join(__dirname, './views/work-with-us.pug')], options);
+const bundler = new Bundler([join(__dirname, './views/index.pug'), join(__dirname, './views/contact.pug'), join(__dirname, './views/blog.pug'), join(__dirname, './views/work-with-us.pug'), join(__dirname, './views/partials/applicant-email.pug'), join(__dirname, './views/partials/emites.pug')], options);
 
 server.use(bundler.middleware());
 

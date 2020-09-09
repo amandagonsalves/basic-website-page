@@ -1,32 +1,32 @@
-{% include 'layout.html' %}
-{% block styles %}
-    <link rel="stylesheet" href="/styles/partials/header.css">
-    <link rel="stylesheet" href="/styles/partials/pages-emites-suite-finance.css">
-    <link rel="stylesheet" href="/styles/partials/form.css">
-{% endblock styles %}
-{% block content %}
-{% include 'partials/header.html' %}
-<div class="section-page">
-    <img src="https://nexaas.com/wp-content/uploads/2020/05/emites-comercial-integracoes.png" alt="">
-    <div class="description-page">
-        <h1>Fácil integração e automatização</h1>
-        <p>Através das APIs de integração é possível emitir notas fiscais eletrônicas provenientes dos mais variados dispositivos, inclusive o smart terminal – terminais de venda integrados pela Rede e Cielo – tanto para pessoa jurídica quanto para o consumidor final (NFC-e).a</p>
-    </div> 
-</div>
-<div class="section-page">
-    <div class="description-page">
-        <h1>Atualização de tabelas fiscais</h1>
-        <p>Um recurso exclusivo proporciona a atualização imediata e em tempo real de diversas tabelas fiscais. Antes de emitir qualquer nota fiscal, o sistema verifica e atualiza automaticamente todas as alíquotas.</p>
-    </div> 
-    <img src="https://nexaas.com/wp-content/uploads/2020/05/emites-comercial-tabelas.png" alt="">
-</div>
-<div class="section-page reverse">
-    <img src="https://nexaas.com/wp-content/uploads/2020/05/emites-comercial-modelos.png" alt="" >
-    <div class="description-page">
-        <h1>Modelos de templates tributários</h1>
-        <p>Único emissor do mercado que disponibiliza templates tributários que você personaliza com alíquotas e parametrizações. Salve os modelos mais utilizados e ganhe tempo enquanto reduz a possibilidade de erros nas emissões.</p>
-    </div> 
-</div>
-{% include 'partials/form.html' %}
-{% include 'partials/footer.html' %}
-{% endblock content %}
+include head-partials.pug
+link(rel="stylesheet" href="/../../public/styles/partials/header.css")
+link(rel="stylesheet" href="/../../public/styles/partials/pages-emites-suite-finance.css")
+link(rel="stylesheet" href="/../../public/styles/partials/form.css")
+
+include menu-partials.pug
+
+- var title = emites.title;
+- var descriptionTitle = emites.descriptionTitle;
+- var description = emites.description;  
+
+include header-page.pug
+
+.section-page
+    img(src="https://nexaas.com/wp-content/uploads/2020/05/emites-comercial-integracoes.png" alt="")
+    .description-page
+        h1 Fácil integração e automatização
+        p Através das APIs de integração é possível emitir notas fiscais eletrônicas provenientes dos mais variados dispositivos, inclusive o smart terminal – terminais de venda integrados pela Rede e Cielo – tanto para pessoa jurídica quanto para o consumidor final (NFC-e).a
+.section-page
+    .description-page
+        h1 Atualização de tabelas fiscais
+        p Um recurso exclusivo proporciona a atualização imediata e em tempo real de diversas tabelas fiscais. Antes de emitir qualquer nota fiscal, o sistema verifica e atualiza automaticamente todas as alíquotas.
+    img(src="https://nexaas.com/wp-content/uploads/2020/05/emites-comercial-tabelas.png" alt="")
+.section-page.reverse
+    img(src="https://nexaas.com/wp-content/uploads/2020/05/emites-comercial-modelos.png" alt="")
+    .description-page
+        h1 Modelos de templates tributários
+        p Único emissor do mercado que disponibiliza templates tributários que você personaliza com alíquotas e parametrizações. Salve os modelos mais utilizados e ganhe tempo enquanto reduz a possibilidade de erros nas emissões.
+- var titleForm = emites.titleForm;
+include form.pug
+include footer-partials.pug
+script(src="/../../public/scripts/menu.js")

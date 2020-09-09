@@ -1,4 +1,4 @@
-const cards = require('../cards.json');
+const cards = require('./cards.json');
 const li = require('../pdvend.json');
 const cardsBlog = require('../cards-blog.json');
 
