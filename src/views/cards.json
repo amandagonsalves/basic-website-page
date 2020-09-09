@@ -37,7 +37,7 @@
             "thumbnail": "http://nexaas.com/wp-content/uploads/2018/11/cropped-editada_psshutterstock_640493977.png",
             "description": "Visão única dos seus pedidos em vendas online em marketplaces, E-commerce e sua loja física. Veja seus estoques integrados, com inteligência fiscal e menos infraestrutura.",
             "action": "Conheça a Suíte Omnichannel >>",
-            "href": "./partials/suite"
+            "href": "./partials/suite.pug"
         },
         {
             "id": 5,

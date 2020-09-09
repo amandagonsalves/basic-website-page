@@ -41,7 +41,6 @@ module.exports = {
             description: 'Visão única dos seus pedidos em vendas online em marketplaces, ecommerce e sua loja física. Veja seus estoques integrados, com inteligência fiscal e menos infraestrutura.',
             titleSection: 'Conectividade e flexibilidade em toda operação', 
             descriptionSection:'Promove uma visão e uma jornada de compra unificada para cada cliente, de forma que ele tenha uma melhor experiência, seja qual for o canal de entrada, além da visibilidade integrada dos seus estoques.', 
-            thumbnailSection:'/images/oms-products.png', 
             titleForm: 'Cadastre seu negócio'
         },
         myFinance: {
