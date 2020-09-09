@@ -13,7 +13,7 @@
             "thumbnail": "http://nexaas.com/wp-content/uploads/2020/04/cropped-485e8a23-0fc7-4581-a0ab-c1f7cba72ac2_h-1.jpg",
             "description": "Tenha gestão e controle do seu negócio, com facilidade e mobilidade.  Aplicavo para sistema de PDV e caixa de loja 100% móvel: funciona de qualquer lugar, levando seu negócio onde você estiver. ",
             "action": "Conheça o PDVend >>",
-            "href": "./partials/pdvend"
+            "href": "./partials/pdvend.pug"
         },
         {
             "id": 2,

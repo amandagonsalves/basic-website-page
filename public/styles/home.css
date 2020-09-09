@@ -473,7 +473,7 @@ footer .footer p {
     }
     .footer-solutions img {
         width: 50%;
-        box-shadow: 4px 0 16px #949494;
+        box-shadow: 16px 16px 42px #2b2b2bc9;
     }
     .footer-solutions {
         display: flex;
@@ -495,14 +495,19 @@ footer .footer p {
     .cards {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        max-width: 1600px;
+        margin: 5rem auto;
     }
     .card {
-        max-width: 475px;
+        max-width: 500px;
         width: 80%;
     }
     .card p {
         max-width: 200px;
         width: 100%;
+        margin: 2rem auto;
+        font: 400 1.1rem Archivo;
+        line-height: 30px;
     }
 
 }
