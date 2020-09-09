@@ -1,29 +1,36 @@
-{% include 'layout.html' %}
-{% block styles %}
-    <link rel="stylesheet" href="/styles/partials/header.css">
-    <link rel="stylesheet" href="/styles/partials/store.css">
-    <link rel="stylesheet" href="/styles/partials/sectionDescription.css">
-    <link rel="stylesheet" href="/styles/partials/form.css">
-{% endblock styles %}
-{% block content %}
-{% include 'partials/header.html' %}
-{% include 'partials/sectionDescription.html' %}
-<div class="section-flex">
-    <div class="description-page-store ">
-        <h1>Faça vendas domiciliares</h1>
-        <p>Sua loja pode funcionar na palma da sua mão com nosso aplicativo de caixa de loja para smartphones ou tablets  Android. Sua equipe pode continuar vendendo seu estoque físico para seus contatos.</p>
-    </div>
-    <img src="/images/gip.png" alt="">
-</div>
-<hr>
-<div class="section-flex">
-    <img src="http://nexaas.com/wp-content/uploads/2020/04/cropped-shutterstock_1505458583-1-1.jpg" alt="">
-    <div class="description-page-store">
-        <h1>Complete com entrega e retirada
-        </h1>
-        <p>Uma plataforma pensada de ponta a ponta. Seja para entregas próximas e pontuais ou para retirada num ponto de entrega, ou ainda para envio ao cliente com frota própria, terceirizada ou Correios, você não precisa se preocupar em negociar e configurar cada item em separado. Trazemos uma solução completa.</p>
-    </div>
-</div>
-{% include 'partials/form.html' %}
-{% include 'partials/footer.html' %}
-{% endblock content %}
+include head-partials.pug
+
+link(rel="stylesheet" href="/../../public/styles/partials/header.css")
+link(rel="stylesheet" href="/../../public/styles/partials/store.css")
+link(rel="stylesheet" href="/../../public/styles/partials/sectionDescription.css")
+link(rel="stylesheet" href="/../../public/styles/partials/form.css")
+
+include menu-partials.pug
+
+- var title = store.title;
+- var descriptionTitle = store.descriptionTitle;
+- var description = store.description;
+
+include header-page.pug
+
+- var thumbnailSection = '/../../public/images/online-shopping.jpg';
+- var titleSection = store.titleSection;
+- var descriptionSection = store.descriptionSection;
+
+include sectionDescription.pug
+
+.section-flex
+    .description-page-store
+        h1 Faça vendas domiciliares
+        p Sua loja pode funcionar na palma da sua mão com nosso aplicativo de caixa de loja para smartphones ou tablets  Android. Sua equipe pode continuar vendendo seu estoque físico para seus contatos.
+    img(src="/../../public/images/gip.png" alt="")
+hr
+.section-flex
+    img(src="http://nexaas.com/wp-content/uploads/2020/04/cropped-shutterstock_1505458583-1-1.jpg" alt="")
+    .description-page-store
+        h1 Complete com entrega e retirada
+        p Uma plataforma pensada de ponta a ponta. Seja para entregas próximas e pontuais ou para retirada num ponto de entrega, ou ainda para envio ao cliente com frota própria, terceirizada ou Correios, você não precisa se preocupar em negociar e configurar cada item em separado. Trazemos uma solução completa.
+
+- var titleForm = pdvend.titleForm;        
+include form.pug
+include footer-partials.pug

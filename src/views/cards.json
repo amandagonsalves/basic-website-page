@@ -29,7 +29,7 @@
             "thumbnail": "http://nexaas.com/wp-content/uploads/2020/04/cropped-shutterstock_1237494658.jpg",
             "description": "Monte seu E-commerce com plataforma multilojas e design responsivo para vendas pela web e celular. Uma solução completa com serviços de entrega com frota própria, Correios ou retirada.",
             "action": "Conheça a Solução Store >>",
-            "href": "./partials/store"
+            "href": "./partials/store.pug"
         },
         {
             "id": 4,

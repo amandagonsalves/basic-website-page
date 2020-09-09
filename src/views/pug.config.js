@@ -12,8 +12,7 @@ module.exports = {
             descriptionTitle: 'Total conectividade e flexibilidade em toda operação',
             description: 'Promove uma visão e uma jornada de compra unificada para cada cliente, de forma que ele tenha uma melhor experiência, seja qual for o canal de entrada, além da visibilidade integrada dos seus estoques.',
             titleSection: 'Soluções de acordo com a necessidade do seu negócio:', 
-            descriptionSection:'Uma plataforma pensada de ponta a ponta. Seja para entregas próximas e pontuais ou para retirada num ponto de entrega, ou ainda para envio ao cliente com frota própria, terceirizada ou Correios, você não precisa se preocupar em negociar e configurar cada item em separado. Trazemos uma solução completa.', 
-            thumbnailSection:'../../public/images/vor.jpg', 
+            descriptionSection:'Uma plataforma pensada de ponta a ponta. Seja para entregas próximas e pontuais ou para retirada num ponto de entrega, ou ainda para envio ao cliente com frota própria, terceirizada ou Correios, você não precisa se preocupar em negociar e configurar cada item em separado. Trazemos uma solução completa.',
             titleForm: 'Cadastre seu negócio'
         },
         pdvend: {
@@ -34,7 +33,6 @@ module.exports = {
             description: 'Monte seu E-commerce com plataforma multilojas e design responsivo para vendas pela web e celular.', 
             titleSection: 'Seu ecommerce rápido', 
             descriptionSection:'Com integração total ao Nexaas.Omnichannel, suas lojas físicas, ecommerce e marketplaces numa visão única. Veja todos os seus estoques, faça transferências, com todos os ajustes fiscais necessários. Recebimento com boleto e cartão de crédito', 
-            thumbnailSection: '/images/online-shopping.jpg', 
             titleForm: 'Cadastre seu negócio'
         },
         suite: {
