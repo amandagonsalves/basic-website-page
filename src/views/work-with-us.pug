@@ -1,101 +1,63 @@
-<!DOCTYPE html>
-<html lang="en">
+include partials/head.pug
+link(rel="stylesheet", href="../../public/styles/work-with-us.css")
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="https://s3-sa-east-1.amazonaws.com/prod-jobsite-files.kenoby.com/uploads/nexaas-trabalhe-conosco-1555437064-favicon-nexaas-kenobypng.png">
-    <title>Trabalhe conosco</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Archivo&family=Lato:wght@100&family=Montserrat:wght@100&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="/styles/home.css">
-    <link rel="stylesheet" href="/styles/work-with-us.css">
-</head>
-
-<body>
-    <header>
-        <div class="content">
-            <img src="/images/nexaas-logo.png" alt="">
-            <i class="fa fa-bars icon-menu"></i>
-            <ul class="menu-content">
-                <div class="menu-close">
-                    <i class="fa fa-times icon-close"></i>
-                    <p>MENU</p>
-                </div>
-                <a href="/">Institucional</a>
-                <a href="https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fcompany-beta%2F10670931%2F&trk=login_reg_redirect">LinkedIn</a>
-                <a href="/blog">Blog</a>
-                <a href="/applicant">Sou candidato</a>
-            </ul>
-        </div>
-    </header>
-    <section>
-        <div class="section-background">
-            <div class="backdrop">
-                <div class="backdrop-text">
-                    <h1>Seja um Nexaas!</h1>
-                    <p>Trabalhe em uma empresa pioneira em desenvolvimento de software de gestão em nuvem.</p>
-                    <a href="#" id="aboutUs">Sobre nós</a>
-                    <a href="#" id="job">Vagas</a>
-                </div>
-            </div>
-        </div>
-        <div class="section-search">
-            <form action="" >
-                <fieldset>
-                    <div class="form-block">
-                        <div class="select-block">
-                            <label for="position">Área</label>
-                            <select name="position" id="position">
-                                <option value="0">Todas</option>
-                                <option value="1">Comercial</option>
-                                <option value="2">Desenvolvimento</option>
-                                <option value="3">Design</option>
-                                <option value="4">Implantação</option>
-                                <option value="5">Marketing</option>
-                                <option value="6">Produto</option>
-                                <option value="7">Suporte Corporativo</option>
-                            </select>
-                        </div>
-                        <div class="select-block">
-                            <label for="city">Cidade</label>
-                            <select name="city" id="city">
-                                <option value="">Selecione o Estado</option>
-                            </select>
-                        </div>
-                        <div class="select-block">
-                            <label for="state">Estado</label>
-                            <select name="state" id="state">
-                                <option value="">Todos</option>
-                            </select>
-                            <input type="text" id="state" hidden>
-                        </div>
-                    </div>
-                </fieldset>
-            </form>
-        </div>
-        <div class="section-text">
-            <p>Não encontrou nenhuma vaga? Envie seu CV mesmo assim!    
-            </p>
-            <a href="/applicant">Enviar agora</a>
-        </div>
-        <div class="section-content">
-            <img src="https://s3.amazonaws.com/nexaas-marketing/repositorio/kenoby/imagem-1-nexaas-kenoby.png" alt="">
-            <h1>Quem somos e o que fazemos?</h1>
-            <p>A Nexaas é uma empresa de desenvolvimento de softwares em nuvem para gestão empresarial. Esqueça as velhas tecnologias e formas de pensar, aqui nós ditamos tendências e desenvolvemos soluções disruptivas que oferecem a melhor experiência para nossos usuários. Para isso aliamos tecnologia de ponta a um time de pessoas que não se conformam com a zona de conforto. Somos apaixonados pelo que fazemos, viciados em resolver problemas reais e curiosos por conhecer pessoas que tenham essa mesma garra e determinação.<br><b>Se você se identifica, venha ser um Nexaas.</b></p>
-            <img src="https://s3.amazonaws.com/nexaas-marketing/repositorio/kenoby/imagem-2-nexaas-kenoby.png" alt="">
-            <h1>O perfil de um Nexaas</h1>
-            <p>Somos uma empresa jovem, porém com profunda experiência naquilo que faz. Nosso perfil vai desde estagiários até profissionais com mais de 30 anos de mercado. Respeitamos nossas diferenças e abraçamos as experiências de cada um pois acreditamos que a diversidade é um dos nossos maiores diferenciais. Portanto, a definição de um Nexaas está intimamente ligada à capacidade de flexibilização, adaptação às mudanças do mercado onde estamos inseridos e, principalmente, à criatividade e inovação.</p>
-            <h1>O jeito Nexaas de gerir pessoas</h1>
-            <p>Na Nexaas as relações são de longo prazo e prezam pelo desenvolvimento dos talentos de cada um, necessários ao crescimento da empresa. Nossos colaboradores contam com uma série de benefícios e incentivos que proporcionam o equilíbrio entre demandas profissionais e pessoais. Aqui nós temos um ambiente colaborativo e enérgico onde trabalhamos duro e nos divertimos na mesma medida.</p>
-        </div>
-       
-    </section>
-    {% include 'partials/footer.html' %}
-    <script src="/scripts/work-with-us.js"></script>
-</body>
-
-</html>
+body
+    header
+        .content
+            img(src="../../public/images/nexaas-logo.png" alt="")
+            i.fa.fa-bars.icon-menu
+            ul.menu-content
+                .menu-close
+                    i.fa.fa-times.icon-close
+                    p MENU
+                a(href="/index.pug") Institucional
+                a(href="https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fcompany-beta%2F10670931%2F&trk=login_reg_redirect") LinkedIn
+                a(href="/blog.pug") Blog
+                a(href="/applicant") Sou candidato
+    section
+        .section-background
+            .backdrop
+                .backdrop-text
+                    h1 Seja um Nexaas!
+                    p Trabalhe em uma empresa pioneira em desenvolvimento de software de gestão em nuvem.
+                    a(href="#" id="aboutUs") Sobre nós
+                    a(href="#" id="job") Vagas
+        .section-search
+            form(action="")
+                fieldset
+                    .form-block
+                        .select-block
+                            label(for="position") Área
+                            select(name="position" id="position")
+                                option(value="0") Todas
+                                option(value="1") Comercial
+                                option(value="2") Desenvolvimento
+                                option(value="3") Design
+                                option(value="4") Implantação
+                                option(value="5") Marketing
+                                option(value="6") Produto
+                                option(value="7") Suporte Corporativo
+                        .select-block
+                            label(for="city") Cidade
+                            select(name="city" id="city")
+                                option(value="") Selecione o Estado
+                        .select-block
+                            label(for="state") Estado
+                            select(name="state" id="state")
+                                option(value="") Todos
+                            input(type="text" id="state" hidden)
+        .section-text
+            p Não encontrou nenhuma vaga? Envie seu CV mesmo assim!
+            a(href="/applicant") Enviar agora
+        .section-content
+            img(src="https://s3.amazonaws.com/nexaas-marketing/repositorio/kenoby/imagem-1-nexaas-kenoby.png" alt="")
+            h1 Quem somos e o que fazemos?
+            p A Nexaas é uma empresa de desenvolvimento de softwares em nuvem para gestão empresarial. Esqueça as velhas tecnologias e formas de pensar, aqui nós ditamos tendências e desenvolvemos soluções disruptivas que oferecem a melhor experiência para nossos usuários. Para isso aliamos tecnologia de ponta a um time de pessoas que não se conformam com a zona de conforto. Somos apaixonados pelo que fazemos, viciados em resolver problemas reais e curiosos por conhecer pessoas que tenham essa mesma garra e determinação.<br>
+                <b>Se você se identifica, venha ser um Nexaas.
+            img(src="https://s3.amazonaws.com/nexaas-marketing/repositorio/kenoby/imagem-2-nexaas-kenoby.png" alt="")
+            h1 O perfil de um Nexaas
+            p Somos uma empresa jovem, porém com profunda experiência naquilo que faz. Nosso perfil vai desde estagiários até profissionais com mais de 30 anos de mercado. Respeitamos nossas diferenças e abraçamos as experiências de cada um pois acreditamos que a diversidade é um dos nossos maiores diferenciais. Portanto, a definição de um Nexaas está intimamente ligada à capacidade de flexibilização, adaptação às mudanças do mercado onde estamos inseridos e, principalmente, à criatividade e inovação.
+            h1 O jeito Nexaas de gerir pessoas
+            p Na Nexaas as relações são de longo prazo e prezam pelo desenvolvimento dos talentos de cada um, necessários ao crescimento da empresa. Nossos colaboradores contam com uma série de benefícios e incentivos que proporcionam o equilíbrio entre demandas profissionais e pessoais. Aqui nós temos um ambiente colaborativo e enérgico onde trabalhamos duro e nos divertimos na mesma medida.
+include partials/footer.pug
+script(src="../../public/scripts/work-with-us.js")
