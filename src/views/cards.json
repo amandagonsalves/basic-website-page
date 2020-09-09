@@ -5,7 +5,7 @@
             "thumbnail": "http://nexaas.com/wp-content/uploads/2018/09/cropped-editada_ps-shutterstock_1012713175.png",
             "description": "Uma visão e uma jornada de compra unificada para cada cliente, de forma que ele tenha uma melhor experiência, seja qual for o canal de entrada, além da visibilidade integrada dos seus estoques.",
             "action": "Conheça o OMS >>",
-            "href": "./partials/oms"
+            "href": "./partials/oms.pug"
         },
         {
             "id": 1,

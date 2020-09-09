@@ -13,7 +13,7 @@ module.exports = {
             description: 'Promove uma visão e uma jornada de compra unificada para cada cliente, de forma que ele tenha uma melhor experiência, seja qual for o canal de entrada, além da visibilidade integrada dos seus estoques.',
             titleSection: 'Soluções de acordo com a necessidade do seu negócio:', 
             descriptionSection:'Uma plataforma pensada de ponta a ponta. Seja para entregas próximas e pontuais ou para retirada num ponto de entrega, ou ainda para envio ao cliente com frota própria, terceirizada ou Correios, você não precisa se preocupar em negociar e configurar cada item em separado. Trazemos uma solução completa.', 
-            thumbnailSection:'/images/vor.jpg', 
+            thumbnailSection:'../../public/images/vor.jpg', 
             titleForm: 'Cadastre seu negócio'
         },
         pdvend: {
