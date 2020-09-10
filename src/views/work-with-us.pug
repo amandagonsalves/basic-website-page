@@ -4,16 +4,16 @@ link(rel="stylesheet", href="../../public/styles/work-with-us.css")
 body
     header
         .content
-            img(src="../../public/images/nexaas-logo.png" alt="")
-            i.fa.fa-bars.icon-menu
-            ul.menu-content
-                .menu-close
-                    i.fa.fa-times.icon-close
-                    p MENU
-                a(href="/index.pug") Institucional
-                a(href="https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fcompany-beta%2F10670931%2F&trk=login_reg_redirect") LinkedIn
-                a(href="/blog.pug") Blog
-                a(href="/partials/applicant-email.pug") Sou candidato
+            img(src="../../public/images/nexaas-logo.png" alt="").content__thumbnail   
+            i.fa.fa-bars.content__icon-menu
+            ul.content__menu
+                .content__menu-close
+                    i.fa.fa-times.content__icon-close
+                    p.content__text-menu MENU
+                a(href="/index.pug").content__link Institucional
+                a(href="https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fcompany-beta%2F10670931%2F&trk=login_reg_redirect").content__link LinkedIn
+                a(href="/blog.pug").content__link Blog
+                a(href="/partials/applicant-email.pug").content__link Sou candidato
     section
         .section-background
             .backdrop
