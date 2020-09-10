@@ -7,33 +7,33 @@ section {
     margin: 0 auto;
     padding: 2rem;
 }
-.section-help {
+.section__content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 30%;
 }
-.section-map {
+.section__map {
     width: 600px;
     height: 350px;
 }
-.section-help ul {
+.section__list {
     width: 100%;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.section-help ul li, .section-help.form p  {
+.section__list___item, .section__para  {
     margin: 0.7rem auto;
     font: 400 1.2rem Archivo;
 }
-.section-help h1 {
+.section__title {
     margin: 1rem auto;
     font: 400 2rem Archivo;
 }
-.section-help a {
+.section__list___link {
     padding: 0.9rem;
     width: 15rem;
     background-color: rgb(38, 38, 241);
@@ -47,10 +47,10 @@ section {
     transition: 0.3s;
     cursor: pointer;
 }
-.section-help a:hover {
+.section__list___link:hover {
     background-color: rgb(76, 76, 250);
 }
-.section-help.form {
+.section__content.form {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -60,7 +60,7 @@ section {
     margin-top: 4rem;
     background-color: #f5fafd;
 }
-.section-help.form h1 {
+section__title--form {
     margin-top: 3rem;
 }
 @media (max-width:1100px) {
@@ -70,24 +70,21 @@ section {
         justify-content: center;
         padding: 0;
     }
-    .section-help {
+    .section__content {
         width: 100%;
     }
-    .section-help ul {
+    .section__list {
         list-style: none;
     }
-    section h1 {
+    .section__title {
         text-align: center;
     }
-    .section-map {
+    .section__map {
         max-width: 600px;
         width: 100%;
         height: 350px;
     }
-    .section-help.form {
+    .section__content.form {
         text-align: center;
-    }
-    .section-help.form ul li {
-        font: 700 1.2rem Archivo;
     }
 }
