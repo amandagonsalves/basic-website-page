@@ -15,7 +15,7 @@
     align-items: flex-start;
     justify-content: center;
 }
-.header h1 {
+.header__title {
     font-size: 5.2rem;
     margin-left: 5rem;
     color: white;
@@ -29,12 +29,12 @@
     padding: 2rem;
     text-align: center;
 }
-.description h1 {
+.description__title {
     font-size: 1.6rem;
     font-weight: 900;
     flex: 1;
 }
-.description p {
+.description__para {
     font-family: Archivo;
     color: gray;
     max-width: 50%;
@@ -46,7 +46,7 @@
         height: 300px;
         align-items: center;
     }
-    .header h1 {
+    .header__title  {
         font-size: 3.2rem;
         margin-left: 0;
         color: rgb(70, 70, 70);
@@ -56,7 +56,7 @@
         flex-direction: column;
         padding: 1rem;
     }
-    .description h1 {
+    .description__title {
         margin-bottom: 2rem;
     }
 }

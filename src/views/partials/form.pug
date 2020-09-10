@@ -1,25 +1,25 @@
 form(action="" id="form-register")
-    fieldset
-        h1 #{titleForm}
-        .form-group
-            .form-group-flex
-                .form-group
-                    label(for="name") Nome
-                    input(type="text", name="name", id="name")
-                .form-group
-                    label(for="surname") Sobrenome
-                    input(type="text", name="surname", id="surname")
-        .form-group
-            label(for="email") Email
-            input(type="email" name="email" id="email")
-        .form-group
-            label(for="number") Número de telefone
-            input(type="number" name="number" id="number")
-        .form-group
-            .form-group-flex
-                .form-group.select
-                    label(for="position")
-                    select(name="position" id="position")
+    fieldset.form-register__fieldset
+        h1.form-register__title #{titleForm}
+        .form-register__form-group
+            .form-register__form-group-flex
+                .form-register__form-group
+                    label(for="name").form-register__label Nome
+                    input(type="text", name="name", id="name").form-register__input
+                .form-register__form-group
+                    label(for="surname").form-register__label Sobrenome
+                    input(type="text", name="surname", id="surname").form-register__input
+        .form-register__form-group
+            label(for="email").form-register__label Email
+            input(type="email" name="email" id="email").form-register__input
+        .form-register__form-group
+            label(for="number").form-register__label Número de telefone
+            input(type="number" name="number" id="number").form-register__input
+        .form-register__form-group
+            .form-register__form-group-flex
+                .form-register__form-group
+                    label(for="position").form-register__label
+                    select(name="position" id="position").form-register__select
                         option(value="") Selecione uma opção
                         option(value="0") CEO
                         option(value="1") Diretor
@@ -27,9 +27,9 @@ form(action="" id="form-register")
                         option(value="3") Gerente
                         option(value="4") Coordenador
                         option(value="5") Analista
-                .form-group.select
-                    label(for="area")
-                    select(name="area" id="area")
+                .form-register__form-group
+                    label(for="area").form-register__label
+                    select(name="area" id="area").form-register__select
                         option(value="") Selecione uma opção
                         option(value="0") Comercial
                         option(value="1") Operações
@@ -39,20 +39,20 @@ form(action="" id="form-register")
                         option(value="5") E-commerce
                         option(value="6") Transformação digital
                         option(value="7") Não se aplica
-        .form-group
-            label(for="companyName") Nome da empresa
-            input(type="text", name="companyName", id="companyName")
-        .form-group
-            label(for="store") Quantidade de lojas
-            input(type="number", name="store", id="store")
-        .form-group
-            .form-group-flex
-                .form-group
-                    label(for="city") Cidade
-                    select(name="city", id="city")
+        .form-register__form-group
+            label(for="companyName").form-register__label Nome da empresa
+            input(type="text", name="companyName", id="companyName").form-register__input
+        .form-register__form-group
+            label(for="store").form-register__label Quantidade de lojas
+            input(type="number", name="store", id="store").form-register__input
+        .form-register__form-group
+            .form-register__form-group-flex
+                .form-register__form-group
+                    label(for="city").form-register__label Cidade
+                    select(name="city", id="city").form-register__select
                         option(value="") Selecione uma opção
-                .form-group
-                    label(for="state") Estado
-                    select(name="state", id="state")
+                .form-register__form-group
+                    label(for="state").form-register__label Estado
+                    select(name="state", id="state").form-register__select
                         option(value="") Selecione uma opção
-        button(type="submit") Enviar
+        button(type="submit").form-register__button Enviar
