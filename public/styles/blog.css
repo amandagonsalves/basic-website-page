@@ -15,7 +15,7 @@
     align-items: flex-start;
     justify-content: center;
 }
-.header__h1 {
+.header__title {
     font-size: 5.2rem;
     margin-left: 5rem;
     color: white;
@@ -90,7 +90,7 @@
     margin: 2rem auto;
     display: flex;
 }
-.card-blog__social a {
+.card-blog__social-item {
     background-color: white; 
     border: 1px solid #e2e2e2; 
     transition: 0.295s;
@@ -104,11 +104,11 @@
     justify-content: center;
     align-items: center;
 }
-.card-blog__social a img {
+.card-blog__social-item img {
     width: 1.5rem;
     height: 1.5rem;
 }
-.card-blog__social a:hover {
+.card-blog__social-item:hover {
     border: 1px solid #0083b8;
 }
 .pagination {
@@ -190,12 +190,7 @@
         height: 300px;
         align-items: center;
     }
-    .header__h1 {
-        font-size: 3.2rem;
-        margin-left: 0;
-        color: rgb(70, 70, 70);
-    }
-    .header__h1 {
+    .header__title {
         font-size: 3.2rem;
         margin-left: 0;
         color: rgb(70, 70, 70);

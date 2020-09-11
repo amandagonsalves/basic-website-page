@@ -2,7 +2,7 @@ include head.pug
 link(rel="stylesheet", href="../../public/styles/blog.css")
 include menu.pug
 .header 
-    h1.header__h1 Blog 
+    h1.header__title Blog 
 section 
     .cards-blog 
         each card in cardsBlog
@@ -14,13 +14,13 @@ section
                 p.card-blog__words-blog
                     i.fa.fa-bookmark #{card.keywords}
                 ul.card-blog__social
-                    a(href="#")
+                    a(href="#").card-blog__social-item
                         img(src="../../public/images/youtube-blog.svg" alt="")
-                    a(href="#")
+                    a(href="#").card-blog__social-item
                         img(src="../../public/images/facebook-blog.svg", alt="") 
-                    a(href="#")
+                    a(href="#").card-blog__social-item
                         img(src="../../public/images/instagram-blog.svg", alt="")
-                    a(href="#")
+                    a(href="#").card-blog__social-item
                         img(src="../../public/images/twitter-blog.svg", alt="")
  
     nav.pagination
