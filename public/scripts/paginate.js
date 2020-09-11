@@ -16,11 +16,46 @@ function paginate() {
     }
 
     const list = {
-        create() {
+        create(card) {
+            const div = document.createElement('div');
+            div.classList.add('card-blog');
+            div.innerHTML = `
+            <img src="${card.thumbnail}" alt="" class="card-blog__photo">
+            <h1 class="card-blog__title">${card.title}</h1>
+            <p class="card-blog__description">${card.description}</p>
+            <a href="#" class="card-blog__read-more">Ler mais</a>
+            <p class="card-blog__words-blog">
+                <i class="fa fa-bookmark"></i>
+                <p class="card-blog__words-blog">${card.keywords}</p>
+            </p>
+            <ul class="card-blog__social">
+                <a href="#" class="card-blog__social-item">
+                    <img src="../images/youtube-blog.svg" alt="">
+                </a>
+                <a href="#" class="card-blog__social-item">
+                    <img src="../images/facebook-blog.svg" alt="">
+                </a>
+                <a href="#" class="card-blog__social-item">
+                    <img src="../images/instagram-blog.svg" alt="">
+                </a>
+                <a href="#" class="card-blog__social-item">
+                    <img src="../images/twitter-blog.svg" alt="">
+                </a>
+            </ul>
+            `;
 
+            html.get('.cards-blog').appendChild(div);
         }, 
         update() {
+            html.get('.cards-blog').innerHTML = ''; 
 
+            let page = state.page - 1;
+            let start = page * state.perPage;
+            let end = start + state.perPage;
+            
+            const paginatedItems = data.slice(start, end);
+            
+            paginatedItems.forEach(list.create)
         }
     }
     const controls = {
@@ -75,10 +110,13 @@ function paginate() {
     }
 
     function update() {
-        console.log(state.page)
+        list.update();
     } 
-
-    controls.createListeners()
+    function init() {
+        list.update();
+        controls.createListeners();
+    }
+    init()
    
 }
 paginate()

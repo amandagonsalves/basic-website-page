@@ -4,32 +4,12 @@ include menu.pug
 .header 
     h1.header__title Blog 
 section 
-    .cards-blog 
-        each card in cardsBlog
-            .card-blog
-                img(src=card.thumbnail, alt="").card-blog__photo
-                h1.card-blog__title #{card.title}
-                p.card-blog__description #{card.description}
-                a(href="#").card-blog__read-more Ler mais
-                p.card-blog__words-blog
-                    i.fa.fa-bookmark #{card.keywords}
-                ul.card-blog__social
-                    a(href="#").card-blog__social-item
-                        img(src="../../public/images/youtube-blog.svg" alt="")
-                    a(href="#").card-blog__social-item
-                        img(src="../../public/images/facebook-blog.svg", alt="") 
-                    a(href="#").card-blog__social-item
-                        img(src="../../public/images/instagram-blog.svg", alt="")
-                    a(href="#").card-blog__social-item
-                        img(src="../../public/images/twitter-blog.svg", alt="")
- 
+    .cards-blog
     nav.pagination
         .pagination__item#first &#171
         .pagination__item#prev &lt;
         ul.pagination__page-numbers
             a(href="#" class="pagination__item") 1
-            a(href="#" class="pagination__item") 2
-            a(href="#" class="pagination__item") 3
         .pagination__item#next &gt;
         .pagination__item#last &#187
 
