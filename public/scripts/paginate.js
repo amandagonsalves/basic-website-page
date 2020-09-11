@@ -1,11 +1,6 @@
 import data from '../../src/cards-blog.json'
 function paginate() {
     console.log(data)
-    const html = {
-        get(element) {
-            return document.querySelector(element);
-        }
-    }
 
     let perPage = 6;
     const state = {
@@ -13,6 +8,21 @@ function paginate() {
         perPage,
         totalPage: Math.ceil(data.length/perPage)
     };
+
+    const html = {
+        get(element) {
+            return document.querySelector(element);
+        }
+    }
+
+    const list = {
+        create() {
+
+        }, 
+        update() {
+
+        }
+    }
     const controls = {
         next() {
             state.page++;
@@ -63,9 +73,12 @@ function paginate() {
             });
         }
     }
-    controls.createListeners()
+
     function update() {
         console.log(state.page)
     } 
+
+    controls.createListeners()
+   
 }
 paginate()
