@@ -13,11 +13,11 @@ include menu-partials.pug
 
 include header-page.pug
 
-.description-page
-  h1 Um só varejo, uma só experiência
-  p
+.section-page__description
+  h1.section-page__title Um só varejo, uma só experiência
+  p.section-page__para
     | Trabalhando de forma integrada a partir de qualquer canal, para entregar em qualquer lugar, acessando qualquer estoque. A fórmula definitiva para maior satisfação dos seus clientes, mais vendas para sua empresa e o aumento do ticket médio em seu negócio.
-  h1 Uma solução modular que endereça a complexidade do seu varejo de uma só vez:
+  h1.section-page__title Uma solução modular que endereça a complexidade do seu varejo de uma só vez:
 
 - var thumbnailSection = '/../../public/images/oms-products.png';
 - var titleSection = suite.titleSection;
@@ -26,16 +26,16 @@ include header-page.pug
 include sectionDescription.pug
 
 .section-page
-  .description-page
-    h1 Emissão de NFe e mensageria fora do ERP
-    p
+  .section-page__description
+    h1.section-page__title Emissão de NFe e mensageria fora do ERP
+    p.section-page__para
       | Preparado para receber seu conteúdo tributário pronto ou através da integração nativa com TaxRules e TaxTechs.
-  img(src='https://nexaas.com/wp-content/uploads/2020/05/emites-comercial-hero.png', alt='')
-.section-page.reverse
-  img(src='https://nexaas.com/wp-content/uploads/2020/05/maquinetas-700x396-1.png', alt='')
-  .description-page
-    h1 Ponto de Venda móvel, cloud e integrado
-    p
+  img(src='https://nexaas.com/wp-content/uploads/2020/05/emites-comercial-hero.png', alt='').section-page__image
+.section-page.section-page--reverse
+  img(src='https://nexaas.com/wp-content/uploads/2020/05/maquinetas-700x396-1.png', alt='').section-page__image
+  .section-page__description
+    h1.section-page__title Ponto de Venda móvel, cloud e integrado
+    p.section-page__para
       | Com integração dos principais meios de pagamento, agora cada vendedor pode funcionar como um caixa móvel dentro da sua loja, liberando espaço no seu ponto de venda e agilizando a operação da sua equipe.
 
 - var titleForm = suite.titleForm;        

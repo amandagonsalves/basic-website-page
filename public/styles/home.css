@@ -129,8 +129,10 @@ header {
     justify-content: center;
     line-height: 28px;
     text-align: center;
-    font-family: 'Montserrat';
-    text-shadow: 2px 2px 8px #000000;
+    font-family: 'Lato';
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    width: 100vw;
 }
 .container__title {
     margin-bottom: 1.5rem;
@@ -144,7 +146,7 @@ header {
     margin: 0 1.5rem 0 1.5rem;
     font-weight: bold;
     font-size: 1.2rem;
-    font-family: Archivo;
+    font-family: Lato;
 }
 .container__link {
     background-color: #03a9f4;
@@ -167,12 +169,15 @@ header {
 .container__section {
     display: flex;
     flex-direction: column;
-    margin: 4rem 1rem 2rem 1rem;
+    margin: 7rem 1rem 2rem 1rem;
     font: 'Montserrat';
     text-align: center;
     font-size: 0.8rem;
     color: #3e4451;
     line-height: 23px;
+}
+.container__section___text {
+    margin: 2rem 1rem 2rem 1rem;
 }
 .container__section hr {
     background-color: #FF9800;
@@ -188,6 +193,7 @@ header {
     padding: 3rem;
     font-family: 'Lato';
     text-align: center;
+    margin-top: 5rem;
 }
 .container__cards___header hr {
     width: 7rem;
@@ -202,10 +208,14 @@ hr {
     height: 2px;
     border: none;
 }
+
+.container__cards {
+    margin-top: 6rem;
+}
 .container__card {
     max-width: 600px;
     width: 100%;
-    margin: 2rem auto;
+    margin: 3rem auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -273,6 +283,10 @@ hr {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: 2rem;
+    gap: 5rem;
+}
+.solutions-content__image {
+    width: 100%;
 }
 .solutions-content__list___title {
     text-transform: uppercase;
@@ -288,7 +302,7 @@ hr {
 }
 .footer-page__section {
     width: 100%;
-    margin: 5rem auto 0 auto;
+    margin: 7rem auto 0 auto;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -351,7 +365,7 @@ hr {
     .container__card {
         max-width: 600px;
         width: 60%;
-        margin: 2rem auto;
+        margin: 5rem auto;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -417,11 +431,16 @@ hr {
         text-align: left;
         line-height: 30px;
         font-size: 1.5rem;
-        max-width: 420px;
         margin-top: 6rem;
         padding: 5rem; 
         font-family: 'Montserrat';
         text-shadow: 3px 3px 10px #000000;
+        height: 100%;
+        background-color: rgba(0,0,0,0.3);
+        width: 100vw;
+    }
+    .container__para--header {
+       max-width: 430px;
     }
     .container__cards___para {
         font-weight: 700;
@@ -457,7 +476,7 @@ hr {
     .container__section {
         display: flex;
         flex-direction: initial;
-        margin: 3rem 4rem 0 4rem;
+        margin: 7rem 4rem 0 4rem;
     }
     .container__section___text {
         display: flex;
@@ -474,7 +493,7 @@ hr {
     }
     .solutions-content {
         display: flex;
-        margin-top: 5rem;
+        margin-top: 8rem;
     }
     .solutions-content__image {
         width: 50%;

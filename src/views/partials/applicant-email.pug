@@ -2,13 +2,13 @@ include head-partials.pug
 link(rel="stylesheet", href="/../../public/styles/partials/applicant.css")
 include menu-partials.pug        
 
-.section-background
-    .backdrop
-        h1 Portal do candidato
-        p Acompanhe sua evolução no processo seletivo
-        form(action="")
-            fieldset
-                .form-block
-                    label(for="email") Endereço de E-mail
-                    input(type="email" name="email" id="email")
-            button(type="button") Enviar
+.section
+    .section__backdrop
+        h1.section__title Portal do candidato
+        p.section__para Acompanhe sua evolução no processo seletivo
+        form(action="").section__form
+            fieldset.section__fieldset
+                .section__form-block
+                    label(for="email").section__label Endereço de E-mail
+                    input(type="email" name="email" id="email").section__input
+            button(type="button").section__button Enviar

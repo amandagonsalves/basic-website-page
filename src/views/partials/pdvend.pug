@@ -13,27 +13,27 @@ include menu-partials.pug
 include header-page.pug
 
 section
-    .description-page-pdvend
-        h1(style="font: 700 1.6rem Lato;color: black;") Como o PDVend melhora a sua vida:
-        p Pensado para tornar a sua gestão mais simples, rápida, eficiente e funcional. Aplicavo para sistema de PDV e Caixa de loja 100% móvel: funciona de qualquer lugar, levando seu negócio onde você estiver. Com qualquer dispositivo Android, é possível efetuar suas vendas de qualquer lugar.
-    ul
+    .section__description
+        h1(style="font: 700 1.6rem Lato;color: black;").section__title Como o PDVend melhora a sua vida:
+        p.section__para Pensado para tornar a sua gestão mais simples, rápida, eficiente e funcional. Aplicavo para sistema de PDV e Caixa de loja 100% móvel: funciona de qualquer lugar, levando seu negócio onde você estiver. Com qualquer dispositivo Android, é possível efetuar suas vendas de qualquer lugar.
+    ul.section__list
         each item in li
             li
-                img(src=item.thumbnail alt="")
-                h1 #{item.title}
-                p #{item.description}
-    h1(style="font: 700 2.3rem Lato;") Integrações
-    ul.integrations
-            li
-                img(src="https://nexaas.com/wp-content/uploads/2020/05/sumup-logo-275x80-1.png" alt="")
-            li
-                img(src="https://nexaas.com/wp-content/uploads/2020/05/Stone_pagamentos-275x139-1.png" alt="")
-            li
-                img(src="https://nexaas.com/wp-content/uploads/2020/05/rede-logo-1-275x90-1.png" alt="")
-            li
-                img(src="https://nexaas.com/wp-content/uploads/2020/04/Logo_of_Cielo.svg_-1024x340.png" alt="")
-            li
-                img(src="https://nexaas.com/wp-content/uploads/2020/05/Logo_PagSeguro-275x89-1.png" alt="")
+                img(src=item.thumbnail alt="").section__image-thumbnail
+                h1.section__titlw #{item.title}
+                p.section__para-list #{item.description}
+    h1(style="font: 700 2.3rem Lato;").section__title Integrações
+    ul.section__list-integrations
+            li.section__item
+                img(src="https://nexaas.com/wp-content/uploads/2020/05/sumup-logo-275x80-1.png" alt="").section__image
+            li.section__item
+                img(src="https://nexaas.com/wp-content/uploads/2020/05/Stone_pagamentos-275x139-1.png" alt="").section__image
+            li.section__item
+                img(src="https://nexaas.com/wp-content/uploads/2020/05/rede-logo-1-275x90-1.png" alt="").section__image
+            li.section__item
+                img(src="https://nexaas.com/wp-content/uploads/2020/04/Logo_of_Cielo.svg_-1024x340.png" alt="").section__image
+            li.section__item
+                img(src="https://nexaas.com/wp-content/uploads/2020/05/Logo_PagSeguro-275x89-1.png" alt="").section__image
 - var titleForm = pdvend.titleForm;
 include form.pug
 include footer-partials.pug

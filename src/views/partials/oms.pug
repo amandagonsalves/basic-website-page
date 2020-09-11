@@ -13,7 +13,7 @@ include menu-partials.pug
 
 include header-page.pug
 
-img(src="/../../public/images/oms-products.png" alt="" class="comercial")
+img(src="/../../public/images/oms-products.png" alt="" class="comercial-image")
 
 - var thumbnailSection = '/../../public/images/vor.jpg';
 - var titleSection = oms.titleSection;
@@ -22,22 +22,22 @@ img(src="/../../public/images/oms-products.png" alt="" class="comercial")
 include sectionDescription.pug
 
 .services
-    div
-        h1 Principais características
-        ul
-            li Gestão de catálogo (produtos, categorias, marcas, fabricantes, características)
-            li Enriquecimento de ficha de produto para canais online
-            li Gestão de pedidos, tabelas de preços, canais de vendas, estoques, clientes
-            li Integração com operadores logísticos / transportadoras
-            li Pedido de compra / Entrada de mercadorias
-            li Operações massivas (produto/preço/estoque)
-            li Devoluções, Transferências, Coleta e Empacotamento
-            li Relatórios operacionais e estratégicos
-            li Visão franqueado/franqueador
-            li Inventário da loja
-            li Precificação de produtos
-            li Motor de promoção
-    img(src="/../../public/images/oms-services.jpg" alt="")
+    .services__box
+        h1.services__title Principais características
+        ul.services__list
+            li.services__item Gestão de catálogo (produtos, categorias, marcas, fabricantes, características)
+            li.services__item Enriquecimento de ficha de produto para canais online
+            li.services__item Gestão de pedidos, tabelas de preços, canais de vendas, estoques, clientes
+            li.services__item Integração com operadores logísticos / transportadoras
+            li.services__item Pedido de compra / Entrada de mercadorias
+            li.services__item Operações massivas (produto/preço/estoque)
+            li.services__item Devoluções, Transferências, Coleta e Empacotamento
+            li.services__item Relatórios operacionais e estratégicos
+            li.services__item Visão franqueado/franqueador
+            li.services__item Inventário da loja
+            li.services__item Precificação de produtos
+            li.services__item Motor de promoção
+    img(src="/../../public/images/oms-services.jpg" alt="").services__image
 - var titleForm = oms.titleForm;    
 include form.pug
 include footer-partials.pug

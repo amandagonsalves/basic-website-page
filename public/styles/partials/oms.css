@@ -2,38 +2,38 @@
     margin: 0;
     padding: 0;
 }
-.comercial {
+.comercial-image {
     max-width: 800px;
     width: 90%;
-    margin: 2rem auto;
+    margin: 5rem auto 7rem auto;
 }
 .services {
     max-width: 800px;
     width: 100%;  
-    margin: 4rem auto; 
+    margin: 6rem auto; 
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 2rem;
 }
-.services img {
+.services__image {
     width: 60%;
     max-height: 300px;
 }
-.services div  {
+.services__box  {
     flex: 1;
 }
-.services ul {
+.services__list {
     padding: 2rem 3rem;
 }
-.services li {
+.services__item {
     line-height: 20px;
     text-align: left;
     font-family: Archivo;
     margin-bottom: 0.5rem;
     color: rgb(102, 102, 102);
 }
-.services h1 {
+.services__title {
     margin-bottom: 1rem;
     font: 700 1.7rem Archivo;
     color: #ff6704;
@@ -45,10 +45,10 @@
         margin: 0;
         padding: 0;
     }
-    .services ul {
+    .services__list {
         padding: 2rem;
     }
-    .services h1 {
+    .services__title {
         margin: 2rem 0 0 1rem;
     }
 }

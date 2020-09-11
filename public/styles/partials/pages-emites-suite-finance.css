@@ -1,19 +1,24 @@
-.description-page h1 {
+.section-page__description {
     font: 700 1.8rem Archivo;
     color: rgb(0, 184, 92);
     margin: 4rem 2rem;
 }
-.description-page h1.blue {
+.section-page__title.section-page__title--blue {
     font: 700 1.8rem Archivo;
     color: rgb(0, 99, 212);
     margin: 4rem 2rem;
 }
-.description-page {
+.section-page__title {
+    font: 700 1.8rem Archivo;
+    color: rgb(6, 138, 96);
+    margin: 4rem 2rem;
+}
+.section-page__description {
     text-align: center;
     margin: 2rem auto;
     max-width: 900px;
 }
-.description-page p {
+.section-page__para {
     font: 400 1.2rem Archivo;
     margin: 0 2rem;
     line-height: 30px;
@@ -24,44 +29,45 @@
     align-items: center;
     margin: 5rem 2rem;
 }
-.section-page img {
+.section-page__image {
     width: 50%;
 }
-.section-page .description-page {
+.section-page__description {
     flex: 1;
 }
-.lastImage{
-    width: 20%;
+.section-page__image--last{
+    width: 30%;
     max-width: 400px;
     height: 400px;
 }
 @media (max-width:700px) {
-    .lastImage{
+    .section-page__image--last{
         height: 300px;
+        width: 100%;
     }
     .section-page {
         display: flex;
         flex-direction: column;
         margin: 1rem 2rem;
     }
-    .section-page .description-page {
+    .section-page__description {
         text-align: center;
     }
-    .section-page img {
+    .section-page__image {
         width: 70%;
     }
-    .description-page p {
+    .section-page__para {
         font: 400 1rem Archivo;
         margin: 0 2rem;
         line-height: 30px;
         color: rgb(95, 95, 95);
     }
-    .description-page h1 {
+    .section-page__title {
         font: 700 1.8rem Archivo;
         color: rgb(0, 184, 92);
         margin: 2rem;
     }
-    .section-page.reverse {
+    .section-page.section-page--reverse {
         flex-direction: column-reverse;
     }
 }

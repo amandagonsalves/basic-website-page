@@ -4,7 +4,7 @@ section {
     width: 100%;
     text-align: center;
 }
-section ul {
+.section__list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     list-style: none;
@@ -13,23 +13,23 @@ section ul {
     align-items: center;
     gap: 20px;
 }
-section ul li p {
+.section__para-list {
     line-height: 25px;
     font-family: Archivo;
     font-size: 1rem;
     margin: 2rem;
     color: rgb(98, 98, 98);
 }
-section h1 {
+.section__title {
     line-height: 30px;
     font-family: Archivo;
     font-size: 1.3rem;
     margin: 2rem auto;
 }
-section ul img {
+.section__image-thumbnail {
     height: 150px;
 }
-.description-page-pdvend {
+.section__description {
     line-height: 30px;
     font-family: Archivo;
     font-size: 1.3rem;
@@ -38,31 +38,37 @@ section ul img {
     padding: 0 2rem;
     color: rgb(98, 98, 98);
 }
-section ul.integrations {
+.section__list-integrations {
+    display: grid;
+    list-style: none;
+    margin: 2rem auto;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
     grid-template-columns: repeat(5, 1fr);
 }
-section ul.integrations li img {
+.section__image {
     max-width: 150px;
     height: 60px;
 } 
-section ul.integrations li {
+.section__item {
     margin: 2rem;
 } 
 @media (min-width:600px) and (max-width:1100px) {
-    section ul {
+    .section__list {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     } 
-    section ul.integrations {
+    .section__list-integrations {
         grid-template-columns: repeat(3, 1fr);
     }
 } 
 @media (max-width:600px) {
-    section ul, section ul.integrations {
+    .section__list, .section__list-integrations {
         display: grid;
         grid-template-columns: 1fr;
     } 
-    section ul.integrations li img {
+    .section__image {
         max-width: 150px;
         height: 50px;
     }
