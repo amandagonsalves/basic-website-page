@@ -69,6 +69,10 @@ function paginate() {
             button.classList.add('pagination__item');
             button.innerHTML = `<p>${number}</p>`;
 
+            if(state.page == number) {
+                button.classList.add('active');
+            }
+            
             button.addEventListener('click', e => {
                 const page = e.target.innerText;
 
@@ -108,7 +112,6 @@ function paginate() {
         }
     }
 
-
     const controls = {
         next() {
             state.page++;
@@ -126,7 +129,7 @@ function paginate() {
             }
         },
         goTo(page) {
-            state.page = page;
+            state.page = +page;
 
             if(page <  1) {
                 page = 1;

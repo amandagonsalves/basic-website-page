@@ -138,6 +138,10 @@
     background-color: #0083b8;
     color: white;
 }
+.pagination__item.active {
+    background-color: #0083b8;
+    color: white;
+}
 .pagination__page-numbers {
     display: flex;
 }
