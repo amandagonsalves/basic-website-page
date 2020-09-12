@@ -9,7 +9,8 @@ function paginate() {
     const state = {
         page: 1,
         perPage,
-        totalPage: Math.ceil(data.length/perPage)
+        totalPage: Math.ceil(data.length/perPage),
+        maxVisibleButtons: 2
     };
 
     const html = {
@@ -63,14 +64,47 @@ function paginate() {
     }
 
     const buttons = {
-        create(card) {
+        create(number) {
+            const button = document.createElement('div');
+            button.classList.add('pagination__item');
+            button.innerHTML = `<p>${number}</p>`;
+
+            button.addEventListener('click', e => {
+                const page = e.target.innerText;
+
+                controls.goTo(page);
+                update()
+            })
+
+            html.get('.pagination__page-numbers').appendChild(button);
            
         }, 
         update() {
            html.get('.pagination__page-numbers').innerHTML = '';
+           const { maxLeft, maxRight } = buttons.calculateMaxVisible();
+
+           for(let page = maxLeft; page <= maxRight; page++)
+           {
+               buttons.create(page)
+           }
+
         },
         calculateMaxVisible() {
-            let maxLeft = (state.page - Math.floor())
+            const { maxVisibleButtons } = state;
+            let maxLeft = (state.page - Math.floor(maxVisibleButtons/2));
+            let maxRight = (state.page + Math.floor(maxVisibleButtons/2));
+            
+            if(maxRight > state.totalPage) {
+                maxLeft = state.totalPage - (maxVisibleButtons - 1);
+                maxRight = state.totalPage 
+
+                if(maxLeft < 1) maxLeft = 1;
+            }
+            if(maxLeft < 1) {
+                maxLeft = 1;
+                maxRight = maxVisibleButtons
+            } 
+            return { maxLeft, maxRight }
         }
     }
 
