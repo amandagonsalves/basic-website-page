@@ -5,8 +5,6 @@ import youtube from '../images/youtube-blog.svg';
 import instagram from '../images/instagram-blog.svg';
 
 function paginate() {
-    console.log(data)
-
     let perPage = 6;
     const state = {
         page: 1,
@@ -63,6 +61,20 @@ function paginate() {
             paginatedItems.forEach(list.create)
         }
     }
+
+    const buttons = {
+        create(card) {
+           
+        }, 
+        update() {
+           html.get('.pagination__page-numbers').innerHTML = '';
+        },
+        calculateMaxVisible() {
+            let maxLeft = (state.page - Math.floor())
+        }
+    }
+
+
     const controls = {
         next() {
             state.page++;
@@ -116,9 +128,10 @@ function paginate() {
 
     function update() {
         list.update();
+        buttons.update();
     } 
     function init() {
-        list.update();
+        update();
         controls.createListeners();
     }
     init()
