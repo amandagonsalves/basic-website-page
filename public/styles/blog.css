@@ -64,6 +64,10 @@
     transition: 0.3s;
     color: #ffffff;
 }
+.card-blog__words-blog.card-blog__words-blog--flex {
+    display: flex;
+    align-items: center;
+} 
 .card-blog__read-more:hover {
     background-color: #2aa9db;
     color: #ffffff;

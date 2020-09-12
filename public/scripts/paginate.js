@@ -1,4 +1,9 @@
-import data from '../../src/cards-blog.json'
+import data from '../../src/cards-blog.json';
+import facebook from '../images/facebook.png';
+import twitter from '../images/twitter-blog.svg';
+import youtube from '../images/youtube-blog.svg';
+import instagram from '../images/instagram-blog.svg';
+
 function paginate() {
     console.log(data)
 
@@ -24,22 +29,22 @@ function paginate() {
             <h1 class="card-blog__title">${card.title}</h1>
             <p class="card-blog__description">${card.description}</p>
             <a href="#" class="card-blog__read-more">Ler mais</a>
-            <p class="card-blog__words-blog">
+            <p class="card-blog__words-blog card-blog__words-blog--flex">
                 <i class="fa fa-bookmark"></i>
-                <p class="card-blog__words-blog">${card.keywords}</p>
+                ${card.keywords}
             </p>
             <ul class="card-blog__social">
                 <a href="#" class="card-blog__social-item">
-                    <img src="../images/youtube-blog.svg" alt="">
+                    <img src="${facebook}" alt="">
                 </a>
                 <a href="#" class="card-blog__social-item">
-                    <img src="../images/facebook-blog.svg" alt="">
+                    <img src="${instagram}" alt="">
                 </a>
                 <a href="#" class="card-blog__social-item">
-                    <img src="../images/instagram-blog.svg" alt="">
+                    <img src="${twitter}" alt="">
                 </a>
                 <a href="#" class="card-blog__social-item">
-                    <img src="../images/twitter-blog.svg" alt="">
+                    <img src="${youtube}" alt="">
                 </a>
             </ul>
             `;
