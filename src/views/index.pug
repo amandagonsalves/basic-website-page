@@ -2,48 +2,48 @@ include head.pug
 include menu.pug
 #container
     .container__header
-        .container__header___text
+        .container__header-text
             h1.container__title Comece a vender online já!
             p.container__para.container__para--header Construa sua loja online ou integre com sua loja física, já com delivery, tabela de frete e outros canais de venda. Tudo numa solução única e integrada.
             a(href="./partials/store.pug").container__link Conheça o Nexaas.Store
     .container__section
         img(src="http://nexaas.com/wp-content/uploads/2018/09/cropped-editada_ps-shutterstock_372396529-1.png" alt="").container__image 
-        .container__section___text
+        .container__section-text
             h1.container__title Seu varejo em qualquer canal online e offline juntos e misturados
-            hr
+            hr.container__divider
             p.container__para Sabemos que negócios mudam constantemente, portanto o que as empresas necessitam hoje é de eficiência e economia.
     .container__cards
-        .container__cards___header
+        .container__cards-header
             h1.container__title Soluções para todos os segmentos
-            hr
-            p.container__cards___para Lojas físicas, E-commerces, marketplaces, supermercados ou restaurantes e lanchonetes conectados numa solução completa, gestão com mobilidade e economia. Leve seu negócio para onde quiser, quando quiser.
+            hr.container__divider.container__divider--cards
+            p.container__cards-para Lojas físicas, E-commerces, marketplaces, supermercados ou restaurantes e lanchonetes conectados numa solução completa, gestão com mobilidade e economia. Leve seu negócio para onde quiser, quando quiser.
             .container__cards-content
                 each card in cards 
                     .container__card
-                        img(src=card.thumbnail, alt="").container__thumbnail-card 
-                        h1.container__title-card #{card.title}
-                        p.container__para-card #{card.description}
-                        a(href=card.href).container__action-card #{card.action}
-.solutions-content
-    img(src="http://nexaas.com/wp-content/uploads/2020/04/cropped-shutterstock_1505458583-1-1.jpg" alt="").solutions-content__image
-    .solutions-content__header
-        h1.solutions-content__title Soluções inteligentes e integradas
-        hr
-        .solutions-content__text
-            p.solutions-content__para As soluções Nexaas são diferentes de tudo o que você conhece. Por serem desenvolvidas na nuvem, elas atendem a um inovador conceito de conexão que permite que sejam integradas entre si, enquanto funcionam de maneira independente de acordo com a sua necessidade e a realidade de sua empresa.
-            .solutions-content__list-container
-                ul.solutions-content__list
+                        img(src=card.thumbnail, alt="").container__card-thumbnail 
+                        h1.container__card-title #{card.title}
+                        p.container__card-para #{card.description}
+                        a(href=card.href).container__card-action #{card.action}
+.solutions-container
+    img(src="http://nexaas.com/wp-content/uploads/2020/04/cropped-shutterstock_1505458583-1-1.jpg" alt="").solutions-container__image
+    .solutions-container__header
+        h1.solutions-container__title Soluções inteligentes e integradas
+        hr.solutions-container__divider
+        .solutions-container__text
+            p.solutions-container__para As soluções Nexaas são diferentes de tudo o que você conhece. Por serem desenvolvidas na nuvem, elas atendem a um inovador conceito de conexão que permite que sejam integradas entre si, enquanto funcionam de maneira independente de acordo com a sua necessidade e a realidade de sua empresa.
+            .solutions-container__list-container
+                ul.solutions-container__list
                     li
-                        h1.solutions-content__list___title Modular
-                        p.solutions-content__list___para Use apenas o que for necessário
+                        h1.solutions-container__list-title Modular
+                        p.solutions-container__list-para Use apenas o que for necessário
                     li
-                        h1.solutions-content__list___title Simples e rápido
-                        p.solutions-content__list___para Sem necessidade de mexer nos atuais sistemas
+                        h1.solutions-container__list-title Simples e rápido
+                        p.solutions-container__list-para Sem necessidade de mexer nos atuais sistemas
                     li
-                        h1.solutions-content__list___title Inovador
-                        p.solutions-content__list___para Trazendo as melhores práticas do varejo mundial
+                        h1.solutions-container__list-title Inovador
+                        p.solutions-container__list-para Trazendo as melhores práticas do varejo mundial
                     li
-                        h1.solutions-content__list___title Cabe no bolso
-                        p.solutions-content__list___para Pensado para ser leve na operação e no custo
+                        h1.solutions-container__list-title Cabe no bolso
+                        p.solutions-container__list-para Pensado para ser leve na operação e no custo
 include footer.pug
        
