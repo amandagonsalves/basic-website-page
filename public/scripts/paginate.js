@@ -24,7 +24,7 @@ function paginate() {
             const div = document.createElement('div');
             div.classList.add('card-blog');
             div.innerHTML = `
-            <img src="${card.thumbnail}" alt="" class="card-blog__photo">
+            <img src="${card.thumbnail}" alt="" class="card-blog__thumbnail">
             <h1 class="card-blog__title">${card.title}</h1>
             <p class="card-blog__description">${card.description}</p>
             <a href="#" class="card-blog__read-more">Ler mais</a>

@@ -31,7 +31,7 @@
     box-shadow: 1px 1px 14px 0px #d6d6d6;
     transition: 0.5s;
 }
-.card-blog__photo {
+.card-blog__thumbnail {
     width: 100%;
 }
 .card-blog__title {
@@ -167,17 +167,19 @@
     .cards-blog {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 3.5rem;
         margin: 7rem auto;
+        max-width: 2000px;
     }
     .card-blog {
         max-width: 600px;
         width: 90%;
-        height: 700px;
+        height: 93%;
         position: relative;
     }
     .card-blog__title {
         font: 400 1.4rem Archivo;
-        margin: 1rem 1rem 0 1rem;
+        margin: 2rem 1rem 0 1rem;
         font-size: 1.6rem;
         line-height: 2.5rem;
     }

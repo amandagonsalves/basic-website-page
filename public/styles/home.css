@@ -99,9 +99,6 @@ header {
     color: #03a9f4;
     border-bottom: 2px solid #03a9f4;
 }
-.container__menu.show li #title-menu {
-    text-align: center;
-}
 #container {
     z-index: 1;
     width: 100%;
