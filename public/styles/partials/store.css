@@ -1,31 +1,31 @@
-.section-flex {
+.section__container {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     margin: 5rem auto;
     max-width: 1225px;
 }
-.section-flex__image {
+.section__container-image {
     max-width: 500px;
     width: 30%;
     height: 250px;
     box-shadow: 1px 1px 13px rgb(153, 153, 153);
 }
-.section-flex__para {
+.section__container-para {
     line-height: 27px;
     color: gray;
     font-family: Archivo;
     text-align: center;
     margin-left: 2rem;
 }
-.section-flex__description {
+.section__container-description {
     margin: 2rem;
     flex: 1;
 }
-.section-flex__title {
+.section__container-title {
     margin: 2rem 3rem; 
 }
-hr {
+.section__divider {
     height: 2px;
     background-color: rgb(240, 133, 12);
     width: 150px;
@@ -33,34 +33,34 @@ hr {
     display: none;
 }
 @media (min-width:700px) and (max-width:1000px) {
-    .section-flex__image {
+    .section__container-image {
         width: 50%;
         max-width: 700px;
     }
-    .section-flex__title {
+    .section__container-title {
         margin: 0 1rem 2rem 1rem;
         text-align: center;
         
     }    
-    hr {
+    .section__divider {
         display: none;
     }
 }
 @media (max-width:700px) {
-    .section-flex {
+    .section__container {
         display: flex;
         flex-direction: column-reverse;
     }
-    .section-flex__image {
+    .section__container-image {
         width: 100%;
         max-width: 700px;
     }
-    .section-flex__title {
+    .section__container-title {
         margin: 0 1rem 2rem 1rem;
         text-align: center;
         
     }    
-    hr {
+    .section__divider {
         display: block;
     }
 }
