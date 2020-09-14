@@ -268,6 +268,10 @@ header {
     font-family: Archivo;
     line-height: 30px;
 }
+.solutions-container__image {
+    width: 100%;
+    max-height: 600px;
+}
 .solutions-container__list-container {
     flex: 1;
 }
@@ -275,20 +279,19 @@ header {
     list-style: none;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: 2rem;
+    margin-top: 5rem;
     gap: 5rem;
-}
-.solutions-container__image {
-    width: 100%;
 }
 .solutions-container__list-title {
     text-transform: uppercase;
     font-weight: 900;
     font-family: Archivo;
-    font-size: 0.8rem;
+    font-size: 1.1rem;
 }
 .solutions-container__list-para {
     color: #969696;
+    font-family: math;
+    margin-top: 1rem;
 }
 .footer-page__list-image {
     width: 100%;
@@ -451,11 +454,11 @@ header {
         width: 80%;
     }
     .container__card-para {
-        max-width: 200px;
+        max-width: 350px;
         width: 100%;
-        margin: 2rem auto;
         font: 400 1.1rem Archivo;
         line-height: 30px;
+        text-align: center;
     }
     .container__title {
         margin-left: 6rem;
@@ -492,7 +495,7 @@ header {
     .solutions-container {
         display: flex;
         max-width: 2000px;
-        margin: 8rem auto 6rem auto;
+        margin: 12rem auto 6rem auto;
     }
     .solutions-container__image {
         width: 50%;
