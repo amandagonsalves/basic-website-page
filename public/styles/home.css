@@ -181,7 +181,8 @@ header {
 .container__cards {
     background-color: #f5fafd;
     width: 100%;
-    margin-top: 6rem;
+    max-width: 2000px;
+    margin: 6rem auto;
 }
 .container__cards-header {
     padding: 3rem;
@@ -255,9 +256,8 @@ header {
 .solutions-container__title {
     margin: 1rem auto;
 }
-.solutions-container__divider {
+.container__divider.container__divider--solutions {
     width: 7rem;
-    height: 2px;
     background-color: #FF9800;
     margin: 2rem auto;
 }
@@ -443,19 +443,26 @@ header {
     .container__cards-content {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 5rem;
         max-width: 2000px;
         margin: 5rem auto;
     }
     .container__card {
         max-width: 500px;
         width: 80%;
+        height: 94%;
+        position: relative;
     }
     .container__card-para {
         max-width: 350px;
-        width: 100%;
         font: 400 1.1rem Archivo;
         line-height: 30px;
-        text-align: center;
+        text-align: justify;
+        margin: 1.5rem 2rem;
+    }
+    .container__card-action {
+        position: absolute;
+        bottom: 1px;
     }
     .container__title {
         margin-left: 6rem;
@@ -492,7 +499,7 @@ header {
     .solutions-container {
         display: flex;
         max-width: 2000px;
-        margin: 12rem auto 6rem auto;
+        margin: 6rem auto;
     }
     .solutions-container__image {
         width: 50%;
