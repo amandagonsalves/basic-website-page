@@ -2,7 +2,8 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin-top: 5rem;
+    margin: 5rem auto;
+    max-width: 1225px;
 }
 .section-flex__image {
     max-width: 500px;
@@ -14,16 +15,15 @@
     line-height: 27px;
     color: gray;
     font-family: Archivo;
+    text-align: center;
+    margin-left: 2rem;
 }
 .section-flex__description {
     margin: 2rem;
     flex: 1;
 }
 .section-flex__title {
-    margin: 2rem 1rem; 
-}
-.section-flex__para {
-    text-align: center;
+    margin: 2rem 3rem; 
 }
 hr {
     height: 2px;

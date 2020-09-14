@@ -27,7 +27,8 @@
 .section-page {
     display: flex;
     align-items: center;
-    margin: 5rem 2rem;
+    margin: 5rem auto;
+    max-width: 1800px;
 }
 .section-page__image {
     width: 50%;
