@@ -1,4 +1,4 @@
-.section-background{
+.section__header {
     margin-top: 90px;
     background-image: url('https://s3-sa-east-1.amazonaws.com/prod-jobsite-files.kenoby.com/uploads/nexaas-trabalhe-conosco-1565979537-prancheta3png.png');
     height: 90vh;
@@ -7,7 +7,7 @@
     background-repeat: no-repeat;
     z-index: 1;
 }
-.backdrop {
+.section__header-backdrop {
     background-color: rgba(0,0,0,0.5);
     width: 100%;
     height: 100%;
@@ -19,16 +19,16 @@
     text-align: center;
     color: white;
 }
-.backdrop .backdrop-text h1 {
+.section__header-title {
     font: 700 5rem Archivo;
     margin-bottom: 2rem;
 }
-.backdrop .backdrop-text p {
+.section__header-para {
     line-height: 20px;
     margin-bottom: 3.9rem;
     font: 400 1.3rem Archivo;
 }
-.backdrop .backdrop-text a, .section-text a {
+.section__header-button, .section__text-button {
     padding: 1.2rem;
     margin: 1rem;
     background-color: #a31313;
@@ -39,40 +39,32 @@
     transition: 0.3s; 
     font: 400 1.2rem Archivo;
 }
-.backdrop .backdrop-text a:hover {
+.section__header-button:hover {
     background-color: rgba(0,0,0,0);
 }
-.section-text a {
-    padding: 0.9rem;
-    font-size: 1rem;
-}
-.section-text a:hover {
-    background-color: rgba(0,0,0,0);
-    color: #a31313;
-}
-.section-search {
+.section__search {
     margin: 3rem auto;
     max-width: 900px;
     width: 100%;
 }
-.section-search .form-block {
+.section__search-form-block {
     display: flex;
     justify-content: space-evenly;
 }
-.section-search fieldset {
+.section__search-fieldset {
     border-radius: 1.8rem;
     border: 1px solid rgb(235, 235, 235);
 }
-.section-search .form-block .select-block {
+.section__search-select-block {
     display: flex;
     flex-direction: column;
     margin: 1rem 0;
 }
-.section-search .form-block .select-block label {
+.section__search-label {
     font: 400 0.9rem Archivo;
     color: gray;
 }
-.section-search .form-block .select-block select {
+.section__search-select {
     height: 40px;
     border-radius: 0.8rem;
     margin: 0.5rem 0;
@@ -80,11 +72,7 @@
     color: gray;
     outline: none;
 }
-.section-search .form-block {
-    display: flex;
-    justify-content: space-evenly;
-}
-.section-text {
+.section__text {
     max-width: 900px;
     margin: 2rem auto;
     display: flex;
@@ -92,11 +80,19 @@
     align-items: center;
     background-color: rgb(245, 245, 245);
 }
-.section-text p {
+.section__text-para {
     font: 400 1.3rem Archivo;
     color: gray;
 }
-.section-content {
+.section__text-button {
+    padding: 0.9rem;
+    font-size: 1rem;
+}
+.section__text-button:hover {
+    background-color: rgba(0,0,0,0);
+    color: #a31313;
+}
+.section__body {
     max-width: 900px;
     margin: 2rem auto;
     display: flex;
@@ -104,7 +100,7 @@
     justify-content: center;
     text-align: center;
 }
-.section-content img {
+.section__body-image {
     max-width: 600px;
     width: 50%;
     margin: 3rem auto;
@@ -113,12 +109,12 @@
     justify-content: center;
     text-align: center;
 }
-.section-content h1 {
+.section__body-title {
     font: 700 3rem Archivo;
     margin: 3rem 2rem;
     color: rgb(80, 80, 80);
 }
-.section-content p {
+.section__body-para {
     font: 400 1.2rem Archivo;
     line-height: 27px;
     margin: 0 2rem;
@@ -126,37 +122,37 @@
     color: rgb(124, 124, 124);
 }
 @media (max-width:1100px) {
-    .section-background{
+    .section__header {
         margin-top: 80px;
     }
-    .section-search fieldset {
+    .section__search-fieldset {
         margin: 2rem;
     }
 }
 @media (max-width:600px) {
-    .section-search .form-block {
+    .section__search-form-block {
         display: flex;
         flex-direction: column;
     }
-    .section-search fieldset {
+    .section__search-fieldset {
         padding: 1rem 2rem;
     }
-    .backdrop .backdrop-text p {
+    .section__header-para {
         line-height: 30px;
         margin: 2rem;
     }
-    .section-content p {
+    .section__body-para {
         margin: 0 2rem;
     }
-    .section-content img {
+    .section__body-image {
         margin: 2rem auto;
     }
-    .section-text {
+    .section__text {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .section-text p {
+    .section__text-para {
         text-align: center;
         margin: 1rem 2rem;
     }
