@@ -12,6 +12,7 @@ section {
     text-align: center;
     align-items: center;
     gap: 20px;
+    max-width: 2000px;
 }
 .section__para-list {
     line-height: 25px;

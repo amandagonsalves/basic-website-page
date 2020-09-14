@@ -23,28 +23,28 @@ header {
     align-items: center;
     display: flex;
 }
-.content {
+.container {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.content__thumbnail {
+.container__logo {
     height: 30px;
     margin: 1rem;
 }
-.content__icon-menu {
+.container__icon-menu {
     display: block;
     margin: 2rem;
     cursor: pointer;
 }
-.content__icon-menu:hover {
+.container__icon-menu:hover {
     color: #03a9f4;
 }
-.content__menu {
+.container__menu {
     display: none;
 }
-.content__menu-close {
+.container__menu-close {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -53,23 +53,23 @@ header {
     align-items: center;
     border-bottom: 1px solid rgb(238, 238, 238);
 }
-.content__icon-close {
+.container__icon-close {
     cursor: pointer;
     outline: none;
     transition: 0.3s;
 }
-.content__icon-close:hover {
+.container__icon-close:hover {
     color: #03a9f4;
 }
-.content__text-menu {
+.container__menu-text {
     font: 700 1.1rem Archivo;
     color: rgb(87, 87, 87);
     cursor: default;
 }
-.content__text-menu, .content__icon-close {
+.container__menu-text, .container__icon-close {
     padding: 2rem;
 }
-.content__menu.show {
+.container__menu.show {
     right: 0;
     position: absolute;
     top: 0;
@@ -83,7 +83,7 @@ header {
     transition: 0.5s;
     overflow-y: auto;
 }
-.content__menu.show .content__link {
+.container__menu.show .container__menu-item {
     padding: 1.5rem;
     margin-top: 1rem;
     text-transform: uppercase;
@@ -95,11 +95,11 @@ header {
     transition: 0.3s;
     list-style: none;
 }
-.content__menu.show .content__link:hover {
+.container__menu.show .content__menu-item:hover {
     color: #03a9f4;
     border-bottom: 2px solid #03a9f4;
 }
-.content__menu.show li #title-menu {
+.container__menu.show li #title-menu {
     text-align: center;
 }
 #container {
@@ -113,7 +113,6 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 700px;
@@ -128,8 +127,6 @@ header {
     text-align: center;
     font-family: 'Lato';
     height: 100%;
-    background-color: rgba(0,0,0,0.5);
-    width: 100vw;
 }
 .container__title {
     margin-bottom: 1.5rem;
@@ -176,7 +173,7 @@ header {
 .container__section-text {
     margin: 2rem 1rem 2rem 1rem;
 }
-.container__section hr {
+.container__section-divider {
     background-color: #FF9800;
     width: 7rem;
     margin-left: 2rem;
@@ -375,21 +372,21 @@ header {
     header {
         height: 90px;
     }
-    header img {
+    .container__logo {
         height: 60px;
         margin: 1rem;
     }
-    .content__menu-close {
+    .container__menu-close {
         display: none;
     }
-    .content__menu {
+    .container__menu {
         display: flex;
         list-style: none;
         transition: 0.3s;
         position: absolute;
         right: 2px;
     }
-    .content__link {
+    .container__menu-item {
         padding: 0.5rem;
         text-transform: uppercase;
         font: 700 1.1rem Archivo;
@@ -400,14 +397,14 @@ header {
         transition: 0.3s;
         margin-right: 2rem;
     }
-    .content__link:hover {
+    .container__menu-item:hover {
         color: #03a9f4;
         border-bottom: 2px solid #03a9f4;
     }
-    .content__icon-menu {
+    .container__icon-menu {
         display: none;
     }
-    .content__icon-close {
+    .container__icon-close {
         display: none;
     }
     p {
@@ -426,15 +423,13 @@ header {
         line-height: 30px;
         font-size: 1.5rem;
         margin-top: 6rem;
-        padding: 5rem; 
         font-family: 'Montserrat';
         text-shadow: 3px 3px 10px #000000;
         height: 100%;
-        background-color: rgba(0,0,0,0.3);
-        width: 100vw;
     }
     .container__para--header {
        max-width: 430px;
+       margin-left: 6rem;
     }
     .container__cards-para {
         font-weight: 700;
@@ -445,7 +440,7 @@ header {
     .container__cards-content {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        max-width: 1600px;
+        max-width: 2000px;
         margin: 5rem auto;
     }
     .container__card {
@@ -460,19 +455,21 @@ header {
         line-height: 30px;
     }
     .container__title {
-        margin-left: 1.5rem;
+        margin-left: 6rem;
     }
     .container__link {
         font-size: 1.2rem;
         padding: 0.9rem;
         border-radius: 5rem;
+        margin-left: 6rem;
     }
     .container__section {
         display: flex;
         flex-direction: initial;
-        margin: 7rem 4rem 0 4rem;
+        margin: 7rem auto 0 auto;
+        max-width: 2000px;
     }
-    .container__sectionext {
+    .container__section-text {
         display: flex;
         flex-direction: column;
         padding: 3rem;
@@ -487,7 +484,8 @@ header {
     }
     .solutions-container {
         display: flex;
-        margin-top: 8rem;
+        max-width: 2000px;
+        margin: 8rem auto 6rem auto;
     }
     .solutions-container__image {
         width: 50%;

@@ -1,14 +1,14 @@
 body
     header
-        .content
-            img(src="/../../public/images/nexaas-logo.png" alt="").content__thumbnail 
-            i.fa.fa-bars.content__icon-menu
-            ul.content__menu
-                .content__menu-close
-                    i.fa.fa-times.content__icon-close
-                    p.content__text-menu MENU
-                a(href="../index.pug").content__link Home
-                a(href="../work-with-us.pug").content__link Trabalhe conosco
-                a(href="../contact.pug").content__link Contato
-                a(href="../blog.pug").content__link Blog
+        .container
+            img(src="/../../public/images/nexaas-logo.png" alt="").container__logo   
+            i.fa.fa-bars.container__icon-menu
+            ul.container__menu
+                .container__menu-close
+                    i.fa.fa-times.container__icon-close
+                    p.container__menu-text MENU
+                a(href="/index.pug").container__menu-item Home
+                a(href="/work-with-us.pug").container__menu-item Trabalhe conosco
+                a(href="/contact.pug").container__menu-item Contato
+                a(href="/blog.pug").container__menu-item Blog
 script(src="/../../public/scripts/menu.js")
