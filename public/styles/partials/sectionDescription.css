@@ -1,33 +1,33 @@
-section {
+.section-description {
     width: 100%;
     display: flex;
     align-items: center;
     margin: 2rem auto;
     max-width: 1250px;
 }
-section img {
+.section-description__image {
     width: 50%;
     max-height: 300px;
     box-shadow: 1px 1px 13px rgb(153, 153, 153);
 }
-.section-description {
+.section-description__text {
     margin: 2rem;
     text-align: left;
 }
-.section-description h1 {
+.section-description__title {
     margin-bottom: 2rem;
 }
-.section-description p {
+.section-description__para {
     line-height: 27px;
     color: gray;
     font-family: Archivo;
 }
 @media (max-width:700px) {
-    section {
+    .section-description {
         display: flex;
         flex-direction: column;
     }
-    section img {
+    .section-description__image {
         width: 100%;
     }
 }
