@@ -140,7 +140,6 @@ function paginate() {
             }
         },
         createListeners() {
-
             html.get('#first').addEventListener('click', e => {
                 controls.goTo(1);
                 update()
