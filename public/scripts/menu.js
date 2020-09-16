@@ -1,7 +1,12 @@
-let menu = document.querySelector('.container__menu');
-document.querySelector('.container__icon-menu').addEventListener('click', e => {
+const menu = document.querySelector('.container__menu');
+const html = {
+    get(element) {
+        return document.querySelector(element);
+    }
+}
+html.get('.container__icon-menu').addEventListener('click', e => {
     menu.classList.add('show');
 })
-document.querySelector('.container__icon-close').addEventListener('click', e => {
+html.get('.container__icon-close').addEventListener('click', e => {
     menu.classList.remove('show');
 })
