@@ -16,7 +16,7 @@ body {
     position: fixed;
     width: 100vw;
     height: 100vh;
-    z-index: 3;
+    z-index: 2;
     background-color: rgba(0,0,0,0.6);
     display: none;
 }
@@ -374,6 +374,9 @@ header {
 @media (min-width:1100px) {
     header {
         height: 90px;
+    }
+    .backdrop-menu.show-backdrop {
+        display: none;
     }
     .container__logo {
         height: 60px;
