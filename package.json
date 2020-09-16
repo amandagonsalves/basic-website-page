@@ -9,10 +9,10 @@
   "dependencies": {},
   "devDependencies": {
     "express": "^4.17.1",
+    "faker": "^5.1.0",
     "parcel-bundler": "^1.12.4",
     "pug": "^3.0.0",
     "pug-cli": "^1.0.0-alpha6",
-    "sqlite-async": "^1.1.0",
-    "sqlite3": "^5.0.0"
+    "sqlite-async": "^1.1.0"
   }
 }
