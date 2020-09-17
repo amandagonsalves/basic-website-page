@@ -10,7 +10,7 @@ Database.then(async (db) => {
         action: faker.lorem.sentence(),
         href: faker.internet.url()
     }
-    const selectedCards = await db.all("SELECT * FROM cards"); 
+    const selectedCards = await db.all("SELECT * FROM cards");/*  
     console.log(selectedCards);
-    console.log(cardValue) 
+    console.log(cardValue)  */
 })

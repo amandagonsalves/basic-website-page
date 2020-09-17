@@ -16,4 +16,5 @@ module.exports = async function(db, { cardValue }) {
     `);
     
     const card_id = insertedCard.lastID;
+    console.log(insertedCard)
 }
