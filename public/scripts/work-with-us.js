@@ -1,23 +1,30 @@
 function populateUfs() {
     const ufSelect = document.querySelector('#state');
+
     fetch('https://servicodados.ibge.gov.br/api/v1/localidades/estados')
     .then(res => res.json())
     .then(states => {
         for (let state of states) {
             ufSelect.innerHTML += ` <option value="${state.id}">${state.nome}</option>`
-        }
-    })
-}
-populateUfs()
+        };
+    });
+};
+
+populateUfs();
+
 function getCities(event) {
     const citySelect = document.querySelector('#city');
     const ufValue = event.target.value;
     const stateInput = document.querySelector('input#state')
     const indexOfSelectedState = event.target.selectedIndex
+
     stateInput.value = event.target.options[indexOfSelectedState].text;
+
     citySelect.innerHTML = '';
     citySelect.disabled = true;
+
     const url = `https://servicodados.ibge.gov.br/api/v1/localidades/estados/${ufValue}/municipios`
+
     fetch(url)
     .then(res => res.json())
     .then(cities => {
@@ -28,9 +35,3 @@ function getCities(event) {
     })
 }
 document.querySelector('#state').addEventListener('change', getCities);
-document.querySelector('#aboutUs').addEventListener('click', e => {
-   document.querySelector('.section-content').focus()
-})
-document.querySelector('#job').addEventListener('click', e => {
-    document.querySelector('.seaction-search').focus()
-})
