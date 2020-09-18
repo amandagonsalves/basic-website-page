@@ -13,28 +13,28 @@ const search = html.get('.section__search');
 function buttonScroll() {
    const aboutContentTop = aboutContent.offsetTop;
    const searchTop = search.offsetTop;
+   const aboutButtonTop = aboutContentTop * 3.3 / 4;
+   const jobButtonTop = searchTop * 2.3 / 4;
 
-   about.addEventListener('click', e => {
+    about.addEventListener('click', e => {
         e.preventDefault();
 
-        window.scroll({
-            top: aboutContentTop * 3.3 / 4,
-            behavior: "smooth"
-        });
+        scrollToPosition(aboutButtonTop);
 
    });
 
    job.addEventListener('click', e => {
         e.preventDefault();
 
-        window.scroll( {
-            top: searchTop * 2.3 / 4,
-            behavior: "smooth"
-        });
+        scrollToPosition(jobButtonTop)
 
    });
    
 };
 
 buttonScroll();
+
+function scrollToPosition(elementTop) {
+    window.scroll(0, elementTop);
+};
 
