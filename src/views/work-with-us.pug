@@ -2,13 +2,14 @@ include head.pug
 link(rel="stylesheet", href="../../public/styles/work-with-us.css")
 
 body
+    .backdrop-menu
     header
         .container
             img(src="../../public/images/nexaas-logo.png" alt="").container__logo   
             i.fa.fa-bars.container__icon-menu
             ul.container__menu
                 .container__menu-close
-                    i.fa.fa-times.container__icon-close
+                    i.fa.fa-times.container__icon-menu
                     p.container__menu-text MENU
                 a(href="/index.pug").container__menu-item Institucional
                 a(href="https://www.linkedin.com/signup/cold-join?session_redirect=https%3A%2F%2Fwww%2Elinkedin%2Ecom%2Fcompany-beta%2F10670931%2F&trk=login_reg_redirect").container__menu-item LinkedIn
@@ -20,8 +21,8 @@ body
                 .section__header-text
                     h1.section__header-title Seja um Nexaas!
                     p.section__header-para Trabalhe em uma empresa pioneira em desenvolvimento de software de gestão em nuvem.
-                    a(href="#" id="aboutUs").section__header-button Sobre nós
-                    a(href="#" id="job").section__header-button Vagas
+                    a(href="#" id="about").section__header-button.animatedButton Sobre nós
+                    a(href="#" id="job").section__header-button.animatedButton Vagas
         .section__search
             form(action="").section__search-form
                 fieldset.section__search-fieldset
@@ -51,7 +52,7 @@ body
             a(href="/applicant").section__text-button Enviar agora
         .section__body
             img(src="https://s3.amazonaws.com/nexaas-marketing/repositorio/kenoby/imagem-1-nexaas-kenoby.png" alt="").section__body-image
-            h1.section__body-title Quem somos e o que fazemos?
+            h1.section__body-title#about-content Quem somos e o que fazemos?
             p.section__body-para A Nexaas é uma empresa de desenvolvimento de softwares em nuvem para gestão empresarial. Esqueça as velhas tecnologias e formas de pensar, aqui nós ditamos tendências e desenvolvemos soluções disruptivas que oferecem a melhor experiência para nossos usuários. Para isso aliamos tecnologia de ponta a um time de pessoas que não se conformam com a zona de conforto. Somos apaixonados pelo que fazemos, viciados em resolver problemas reais e curiosos por conhecer pessoas que tenham essa mesma garra e determinação.<br>
                 <b>Se você se identifica, venha ser um Nexaas.
             img(src="https://s3.amazonaws.com/nexaas-marketing/repositorio/kenoby/imagem-2-nexaas-kenoby.png" alt="").section__body-image

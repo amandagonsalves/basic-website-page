@@ -7,6 +7,10 @@
     background-repeat: no-repeat;
     z-index: 1;
 }
+.scroll-content {
+    transition: 0.5s;
+    transform: translate3d(0, -50vh,0);
+}
 .section__header-backdrop {
     background-color: rgba(0,0,0,0.5);
     width: 100%;
