@@ -4,14 +4,12 @@ module.exports = async function(db, { cardValue }) {
             title,
             thumbnail,
             description,
-            action,
-            href
+            action
         ) VALUES (
             "${cardValue.title}",
             "${cardValue.thumbnail}",
             "${cardValue.description}",
-            "${cardValue.action}",
-            "${cardValue.href}"
+            "${cardValue.action}"
         );
     `);
     

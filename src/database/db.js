@@ -6,8 +6,7 @@ function execute(db) {
             title TEXT,
             thumbnail TEXT,
             description TEXT,
-            action TEXT,
-            href TEXT
+            action TEXT
         );
     `);
 };
