@@ -10,7 +10,7 @@ const aboutContent = html.get('#about-content');
 const search = html.get('.section__search'); 
 
 
-function animeScroll() {
+function buttonScroll() {
    const aboutContentTop = aboutContent.offsetTop;
    const searchTop = search.offsetTop;
 
@@ -34,8 +34,7 @@ function animeScroll() {
 
    });
    
-   
 };
 
-animeScroll();
+buttonScroll();
 
