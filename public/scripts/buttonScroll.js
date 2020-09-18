@@ -18,7 +18,7 @@ function buttonScroll() {
         e.preventDefault();
 
         window.scroll({
-            top: aboutContentTop * 3 / 4,
+            top: aboutContentTop * 3.3 / 4,
             behavior: "smooth"
         });
 
@@ -28,7 +28,7 @@ function buttonScroll() {
         e.preventDefault();
 
         window.scroll( {
-            top: searchTop * 2 / 4,
+            top: searchTop * 2.3 / 4,
             behavior: "smooth"
         });
 
