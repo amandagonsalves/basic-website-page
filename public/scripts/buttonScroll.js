@@ -14,23 +14,15 @@ const searchTop = search.offsetTop;
 const aboutButtonTop = aboutContentTop * 3.3 / 4;
 const jobButtonTop = searchTop * 2.3 / 4;
 
-
-function buttonScroll() {
-
-   addEventToButton(about, aboutButtonTop);
-
-   addEventToButton(job, jobButtonTop);
-   
-};
-
-buttonScroll();
-
 function addEventToButton(button, elementTop) {
+
     button.addEventListener('click', e => {
         e.preventDefault();
 
         scrollToPosition(elementTop);
-   });
+        
+    });
+
 }
 
 function scrollToPosition(elementTop) {
@@ -65,3 +57,12 @@ function smoothScrollTo(endX, endY, duration) {
     }, 1000 / 60);
 }
 
+function buttonScroll() {
+
+    addEventToButton(about, aboutButtonTop);
+ 
+    addEventToButton(job, jobButtonTop);
+    
+ };
+ 
+ buttonScroll();
