@@ -1,10 +1,4 @@
-const html = {
-    get(element) {
-        return document.querySelectorAll(element);
-    }
-}
-
-const target = html.get('[data-anime]');
+const target = document.querySelectorAll('[data-anime]');
 const animationClass = 'animate';
 
 function animeScroll() {

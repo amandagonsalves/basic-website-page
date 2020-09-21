@@ -1,5 +1,6 @@
 include head.pug
 link(rel="stylesheet", href="../../public/styles/job.css")
+link(rel="stylesheet", href="../../public/styles/animate.css")
 
 body
     .backdrop-menu
@@ -23,7 +24,7 @@ body
                     p.section__header-para Trabalhe em uma empresa pioneira em desenvolvimento de software de gestão em nuvem.
                     a(href="#" id="about").section__header-button Sobre nós
                     a(href="#" id="job").section__header-button Vagas
-        .section__search
+        div(data-anime="top").section__search
             form(action="").section__search-form
                 fieldset.section__search-fieldset
                     .section__search-form-block
@@ -47,20 +48,21 @@ body
                             select(name="state" id="state").section__search-select
                                 option(value="") Todos
                             input(type="text" id="state" hidden)
-        .section__text
+        div(data-anime="top").section__text
             .section__text-para Não encontrou nenhuma vaga? Envie seu CV mesmo assim!
             a(href="/applicant").section__text-button Enviar agora
         .section__body
-            img(src="https://s3.amazonaws.com/nexaas-marketing/repositorio/kenoby/imagem-1-nexaas-kenoby.png" alt="").section__body-image
-            h1.section__body-title#about-content Quem somos e o que fazemos?
-            p.section__body-para A Nexaas é uma empresa de desenvolvimento de softwares em nuvem para gestão empresarial. Esqueça as velhas tecnologias e formas de pensar, aqui nós ditamos tendências e desenvolvemos soluções disruptivas que oferecem a melhor experiência para nossos usuários. Para isso aliamos tecnologia de ponta a um time de pessoas que não se conformam com a zona de conforto. Somos apaixonados pelo que fazemos, viciados em resolver problemas reais e curiosos por conhecer pessoas que tenham essa mesma garra e determinação.<br>
+            img(src="https://s3.amazonaws.com/nexaas-marketing/repositorio/kenoby/imagem-1-nexaas-kenoby.png" alt="" data-anime="top").section__body-image
+            h1(data-anime="left").section__body-title#about-content Quem somos e o que fazemos?
+            p(data-anime="right").section__body-para A Nexaas é uma empresa de desenvolvimento de softwares em nuvem para gestão empresarial. Esqueça as velhas tecnologias e formas de pensar, aqui nós ditamos tendências e desenvolvemos soluções disruptivas que oferecem a melhor experiência para nossos usuários. Para isso aliamos tecnologia de ponta a um time de pessoas que não se conformam com a zona de conforto. Somos apaixonados pelo que fazemos, viciados em resolver problemas reais e curiosos por conhecer pessoas que tenham essa mesma garra e determinação.<br>
                 <b>Se você se identifica, venha ser um Nexaas.
-            img(src="https://s3.amazonaws.com/nexaas-marketing/repositorio/kenoby/imagem-2-nexaas-kenoby.png" alt="").section__body-image
-            h1.section__body-title O perfil de um Nexaas
-            p.section__body-para Somos uma empresa jovem, porém com profunda experiência naquilo que faz. Nosso perfil vai desde estagiários até profissionais com mais de 30 anos de mercado. Respeitamos nossas diferenças e abraçamos as experiências de cada um pois acreditamos que a diversidade é um dos nossos maiores diferenciais. Portanto, a definição de um Nexaas está intimamente ligada à capacidade de flexibilização, adaptação às mudanças do mercado onde estamos inseridos e, principalmente, à criatividade e inovação.
-            h1.section__body-title O jeito Nexaas de gerir pessoas
-            p.section__body-para Na Nexaas as relações são de longo prazo e prezam pelo desenvolvimento dos talentos de cada um, necessários ao crescimento da empresa. Nossos colaboradores contam com uma série de benefícios e incentivos que proporcionam o equilíbrio entre demandas profissionais e pessoais. Aqui nós temos um ambiente colaborativo e enérgico onde trabalhamos duro e nos divertimos na mesma medida.
+            img(src="https://s3.amazonaws.com/nexaas-marketing/repositorio/kenoby/imagem-2-nexaas-kenoby.png" alt="" data-anime="top").section__body-image
+            h1(data-anime="left").section__body-title O perfil de um Nexaas
+            p(data-anime="right").section__body-para Somos uma empresa jovem, porém com profunda experiência naquilo que faz. Nosso perfil vai desde estagiários até profissionais com mais de 30 anos de mercado. Respeitamos nossas diferenças e abraçamos as experiências de cada um pois acreditamos que a diversidade é um dos nossos maiores diferenciais. Portanto, a definição de um Nexaas está intimamente ligada à capacidade de flexibilização, adaptação às mudanças do mercado onde estamos inseridos e, principalmente, à criatividade e inovação.
+            h1(data-anime="left").section__body-title O jeito Nexaas de gerir pessoas
+            p(data-anime="right").section__body-para Na Nexaas as relações são de longo prazo e prezam pelo desenvolvimento dos talentos de cada um, necessários ao crescimento da empresa. Nossos colaboradores contam com uma série de benefícios e incentivos que proporcionam o equilíbrio entre demandas profissionais e pessoais. Aqui nós temos um ambiente colaborativo e enérgico onde trabalhamos duro e nos divertimos na mesma medida.
 include footer.pug
 script(src="../../public/scripts/select.js")
 script(src="../../public/scripts/buttonScroll.js")
 script(src="../../public/scripts/menu.js")
+script(src="../../public/scripts/animate.js")
