@@ -1,1 +1,17 @@
-/* [join(__dirname, './views/index.pug'), join(__dirname, './views/contact.pug'), join(__dirname, './views/blog.pug'), join(__dirname, './views/work-with-us.pug'), join(__dirname, './views/partials/applicant-email.pug'), join(__dirname, './views/partials/emites.pug'), join(__dirname, './views/partials/myFinance.pug'),join(__dirname, './views/partials/oms.pug'), join(__dirname, './views/partials/pdvend.pug'), join(__dirname, './views/partials/store.pug'), join(__dirname, './views/partials/suite.pug')]*/
+const { database } = require('faker');
+const Database = require('./database/db');
+
+async function cardsHome() {
+    const query = "SELECT * FROM cards";
+
+    try {
+        const db = await Database;
+        const cards = await db.all(query);
+        return res.json(cards);
+    } catch (error) { 
+        console.log(error);
+    };
+    
+}
+
+module.exports = { cardsHome }
