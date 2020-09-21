@@ -16,9 +16,9 @@ include menu.pug
     .container__cards
         .container__cards-header
             h1(data-anime="left").container__title Soluções para todos os segmentos
-            hr(data-anime="left").container__divider.container__divider--cards
-            p(data-anime="left").container__cards-para Lojas físicas, E-commerces, marketplaces, supermercados ou restaurantes e lanchonetes conectados numa solução completa, gestão com mobilidade e economia. Leve seu negócio para onde quiser, quando quiser.
-            div(data-anime="right").container__cards-content
+            hr(data-anime="top").container__divider.container__divider--cards
+            p(data-anime="right").container__cards-para Lojas físicas, E-commerces, marketplaces, supermercados ou restaurantes e lanchonetes conectados numa solução completa, gestão com mobilidade e economia. Leve seu negócio para onde quiser, quando quiser.
+            div(data-anime="top").container__cards-content
                 each card in cards 
                     .container__card
                         img(src=card.thumbnail, alt="").container__card-thumbnail 
