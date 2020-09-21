@@ -3,6 +3,7 @@ include head-partials.pug
 link(rel="stylesheet" href="/../../public/styles/partials/header.css")
 link(rel="stylesheet" href="/../../public/styles/partials/pages-emites-suite-finance.css")
 link(rel="stylesheet" href="/../../public/styles/partials/form.css")
+link(rel="stylesheet", href="/../../public/styles/animate.css")
 
 include menu-partials.pug
 
@@ -12,27 +13,27 @@ include menu-partials.pug
 
 include header-page.pug
 
-.section-page.section-page--reverse
+div(data-anime="left").section-page.section-page--reverse
     img(src="https://nexaas.com/wp-content/uploads/2020/05/myfinance-comercial-cadastros-1.png" alt="").section-page__image
     .section-page__description
         h1.section-page__title.section-page__title--blue Automatize o contas a pagar e a receber
         p.section-page__para Uma ferramenta que vai ajudar muito no dia-a-dia do seu negócio, com o módulo de recebíveis do MyFinance. Ele atua diretamente no seu contas a receber, atualizando automaticamente datas de compensação, taxas deduzidas e descontos, garantindo que seu movimento bancário esteja fiel à realidade e trazendo toda a tranquilidade que você precisa.
-.section-page
+div(data-anime="right").section-page
     .section-page__description
         h1.section-page__title.section-page__title--blue Personalize seus lançamentos e encontre de forma rápida o que procura
         p.section-page__para O Myfinance possibilita criar classificadores personalizados exclusivos para seus lançamentos, a partir dos quais sua empresa gera relatórios e análises que realmente contribuem para o negócio. Esta ferramenta vai simplificar muito os seus processos
     img(src="https://nexaas.com/wp-content/uploads/2020/05/myfinance-comercial-personalize-1.png" alt="").section-page__image
-.section-page.section-page--reverse
+div(data-anime="left").section-page.section-page--reverse
     img(src="https://nexaas.com/wp-content/uploads/2020/05/myfinance-comercial-integracoes-1.png" alt="").section-page__image
     .section-page__description
         h1.section-page__title.section-page__title--blue Potencialize com integrações exclusivas
         p.section-page__para Para agilizar ainda mais a sua rotina, as nossas APIs públicas permitem integrações a diversos outros sistemas de gestão, bancos, ERPs, pontos de venda, e o que mais for necessário para a sua gestão ficar ainda mais completa.
-.section-page
+div(data-anime="right").section-page
     .section-page__description
         h1.section-page__title.section-page__title--blue Veja com precisão os dados que realmente importam
         p.section-page__para A inteligência de dados do Myfinance possibilita criar todo tipo de relatório que sua empresa necessite, de forma minuciosa e dinâmica, com apenas alguns cliques.
     img(src="https://nexaas.com/wp-content/uploads/2020/05/myfinance-comercial-dados-1.png" alt="").section-page__image
-.section-page.section-page--reverse
+div(data-anime="left").section-page.section-page--reverse
     img(src="https://nexaas.com/wp-content/uploads/2020/05/myfinance-comercial-phones-1.png" alt="").section-page__image--last
     .section-page__description
         h1.section-page__title.section-page__title--blue Torne seu negócio mobile
@@ -40,3 +41,4 @@ include header-page.pug
 - var titleForm = myFinance.titleForm;
 include form.pug
 include footer-partials.pug
+script(src="/../../public/scripts/animate.js")
