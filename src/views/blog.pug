@@ -1,10 +1,11 @@
 include head.pug
 link(rel="stylesheet", href="../../public/styles/blog.css")
+link(rel="stylesheet", href="../../public/styles/animate.css")
 include menu.pug
 .header 
     h1.header__title Blog 
 section 
-    .cards-blog
+    div(data-anime="top").cards-blog
     nav.pagination
         .pagination__item#first &#171
         .pagination__item#prev &lt;
@@ -14,3 +15,4 @@ section
 
 include footer.pug
 script(src="../../public/scripts/paginate.js")
+script(src="../../public/scripts/animate.js")
