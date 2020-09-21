@@ -4,6 +4,7 @@ link(rel="stylesheet" href="/../../public/styles/partials/header.css")
 link(rel="stylesheet" href="/../../public/styles/partials/oms.css")
 link(rel="stylesheet" href="/../../public/styles/partials/sectionDescription.css")
 link(rel="stylesheet" href="/../../public/styles/partials/form.css")
+link(rel="stylesheet", href="/../../public/styles/animate.css")
 
 include menu-partials.pug
 
@@ -13,7 +14,7 @@ include menu-partials.pug
 
 include header-page.pug
 
-img(src="/../../public/images/oms-products.png" alt="" class="comercial-image")
+img(src="/../../public/images/oms-products.png" alt="" class="comercial-image" data-anime="top")
 
 - var thumbnailSection = '/../../public/images/vor.jpg';
 - var titleSection = oms.titleSection;
@@ -22,7 +23,7 @@ img(src="/../../public/images/oms-products.png" alt="" class="comercial-image")
 include sectionDescription.pug
 
 .services
-    .services__box
+    div(data-anime="left").services__box
         h1.services__title Principais características
         ul.services__list
             li.services__item Gestão de catálogo (produtos, categorias, marcas, fabricantes, características)
@@ -37,7 +38,8 @@ include sectionDescription.pug
             li.services__item Inventário da loja
             li.services__item Precificação de produtos
             li.services__item Motor de promoção
-    img(src="/../../public/images/oms-services.jpg" alt="").services__image
+    img(src="/../../public/images/oms-services.jpg" alt="" data-anime="right").services__image
 - var titleForm = oms.titleForm;    
 include form.pug
 include footer-partials.pug
+script(src="/../../public/scripts/animate.js")
