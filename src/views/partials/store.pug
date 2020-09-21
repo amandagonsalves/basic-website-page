@@ -4,6 +4,7 @@ link(rel="stylesheet" href="/../../public/styles/partials/header.css")
 link(rel="stylesheet" href="/../../public/styles/partials/store.css")
 link(rel="stylesheet" href="/../../public/styles/partials/sectionDescription.css")
 link(rel="stylesheet" href="/../../public/styles/partials/form.css")
+link(rel="stylesheet", href="/../../public/styles/animate.css")
 
 include menu-partials.pug
 
@@ -19,13 +20,13 @@ include header-page.pug
 
 include sectionDescription.pug
 
-.section__container
+div(data-anime="left").section__container
     .section__container-description
         h1.section__container-title Faça vendas domiciliares
         p.section__container-para Sua loja pode funcionar na palma da sua mão com nosso aplicativo de caixa de loja para smartphones ou tablets  Android. Sua equipe pode continuar vendendo seu estoque físico para seus contatos.
     img(src="/../../public/images/gip.png" alt="").section__container-image
 hr.section__divider
-.section__container
+div(data-anime="right").section__container
     img(src="http://nexaas.com/wp-content/uploads/2020/04/cropped-shutterstock_1505458583-1-1.jpg" alt="").section__container-image
     .description-page-store
         h1.section__container-title Complete com entrega e retirada
@@ -34,3 +35,4 @@ hr.section__divider
 - var titleForm = store.titleForm;        
 include form.pug
 include footer-partials.pug
+script(src="/../../public/scripts/animate.js")
