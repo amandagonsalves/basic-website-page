@@ -11,4 +11,5 @@ Database.then(async (db) => {
     }
     /* await createCard(db, { cardValue }); */
     const selectedCards = await db.all("SELECT * FROM cards");
+    console.log(selectedCards)
 });

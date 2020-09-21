@@ -7,7 +7,7 @@ async function cardsHome() {
     try {
         const db = await Database;
         const cards = await db.all(query);
-        return res.json(cards);
+        return cards;
     } catch (error) { 
         console.log(error);
     };

@@ -12,6 +12,4 @@ module.exports = async function(db, { cardValue }) {
             "${cardValue.action}"
         );
     `);
-    
-    const card_id = insertedCard.lastID;
 }
