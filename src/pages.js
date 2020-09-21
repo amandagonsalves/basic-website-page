@@ -11,7 +11,7 @@ async function cardsHome() {
     } catch (error) { 
         console.log(error);
     };
-    
+     
 }
 
 module.exports = { cardsHome }

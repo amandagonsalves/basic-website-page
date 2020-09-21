@@ -1,15 +1,16 @@
-import data from '../../src/cards-blog.json';
+import data from './cardsBlog';
 import facebook from '../images/facebook.png';
 import twitter from '../images/twitter-blog.svg';
 import youtube from '../images/youtube-blog.svg';
 import instagram from '../images/instagram-blog.svg';
 
 function paginate() {
+
     let perPage = 6;
     const state = {
         page: 1,
         perPage,
-        totalPage: Math.ceil(data.length/perPage),
+        totalPage: Math.ceil(data.length / perPage),
         maxVisibleButtons: 2
     };
 
@@ -49,16 +50,16 @@ function paginate() {
             `;
 
             html.get('.cards-blog').appendChild(div);
-        }, 
+        },
         update() {
-            html.get('.cards-blog').innerHTML = ''; 
+            html.get('.cards-blog').innerHTML = '';
 
             let page = state.page - 1;
             let start = page * state.perPage;
             let end = start + state.perPage;
-            
+
             const paginatedItems = data.slice(start, end);
-            
+
             paginatedItems.forEach(list.create)
         }
     }
@@ -69,10 +70,10 @@ function paginate() {
             button.classList.add('pagination__item');
             button.innerHTML = `<p>${number}</p>`;
 
-            if(state.page == number) {
+            if (state.page == number) {
                 button.classList.add('active');
             }
-            
+
             button.addEventListener('click', e => {
                 const page = e.target.innerText;
 
@@ -81,33 +82,32 @@ function paginate() {
             })
 
             html.get('.pagination__page-numbers').appendChild(button);
-           
-        }, 
-        update() {
-           html.get('.pagination__page-numbers').innerHTML = '';
-           const { maxLeft, maxRight } = buttons.calculateMaxVisible();
 
-           for(let page = maxLeft; page <= maxRight; page++)
-           {
-               buttons.create(page)
-           }
+        },
+        update() {
+            html.get('.pagination__page-numbers').innerHTML = '';
+            const { maxLeft, maxRight } = buttons.calculateMaxVisible();
+
+            for (let page = maxLeft; page <= maxRight; page++) {
+                buttons.create(page)
+            }
 
         },
         calculateMaxVisible() {
             const { maxVisibleButtons } = state;
-            let maxLeft = (state.page - Math.floor(maxVisibleButtons/2));
-            let maxRight = (state.page + Math.floor(maxVisibleButtons/2));
-            
-            if(maxRight > state.totalPage) {
-                maxLeft = state.totalPage - (maxVisibleButtons - 1);
-                maxRight = state.totalPage 
+            let maxLeft = (state.page - Math.floor(maxVisibleButtons / 2));
+            let maxRight = (state.page + Math.floor(maxVisibleButtons / 2));
 
-                if(maxLeft < 1) maxLeft = 1;
+            if (maxRight > state.totalPage) {
+                maxLeft = state.totalPage - (maxVisibleButtons - 1);
+                maxRight = state.totalPage
+
+                if (maxLeft < 1) maxLeft = 1;
             }
-            if(maxLeft < 1) {
+            if (maxLeft < 1) {
                 maxLeft = 1;
                 maxRight = maxVisibleButtons
-            } 
+            }
             return { maxLeft, maxRight }
         }
     }
@@ -117,25 +117,25 @@ function paginate() {
             state.page++;
 
             const lastPage = state.page > state.totalPage;
-            if(lastPage) {
+            if (lastPage) {
                 state.page--;
             }
         },
         prev() {
             state.page--;
 
-            if(state.page < 1) {
+            if (state.page < 1) {
                 state.page++;
             }
         },
         goTo(page) {
             state.page = +page;
 
-            if(page <  1) {
+            if (page < 1) {
                 page = 1;
             }
 
-            if(page > state.totalPage) {
+            if (page > state.totalPage) {
                 state.page = state.totalPage;
             }
         },
@@ -165,12 +165,12 @@ function paginate() {
     function update() {
         list.update();
         buttons.update();
-    } 
+    }
     function init() {
         update();
         controls.createListeners();
     }
     init()
-   
+
 }
 paginate()

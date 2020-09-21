@@ -1,12 +1,10 @@
-const cards = require('./cards.json'); 
+const cards = require('./cards.json');
 const li = require('../pdvend.json');
-const cardsBlog = require('../cards-blog.json');
 
 module.exports = {
     locals: {
-        li,
+        li, 
         cards,
-        cardsBlog,
         oms: {
             title:'OMS', 
             descriptionTitle: 'Total conectividade e flexibilidade em toda operação',
