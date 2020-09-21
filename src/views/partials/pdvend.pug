@@ -3,6 +3,7 @@ include head-partials.pug
 link(rel="stylesheet" href="/../../public/styles/partials/header.css")
 link(rel="stylesheet" href="/../../public/styles/partials/pdvend.css")
 link(rel="stylesheet" href="/../../public/styles/partials/form.css")
+link(rel="stylesheet", href="/../../public/styles/animate.css")
 
 include menu-partials.pug
 
@@ -13,17 +14,17 @@ include menu-partials.pug
 include header-page.pug
 
 section
-    .section__description
+    div(data-anime="top").section__description
         h1(style="font: 700 1.6rem Lato;color: black;").section__title Como o PDVend melhora a sua vida:
         p.section__para Pensado para tornar a sua gestão mais simples, rápida, eficiente e funcional. Aplicavo para sistema de PDV e Caixa de loja 100% móvel: funciona de qualquer lugar, levando seu negócio onde você estiver. Com qualquer dispositivo Android, é possível efetuar suas vendas de qualquer lugar.
-    ul.section__list
+    ul(data-anime="top").section__list
         each item in li
             li
                 img(src=item.thumbnail alt="").section__image-thumbnail
                 h1.section__title #{item.title}
                 p.section__para-list #{item.description}
-    h1(style="font: 700 2.3rem Lato;").section__title Integrações
-    ul.section__list-integrations
+    h1(style="font: 700 2.3rem Lato;" data-anime="top").section__title Integrações
+    ul(data-anime="top").section__list-integrations
             li.section__item
                 img(src="https://nexaas.com/wp-content/uploads/2020/05/sumup-logo-275x80-1.png" alt="").section__image
             li.section__item
@@ -37,3 +38,4 @@ section
 - var titleForm = pdvend.titleForm;
 include form.pug
 include footer-partials.pug
+script(src="/../../public/scripts/animate.js")
