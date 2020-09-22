@@ -29,14 +29,48 @@ body {
 .content-post-page {
     max-width: 900px;
     width: 80%;
-
+    margin: 2rem 3rem;
 }
 .content-search {
     flex: 1;
     width: 100%;
+    margin: 2rem 3rem;
 }
-.container-post-page {
-    max-width: 2000px;
-    display: flex;
+.content-post-page__keywords {
+    margin: 2rem 0;
 
+}
+.content-post-page__title {
+    margin: 2rem 1rem;
+    font-size: 2.4rem; 
+}
+.content-post-page__image {
+    width: 100%;
+    height: 400px;
+    
+}
+.text-container__para {
+    margin: 3rem 0 1rem 0;
+    line-height: 30px;
+}
+.text-container__title {
+    margin: 2rem 0;
+    line-height: 30px;
+}
+.content-post-page__comments {
+    margin: 2rem 0;
+}
+.content-post-page__comments-input {
+    margin: 2rem 0;
+    width: 100%;
+    padding: 1.2rem;
+    border: 1px solid #FFF;
+    outline: none;
+    transition: 0.3s;
+}
+.content-post-page__comments-input:hover {
+    border-bottom: 1px solid rgb(211, 211, 211);
+}
+.content-post-page__comments-input:focus {
+    border-bottom: 1px solid rgb(211, 211, 211);
 }

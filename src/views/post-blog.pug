@@ -9,13 +9,15 @@ include menu.pug
     .content-post-page
         p.content-post-page__keywords palavras chave do post
         h1.content-post-page__title card title ola
-        img(src="", alt="").content-post-page__image
+        img(src="https://nexaas.com/wp-content/uploads/2018/11/editada_ps19428.png", alt="").content-post-page__image
         .content-post-page__text-container
             p.text-container__para Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod harum esse recusandae sunt? Debitis, culpa libero veritatis earum itaque nemo facilis iste eligendi tenetur quidem minima optio voluptatem, ducimus explicabo!
             h1.text-container__title ola ola ola ola ola ola ola
+            p.text-container__para Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod harum esse recusandae sunt? Debitis, culpa libero veritatis earum itaque nemo facilis iste eligendi tenetur quidem minima optio voluptatem, ducimus explicabo!
+            p.text-container__para Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod harum esse recusandae sunt? Debitis, culpa libero veritatis earum itaque nemo facilis iste eligendi tenetur quidem minima optio voluptatem, ducimus explicabo!
         .content-post-page__comments
             label(for="comment")
-            input(type="text", name="comment", placeholder="Adicione um comentário")
+            input(type="text", name="comment", placeholder="Adicione um comentário").content-post-page__comments-input
     .content-search
         label(for="search")
         input(type="text", name="search", placeholder="Pesquisar por...")
