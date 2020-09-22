@@ -2,7 +2,6 @@ const Database = require('./db');
 const createCard = require('./createCard');
 const faker = require('faker');
 const deleteCards = require('./deleteCards');
-const sqlite = require('sqlite-async')
 
 Database.then(async (db) => {
     cardValue = {
