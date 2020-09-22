@@ -7,9 +7,9 @@ Database.then(async (db) => {
         title: faker.lorem.sentence(),
         thumbnail: faker.image.business(),
         description: faker.lorem.paragraph(),
-        action: faker.lorem.sentence()
+        keywords: faker.lorem.sentence()
     }
-    /* await createCard(db, { cardValue }); */
+    await createCard(db, { cardValue });
     const selectedCards = await db.all("SELECT * FROM cards");
     console.log(selectedCards)
 });

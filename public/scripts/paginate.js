@@ -1,16 +1,16 @@
-import data from './cardsBlog';
+import 'regenerator-runtime/runtime'
+import { getData } from './cardsBlog';
 import facebook from '../images/facebook.png';
 import twitter from '../images/twitter-blog.svg';
 import youtube from '../images/youtube-blog.svg';
 import instagram from '../images/instagram-blog.svg';
 
 function paginate() {
-
     let perPage = 6;
     const state = {
         page: 1,
         perPage,
-        totalPage: Math.ceil(data.length / perPage),
+        totalPage: 0,
         maxVisibleButtons: 2
     };
 
@@ -18,7 +18,7 @@ function paginate() {
         get(element) {
             return document.querySelector(element);
         }
-    }
+    };
 
     const list = {
         create(card) {
@@ -28,7 +28,7 @@ function paginate() {
             <img src="${card.thumbnail}" alt="" class="card-blog__thumbnail">
             <h1 class="card-blog__title">${card.title}</h1>
             <p class="card-blog__description">${card.description}</p>
-            <a href="#" class="card-blog__read-more">Ler mais</a>
+            <a href=""${card.url}"" class="card-blog__read-more">Ler mais</a>
             <p class="card-blog__words-blog card-blog__words-blog--flex">
                 <i class="fa fa-bookmark"></i>
                 ${card.keywords}
@@ -51,7 +51,13 @@ function paginate() {
 
             html.get('.cards-blog').appendChild(div);
         },
-        update() {
+        async update() {
+            
+            const data = await getData()
+
+            state.totalPage = Math.ceil(data.length / perPage);
+
+            console.log(data)
             html.get('.cards-blog').innerHTML = '';
 
             let page = state.page - 1;
@@ -89,8 +95,8 @@ function paginate() {
             const { maxLeft, maxRight } = buttons.calculateMaxVisible();
 
             for (let page = maxLeft; page <= maxRight; page++) {
-                buttons.create(page)
-            }
+                buttons.create(page);
+            };
 
         },
         calculateMaxVisible() {
