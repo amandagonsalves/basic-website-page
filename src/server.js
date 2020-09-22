@@ -8,7 +8,8 @@ server.set('view engine', 'ejs');
 
 const options = {}; 
 
-server.get('/api/card', async (req, res) => {
+server.get('/api/card:id?', async (req, res) => {
+    const post = req.params;
     res.json({ cards: await cardsHome() });
 });
 
