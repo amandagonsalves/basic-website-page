@@ -5,11 +5,10 @@ function execute(db) {
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             title TEXT,
             thumbnail TEXT,
-            description TEXT
-        );
-        ALTER TABLE cards
-           ADD keywords TEXT
-               url TEXT
+            description TEXT,
+            keywords TEXT
+        ); 
     `);
+    
 };
 module.exports = Database.open(__dirname + '/database.sqlite').then(execute);
