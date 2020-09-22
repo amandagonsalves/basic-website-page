@@ -2,9 +2,22 @@ include head.pug
 link(rel="stylesheet", href="../../public/styles/post-blog.css")
 include menu.pug
 
-.post-container(style="background-image: url('https://nexaas.com/wp-content/uploads/2018/11/editada_ps19428.png');")
-    .post-container__header
-        h1.post-container__title Card title oi
-.content-post-page
+.post-header(style="background-image: url('https://nexaas.com/wp-content/uploads/2018/11/editada_ps19428.png');")
+    .post-header__header
+        h1.post-header__title Card title oi
+.container-post-page        
+    .content-post-page
+        p.content-post-page__keywords palavras chave do post
+        h1.content-post-page__title card title ola
+        img(src="", alt="").content-post-page__image
+        .content-post-page__text-container
+            p.text-container__para Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod harum esse recusandae sunt? Debitis, culpa libero veritatis earum itaque nemo facilis iste eligendi tenetur quidem minima optio voluptatem, ducimus explicabo!
+            h1.text-container__title ola ola ola ola ola ola ola
+        .content-post-page__comments
+            label(for="comment")
+            input(type="text", name="comment", placeholder="Adicione um comentário")
+    .content-search
+        label(for="search")
+        input(type="text", name="search", placeholder="Pesquisar por...")
 
 include footer.pug    
