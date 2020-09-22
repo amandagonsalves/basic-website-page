@@ -11,9 +11,8 @@ Database.then(async (db) => {
         description: faker.lorem.paragraph(),
         keywords: faker.lorem.words()
     }
-    await createCard(db, { cardValue }); 
+    /* await createCard(db, { cardValue });  */
     /* await deleteCards(db, { cardValue }); */
-    /* db.exec("delete from cards"); */
     const selectedCards = await db.all("SELECT * FROM cards");
     console.log(selectedCards)
 });
