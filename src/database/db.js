@@ -6,8 +6,9 @@ function execute(db) {
             title TEXT,
             thumbnail TEXT,
             description TEXT,
-            keywords TEXT
-        ); 
+            keywords TEXT,
+            textContent TEXT
+        );      
     `);
     
 };

@@ -8,9 +8,10 @@ Database.then(async (db) => {
         title: faker.lorem.sentence(),
         thumbnail: faker.image.business(),
         description: faker.lorem.paragraph(),
-        keywords: faker.lorem.words()
+        keywords: faker.lorem.words(),
+        textContent: faker.lorem.paragraphs()
     }
-    /* await createCard(db, { cardValue });  */
+    await createCard(db, { cardValue });
     /* await deleteCards(db, { cardValue }); */
     const selectedCards = await db.all("SELECT * FROM cards");
     console.log(selectedCards)
