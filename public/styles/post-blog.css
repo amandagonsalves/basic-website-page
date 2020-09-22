@@ -1,9 +1,11 @@
 .post-container {
-    background-image: url('https://nexaas.com/wp-content/uploads/2018/11/editada_ps19428.png');
-    height: 40vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 65vh;
     margin-top: 80px;   
 }
-.post-container__title-container { 
+.post-container__header { 
     display: flex;
     align-items: center;
     width: 100vw;
