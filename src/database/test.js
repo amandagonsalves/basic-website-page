@@ -11,7 +11,7 @@ Database.then(async (db) => {
         keywords: faker.lorem.words(),
         textContent: faker.lorem.paragraphs()
     }
-    await createCard(db, { cardValue });
+    /* await createCard(db, { cardValue }); */
     /* await deleteCards(db, { cardValue }); */
     const selectedCards = await db.all("SELECT * FROM cards");
     console.log(selectedCards)

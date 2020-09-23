@@ -28,7 +28,7 @@ function paginate() {
             <img src="${card.thumbnail}" alt="" class="card-blog__thumbnail">
             <h1 class="card-blog__title">${card.title}</h1>
             <p class="card-blog__description">${card.description}</p>
-            <a href="/${card.id}" class="card-blog__read-more">Ler mais</a>
+            <a href="/api/card/${card.id}" class="card-blog__read-more">Ler mais</a>
             <p class="card-blog__words-blog card-blog__words-blog--flex">
                 <i class="fa fa-bookmark"></i>
                 ${card.keywords}
