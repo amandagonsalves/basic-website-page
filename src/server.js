@@ -3,13 +3,14 @@ const express = require('express');
 const server = express();
 const { join } = require('path');
 const { cardsHome } = require('./pages');
+const db = require('./database/db');
 
 server.set('view engine', 'ejs');
 
 const options = {}; 
 
 server.get('/api/card:id?', async (req, res) => {
-    const post = req.params;
+    const { id } = req.params.id;
     res.json({ cards: await cardsHome() });
 });
 
