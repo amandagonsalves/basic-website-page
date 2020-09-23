@@ -16,9 +16,8 @@ async function cardsHome() {
 
 async function getCard(id) {
     const db = await Database;
-    const card = await db.all(`SELECT * FROM cards WHERE id = ${id}`);
+    const card = await db.all(`SELECT * FROM cards WHERE id = ${id}`); 
     return card;
 }
-
 
 module.exports = { cardsHome, getCard }
