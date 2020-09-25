@@ -3,6 +3,7 @@ const express = require('express');
 const server = express();
 const { join } = require('path');
 const { cardsHome, getCard } = require('./pages');
+const { renderPost } = require('../public/scripts/renderPost');
 const db = require('./database/db');
 
 server.set('view engine', 'ejs');

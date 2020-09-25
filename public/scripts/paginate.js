@@ -28,7 +28,7 @@ function paginate() {
             <img src="${card.thumbnail}" alt="" class="card-blog__thumbnail">
             <h1 class="card-blog__title">${card.title}</h1>
             <p class="card-blog__description">${card.description}</p>
-            <a href="/api/card/${card.id}" class="card-blog__read-more">Ler mais</a>
+            <a href="/post-blog.html?id=${card.id}" class="card-blog__read-more">Ler mais</a>
             <p class="card-blog__words-blog card-blog__words-blog--flex">
                 <i class="fa fa-bookmark"></i>
                 ${card.keywords}
@@ -52,7 +52,6 @@ function paginate() {
             html.get('.cards-blog').appendChild(div);
         },
         async update() {
-            
             const data = await getData()
 
             state.totalPage = Math.ceil(data.length / perPage);
@@ -67,6 +66,7 @@ function paginate() {
             const paginatedItems = data.slice(start, end);
 
             paginatedItems.forEach(list.create)
+
         }
     }
 
@@ -172,8 +172,8 @@ function paginate() {
         list.update();
         buttons.update();
     }
-    function init() {
-        update();
+    async function init() {
+        await update();
         controls.createListeners();
     }
     init()
