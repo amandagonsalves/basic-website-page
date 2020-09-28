@@ -50,13 +50,13 @@ function paginate() {
             `;
 
             html.get('.cards-blog').appendChild(div);
+
         },
         async update() {
             const data = await getData()
 
             state.totalPage = Math.ceil(data.length / perPage);
 
-            console.log(data)
             html.get('.cards-blog').innerHTML = '';
 
             let page = state.page - 1;
