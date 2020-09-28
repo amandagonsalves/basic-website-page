@@ -65,7 +65,21 @@ function paginate() {
 
             const paginatedItems = data.slice(start, end);
 
-            paginatedItems.forEach(list.create)
+            paginatedItems.forEach(list.create);
+
+            for (let index = 0; index < data.length; index++) {
+                
+                let url = new URL(`http://localhost:5500/post-blog.html?id=${index}`);
+                let search_params = url.searchParams;
+
+                if (search_params.has('id')) {
+                    const id = search_params.get('id');
+                    console.log(id);
+                    console.log(data[id])
+                }
+
+            }
+
 
         }
     }
