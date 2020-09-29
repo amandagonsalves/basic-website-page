@@ -94,17 +94,24 @@ body {
         font-size: 1.2rem;
         margin-left: 1rem;
     }
+    .content-post-page__image {
+        width: 100%;
+        height: 200px;
+    }
+    .content-post-page__comments-input {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width:1200px) {
     .container-post-page {
         display: flex;
         flex-direction: column;
+        text-align: justify;
     }
     .content-search {
         flex: 1;
         width: 50%;
-        margin: 2rem;
     }
     
 }
