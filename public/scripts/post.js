@@ -10,13 +10,25 @@ async function cardsContent() {
     const id = urlParams.get('id')
 
     const cards = await getData();
-
     console.log(cards)
-    console.log(cards[id])
+
+    const html = {
+        get(element) {
+            return document.querySelector(element);
+        }
+    }
 
     const titlePage = cards[id].title;
+    const paragraphPage = cards[id].textContent;
+    const keywordsPage = cards[id].keywords;
+    const imagePage = cards[id].thumbnail;
 
-    document.querySelector('.post-header__title').innerHTML = `${titlePage} oi`;
+
+    html.get('.post-header__title').innerHTML = titlePage;
+    html.get('.text-container__para').innerHTML = paragraphPage;
+    html.get('.content-post-page__keywords').innerHTML = keywordsPage;
+    html.get('.text-container__title').innerHTML = titlePage;
+    html.get('.content-post-page__image').innerHTML = imagePage;
 
 }
 cardsContent()
