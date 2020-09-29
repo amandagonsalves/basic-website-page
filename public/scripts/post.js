@@ -1,14 +1,11 @@
+import 'regenerator-runtime/runtime'
 import { getData } from './cardsBlog';
 
-let url = location.href;
-let search_params = url.searchParams;
-console.log(url)
+let url = window.location.search;
+const urlParams = new URLSearchParams(url);
+const id = urlParams.get('id')
+const cards = async () => { await getData() };
+console.log(cards)
+const titlePage = cards[id];
 
-if (search_params.has('id')) {
-    const id = search_params.get('id');
-    const cards = await getData()
-    console.log(cards[id].title)
-    
-} else {
-    console.log('no id')
-}
+document.querySelector('.post-header__title').innerHTML = titlePage;
