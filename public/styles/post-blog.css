@@ -79,7 +79,7 @@ body {
     border-bottom: 1px solid rgb(211, 211, 211);
 }
 .content-search__input {
-    margin: 2rem 0;
+    margin: 2rem 0 6rem 0;
     width: 100%;
     padding: 1.2rem;
     border: 1px solid #FFF;
@@ -93,6 +93,7 @@ body {
     .post-header__title {
         font-size: 1.2rem;
         margin-left: 1rem;
+        text-align: center;
     }
     .content-post-page__image {
         width: 100%;
@@ -104,10 +105,14 @@ body {
 }
 
 @media screen and (max-width:1200px) {
+    .post-header__title {
+        text-align: center;
+    }
     .container-post-page {
         display: flex;
         flex-direction: column;
         text-align: justify;
+        align-items: center;
     }
     .content-search {
         flex: 1;

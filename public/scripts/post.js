@@ -16,13 +16,6 @@ async function cardsContent() {
     const cards = await getData();
     console.log(cards)
 
-    const idArray = cards.forEach(card => {
-        return card.id--;
-    });
-
-    console.log(idArray)
-    console.log(id)
-
     if (id < 0 || id > cards.length) {
         window.location = '/blog.html';
     } else {
@@ -35,15 +28,19 @@ async function cardsContent() {
         html.get('.post-header__title').forEach(element => {
             element.innerHTML = titlePage;
         });
+        
         html.get('.text-container__para').forEach(element => {
             element.innerHTML = paragraphPage;
         });
+
         html.get('.content-post-page__keywords').forEach(element => {
             element.innerHTML = keywordsPage;
         });
+
         html.get('.text-container__title').forEach(element => {
             element.innerHTML = titlePage;
         });
+        
         html.get('.content-post-page__image').forEach(element => {
             element.innerHTML = imagePage;
         });
