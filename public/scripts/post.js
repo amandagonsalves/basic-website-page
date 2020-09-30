@@ -18,17 +18,23 @@ async function cardsContent() {
         }
     }
 
-    const titlePage = cards[id].title;
-    const paragraphPage = cards[id].textContent;
-    const keywordsPage = cards[id].keywords;
-    const imagePage = cards[id].thumbnail;
+    if(id) {
+        const titlePage = cards[id].title;
+        const paragraphPage = cards[id].textContent;
+        const keywordsPage = cards[id].keywords;
+        const imagePage = cards[id].thumbnail;
+    
+    
+        html.get('.post-header__title').innerHTML = titlePage;
+        html.get('.text-container__para').innerHTML = paragraphPage;
+        html.get('.content-post-page__keywords').innerHTML = keywordsPage;
+        html.get('.text-container__title').innerHTML = titlePage;
+        html.get('.content-post-page__image').innerHTML = imagePage;
+    } else {
+        console.log('nao')
+    }
 
-
-    html.get('.post-header__title').innerHTML = titlePage;
-    html.get('.text-container__para').innerHTML = paragraphPage;
-    html.get('.content-post-page__keywords').innerHTML = keywordsPage;
-    html.get('.text-container__title').innerHTML = titlePage;
-    html.get('.content-post-page__image').innerHTML = imagePage;
+     
 
 }
 cardsContent()
