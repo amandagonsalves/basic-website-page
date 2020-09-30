@@ -20,31 +20,36 @@ async function cardsContent() {
         return card.id--;
     });
 
-    if(idArray < 0) {
-       console.log('oiasd')
-    } else {
-        const titlePage = cards[id].title;
-        const paragraphPage = cards[id].textContent;
-        const keywordsPage = cards[id].keywords;
-        const imagePage = cards[id].thumbnail;
-    
-       
-        html.get('.post-header__title').forEach(element => {
-            element.innerHTML = titlePage;
-        });
-        html.get('.text-container__para').forEach(element => {
-            element.innerHTML = paragraphPage;
-        });
-        html.get('.content-post-page__keywords').forEach(element => {
-            element.innerHTML = keywordsPage;
-        });
-        html.get('.text-container__title').forEach(element => {
-            element.innerHTML = titlePage;
-        });
-        html.get('.content-post-page__image').forEach(element => {
-            element.innerHTML = imagePage;
-        });
-    }
+    console.log(idArray)
+    console.log(id)
 
+    if(id < 0 || id > cards.length) {
+        /* document.querySelector('.post-header__title').innerHTML = 'Nenhum post encontrado';
+        document.querySelector('.container-post-page').style.display = 'none'; */
+        window.location = '/blog.html';
+    } else {
+        console.log('maior q 0')
+    }
+   /*  const titlePage = cards[id].title;
+    const paragraphPage = cards[id].textContent;
+    const keywordsPage = cards[id].keywords;
+    const imagePage = cards[id].thumbnail;
+
+   
+    html.get('.post-header__title').forEach(element => {
+        element.innerHTML = titlePage;
+    });
+    html.get('.text-container__para').forEach(element => {
+        element.innerHTML = paragraphPage;
+    });
+    html.get('.content-post-page__keywords').forEach(element => {
+        element.innerHTML = keywordsPage;
+    });
+    html.get('.text-container__title').forEach(element => {
+        element.innerHTML = titlePage;
+    });
+    html.get('.content-post-page__image').forEach(element => {
+        element.innerHTML = imagePage;
+    }); */
 }
 cardsContent()
