@@ -14,7 +14,7 @@ async function cardsContent() {
 
     const html = {
         get(element) {
-            return document.querySelector(element);
+            return document.querySelectorAll(element);
         }
     }
 
@@ -25,11 +25,21 @@ async function cardsContent() {
         const imagePage = cards[id].thumbnail;
     
     
-        html.get('.post-header__title').innerHTML = titlePage;
-        html.get('.text-container__para').innerHTML = paragraphPage;
-        html.get('.content-post-page__keywords').innerHTML = keywordsPage;
-        html.get('.text-container__title').innerHTML = titlePage;
-        html.get('.content-post-page__image').innerHTML = imagePage;
+        html.get('.post-header__title').forEach(element => {
+            element.innerHTML = titlePage;
+        });
+        html.get('.text-container__para').forEach(element => {
+            element.innerHTML = paragraphPage;
+        });
+        html.get('.content-post-page__keywords').forEach(element => {
+            element.innerHTML = keywordsPage;
+        });
+        html.get('.text-container__title').forEach(element => {
+            element.innerHTML = titlePage;
+        });
+        html.get('.content-post-page__image').forEach(element => {
+            element.innerHTML = imagePage;
+        });
     } else {
         console.log('nao')
     }
