@@ -1,30 +1,34 @@
 import 'regenerator-runtime/runtime'
 import { getData } from './cardsBlog';
 
-
-
 async function cardsContent() {
-
-    let url = window.location.search;
-    const urlParams = new URLSearchParams(url);
-    const id = urlParams.get('id')
-
-    const cards = await getData();
-    console.log(cards)
 
     const html = {
         get(element) {
             return document.querySelectorAll(element);
         }
-    }
+    };
 
-    if(id) {
+    let url = window.location.search;
+    const urlParams = new URLSearchParams(url);
+    const id = urlParams.get('id');
+
+    const cards = await getData();
+    console.log(cards)
+
+    const idArray = cards.forEach(card => {
+        return card.id--;
+    });
+
+    if(idArray < 0) {
+       console.log('oiasd')
+    } else {
         const titlePage = cards[id].title;
         const paragraphPage = cards[id].textContent;
         const keywordsPage = cards[id].keywords;
         const imagePage = cards[id].thumbnail;
     
-    
+       
         html.get('.post-header__title').forEach(element => {
             element.innerHTML = titlePage;
         });
@@ -40,11 +44,7 @@ async function cardsContent() {
         html.get('.content-post-page__image').forEach(element => {
             element.innerHTML = imagePage;
         });
-    } else {
-        console.log('nao')
     }
-
-     
 
 }
 cardsContent()
